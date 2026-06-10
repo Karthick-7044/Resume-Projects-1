@@ -1,0 +1,16 @@
+PKF Mithra – Financial RAG Assistant for Chartered Accountants
+
+PKF Mithra is an AI-powered Retrieval-Augmented Generation (RAG) chatbot designed to assist Chartered Accountants (CAs) in quickly accessing relevant information from large financial and regulatory documents. Instead of manually searching through documents that can exceed 600 pages, users can query the chatbot in natural language and instantly retrieve accurate, context-specific information.
+
+The system is capable of:
+
+Retrieving relevant financial and regulatory information from uploaded documents.
+Generating concise summaries of lengthy sections.
+Extracting and interpreting data from structured tables.
+Answering document-specific queries with contextual accuracy.
+
+To improve retrieval efficiency, a Hierarchical RAG architecture was implemented. Documents are first segmented and embedded at the section level. Each section is then further chunked and embedded separately, enabling faster and more precise retrieval of relevant content while reducing search space within large documents.
+
+Given the sensitive nature of financial information, the solution utilizes the Qwen 2.5B local language model, ensuring that all document processing and inference occur locally without exposing confidential client data to external cloud services.
+
+This architecture significantly reduces the time required for information discovery, improves document accessibility, and enhances productivity for financial professionals handling large volumes of regulatory and compliance-related documentation.
