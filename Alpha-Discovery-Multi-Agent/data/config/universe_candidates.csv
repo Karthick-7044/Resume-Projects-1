@@ -1,0 +1,69 @@
+ticker,company_name,sector,industry,exchange
+AAPL,Apple Inc.,Technology,Consumer Electronics,NASDAQ
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,NASDAQ
+NVDA,NVIDIA Corporation,Technology,Semiconductors,NASDAQ
+AMZN,Amazon.com Inc.,Consumer Cyclical,Internet Retail,NASDAQ
+GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,NASDAQ
+META,Meta Platforms Inc.,Communication Services,Internet Content & Information,NASDAQ
+JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,NYSE
+V,Visa Inc.,Financial Services,Credit Services,NYSE
+XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,NYSE
+JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,NYSE
+BAC,Bank of America Corporation,Financial Services,Banks - Diversified,NYSE
+WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,NYSE
+C,Citigroup Inc.,Financial Services,Banks - Diversified,NYSE
+GS,Goldman Sachs Group Inc.,Financial Services,Capital Markets,NYSE
+MS,Morgan Stanley,Financial Services,Capital Markets,NYSE
+AXP,American Express Company,Financial Services,Credit Services,NYSE
+MA,Mastercard Incorporated,Financial Services,Credit Services,NYSE
+UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,NYSE
+PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,NYSE
+MRK,Merck & Co. Inc.,Healthcare,Drug Manufacturers - General,NYSE
+ABT,Abbott Laboratories,Healthcare,Medical Devices,NYSE
+LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General,NYSE
+TMO,Thermo Fisher Scientific Inc.,Healthcare,Diagnostics & Research,NYSE
+AMGN,Amgen Inc.,Healthcare,Drug Manufacturers - General,NASDAQ
+BMY,Bristol-Myers Squibb Company,Healthcare,Drug Manufacturers - General,NYSE
+GILD,Gilead Sciences Inc.,Healthcare,Drug Manufacturers - General,NASDAQ
+MDT,Medtronic plc,Healthcare,Medical Devices,NYSE
+CVX,Chevron Corporation,Energy,Oil & Gas Integrated,NYSE
+COP,ConocoPhillips,Energy,Oil & Gas E&P,NYSE
+SLB,Schlumberger Limited,Energy,Oil & Gas Equipment & Services,NYSE
+KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,NYSE
+PEP,PepsiCo Inc.,Consumer Defensive,Beverages - Non-Alcoholic,NASDAQ
+PG,Procter & Gamble Company,Consumer Defensive,Household & Personal Products,NYSE
+WMT,Walmart Inc.,Consumer Defensive,Discount Stores,NYSE
+COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,NASDAQ
+HD,The Home Depot Inc.,Consumer Cyclical,Home Improvement Retail,NYSE
+LOW,Lowe's Companies Inc.,Consumer Cyclical,Home Improvement Retail,NYSE
+MCD,McDonald's Corporation,Consumer Cyclical,Restaurants,NYSE
+NKE,NIKE Inc.,Consumer Cyclical,Footwear & Accessories,NYSE
+SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,NASDAQ
+TGT,Target Corporation,Consumer Defensive,Discount Stores,NYSE
+F,Ford Motor Company,Consumer Cyclical,Auto Manufacturers,NYSE
+GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,NYSE
+TSLA,Tesla Inc.,Consumer Cyclical,Auto Manufacturers,NASDAQ
+DIS,The Walt Disney Company,Communication Services,Entertainment,NYSE
+CMCSA,Comcast Corporation,Communication Services,Telecom Services,NASDAQ
+T,AT&T Inc.,Communication Services,Telecom Services,NYSE
+VZ,Verizon Communications Inc.,Communication Services,Telecom Services,NYSE
+NFLX,Netflix Inc.,Communication Services,Entertainment,NASDAQ
+INTC,Intel Corporation,Technology,Semiconductors,NASDAQ
+CSCO,Cisco Systems Inc.,Technology,Communication Equipment,NASDAQ
+ORCL,Oracle Corporation,Technology,Software - Infrastructure,NYSE
+IBM,International Business Machines Corporation,Technology,Information Technology Services,NYSE
+QCOM,QUALCOMM Incorporated,Technology,Semiconductors,NASDAQ
+TXN,Texas Instruments Incorporated,Technology,Semiconductors,NASDAQ
+ADBE,Adobe Inc.,Technology,Software - Application,NASDAQ
+CRM,Salesforce Inc.,Technology,Software - Application,NYSE
+AMD,Advanced Micro Devices Inc.,Technology,Semiconductors,NASDAQ
+BA,The Boeing Company,Industrials,Aerospace & Defense,NYSE
+CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery,NYSE
+GE,General Electric Company,Industrials,Specialty Industrial Machinery,NYSE
+HON,Honeywell International Inc.,Industrials,Conglomerates,NASDAQ
+UPS,United Parcel Service Inc.,Industrials,Integrated Freight & Logistics,NYSE
+LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,NYSE
+MMM,3M Company,Industrials,Conglomerates,NYSE
+NEE,NextEra Energy Inc.,Utilities,Utilities - Regulated Electric,NYSE
+DUK,Duke Energy Corporation,Utilities,Utilities - Regulated Electric,NYSE
+SO,The Southern Company,Utilities,Utilities - Regulated Electric,NYSE

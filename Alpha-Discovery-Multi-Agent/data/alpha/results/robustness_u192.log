@@ -1,0 +1,390 @@
+== walkforward reb5
+python.exe : 2026-10-22 22:11:41,794 library: 70 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_robustness.ps1:9 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|INFO| ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-22 22:1...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-22 22:14:18,629 2016: critic passed 0 | naive=0.015 critic_v1=0.015 critic=cash composite=0.0104 
+literature=-0.0029 random=0.0144
+2026-10-22 22:15:57,161 2017: critic passed 0 | naive=0.0065 critic_v1=0.0065 critic=cash composite=0.0139 
+literature=0.0182 random=0.0054
+2026-10-22 22:17:37,122 2018: critic passed 0 | naive=0.0096 critic_v1=0.0096 critic=cash composite=0.0091 
+literature=0.0084 random=0.0019
+2026-10-22 22:19:17,336 2019: critic passed 0 | naive=0.01 critic_v1=0.01 critic=cash composite=0.0018 
+literature=0.0048 random=-0.0036
+2026-10-22 22:20:55,058 2020: critic passed 0 | naive=0.0288 critic_v1=0.0288 critic=cash composite=0.0251 
+literature=0.0267 random=-0.0137
+2026-10-22 23:55:59,718 2021: critic passed 0 | naive=0.0171 critic_v1=0.0171 critic=cash composite=0.0093 
+literature=0.0122 random=0.0079
+2026-10-22 23:57:42,869 2022: critic passed 0 | naive=0.0075 critic_v1=0.0075 critic=cash composite=0.0147 
+literature=0.0206 random=-0.0074
+2026-10-22 23:59:26,738 2023: critic passed 0 | naive=0.0125 critic_v1=0.0125 critic=cash composite=0.014 
+literature=0.0028 random=0.0042
+random null: mean IC 0.0035 p95 0.0094
+naive IC 0.0134 t 2.71 monthly t 3.44 Holm p 0.0018 null p 0.01 net Sharpe 0.0 gross Sharpe 0.71 years+ 1.0 invested 8
+critic_v1 IC 0.0134 t 2.71 monthly t 3.44 Holm p 0.0018 null p 0.01 net Sharpe 0.0 gross Sharpe 0.71 years+ 1.0 invested 8
+random IC 0.0011 t 0.29 monthly t 0.25 Holm p None null p 0.75 net Sharpe -0.87 gross Sharpe -0.28 years+ 0.625 invested 8
+composite IC 0.0123 t 2.88 monthly t 3.63 Holm p 0.0011 null p 0.01 net Sharpe -0.5 gross Sharpe 0.13 years+ 1.0 invested 8
+literature IC 0.0114 t 2.7 monthly t 2.86 Holm p 0.0042 null p 0.02 net Sharpe -0.61 gross Sharpe -0.15 years+ 0.875 invested 8
+
+== walkforward reb21
+python.exe : 2026-10-22 23:59:39,837 library: 70 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_robustness.ps1:9 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|INFO| ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-22 23:5...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-23 00:02:22,844 2016: critic passed 0 | naive=0.015 critic_v1=0.015 critic=cash composite=0.0104 
+literature=-0.0029 random=0.0144
+2026-10-23 00:04:05,166 2017: critic passed 0 | naive=0.0065 critic_v1=0.0065 critic=cash composite=0.0139 
+literature=0.0182 random=0.0054
+2026-10-23 00:05:47,727 2018: critic passed 0 | naive=0.0096 critic_v1=0.0096 critic=cash composite=0.0091 
+literature=0.0084 random=0.0019
+2026-10-23 00:07:29,796 2019: critic passed 0 | naive=0.01 critic_v1=0.01 critic=cash composite=0.0018 
+literature=0.0048 random=-0.0036
+2026-10-23 00:09:11,719 2020: critic passed 0 | naive=0.0288 critic_v1=0.0288 critic=cash composite=0.0251 
+literature=0.0267 random=-0.0137
+2026-10-23 00:10:55,453 2021: critic passed 0 | naive=0.0171 critic_v1=0.0171 critic=cash composite=0.0093 
+literature=0.0122 random=0.0079
+2026-10-23 00:12:38,790 2022: critic passed 0 | naive=0.0075 critic_v1=0.0075 critic=cash composite=0.0147 
+literature=0.0206 random=-0.0074
+2026-10-23 00:14:20,544 2023: critic passed 0 | naive=0.0125 critic_v1=0.0125 critic=cash composite=0.014 
+literature=0.0028 random=0.0042
+random null: mean IC 0.0035 p95 0.0094
+naive IC 0.0134 t 2.71 monthly t 3.44 Holm p 0.0018 null p 0.01 net Sharpe -0.09 gross Sharpe 0.14 years+ 1.0 invested 8
+critic_v1 IC 0.0134 t 2.71 monthly t 3.44 Holm p 0.0018 null p 0.01 net Sharpe -0.09 gross Sharpe 0.14 years+ 1.0 invested 8
+random IC 0.0011 t 0.29 monthly t 0.25 Holm p None null p 0.75 net Sharpe -0.75 gross Sharpe -0.53 years+ 0.625 invested 8
+composite IC 0.0123 t 2.88 monthly t 3.63 Holm p 0.0011 null p 0.01 net Sharpe -0.38 gross Sharpe -0.18 years+ 1.0 invested 8
+literature IC 0.0114 t 2.7 monthly t 2.86 Holm p 0.0042 null p 0.02 net Sharpe -0.45 gross Sharpe -0.33 years+ 0.875 invested 8
+
+== walkforward holdout
+python.exe : 2026-10-23 00:14:33,445 library: 70 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_robustness.ps1:9 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|INFO| ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-23 00:1...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-23 00:17:05,225 2024: critic passed 0 | naive=0.0231 critic_v1=0.0231 critic=cash composite=0.0324 
+literature=0.0261 random=-0.0021
+2026-10-23 00:18:45,950 2025: critic passed 0 | naive=0.0161 critic_v1=0.0161 critic=cash composite=0.0217 
+literature=0.0022 random=0.0131
+random null: mean IC 0.0082 p95 0.0166
+naive IC 0.0196 t 2.29 monthly t 2.45 Holm p 0.0433 null p 0.02 net Sharpe -0.83 gross Sharpe 0.18 years+ 1.0 invested 2
+critic_v1 IC 0.0196 t 2.29 monthly t 2.45 Holm p 0.0433 null p 0.02 net Sharpe -0.83 gross Sharpe 0.18 years+ 1.0 invested 2
+random IC 0.0055 t 0.72 monthly t 0.79 Holm p None null p 0.73 net Sharpe -0.79 gross Sharpe -0.32 years+ 0.5 invested 2
+composite IC 0.0271 t 3.38 monthly t 4.0 Holm p 0.0002 null p 0.0 net Sharpe -0.06 gross Sharpe 0.6 years+ 1.0 invested 2
+literature IC 0.0142 t 1.89 monthly t 2.15 Holm p 0.0433 null p 0.13 net Sharpe -0.53 gross Sharpe 0.06 years+ 1.0 invested 2
+
+== cost_aware
+python.exe : 2026-10-23 00:19:04,607 naive:ls_reb5: net Sharpe -0.29 gross 0.49 turnover 52.7x
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_robustness.ps1:9 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|INFO| ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-23 00:1... turnover 52.7x:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-23 00:19:04,623 naive:ls_reb21: net Sharpe 0.10 gross 0.45 turnover 15.3x
+2026-10-23 00:19:04,640 naive:ls_reb63: net Sharpe 0.14 gross 0.32 turnover 5.1x
+2026-10-23 00:19:04,655 naive:ls_smooth_reb21: net Sharpe 0.10 gross 0.29 turnover 12.0x
+2026-10-23 00:19:04,671 naive:ls_buffer: net Sharpe -0.05 gross 0.53 turnover 44.5x
+2026-10-23 00:19:04,688 naive:lo_top_q_active: net Sharpe 0.43 gross 0.73 turnover 18.2x
+2026-10-23 00:19:04,703 naive:ls_sector_neutral_reb21: net Sharpe -0.08 gross 0.38 turnover 15.6x
+2026-10-23 00:19:11,737 critic_v1:ls_reb5: net Sharpe -0.29 gross 0.49 turnover 52.7x
+2026-10-23 00:19:11,751 critic_v1:ls_reb21: net Sharpe 0.10 gross 0.45 turnover 15.3x
+2026-10-23 00:19:11,765 critic_v1:ls_reb63: net Sharpe 0.14 gross 0.32 turnover 5.1x
+2026-10-23 00:19:11,780 critic_v1:ls_smooth_reb21: net Sharpe 0.10 gross 0.29 turnover 12.0x
+2026-10-23 00:19:11,794 critic_v1:ls_buffer: net Sharpe -0.05 gross 0.53 turnover 44.5x
+2026-10-23 00:19:11,808 critic_v1:lo_top_q_active: net Sharpe 0.43 gross 0.73 turnover 18.2x
+2026-10-23 00:19:11,823 critic_v1:ls_sector_neutral_reb21: net Sharpe -0.08 gross 0.38 turnover 15.6x
+2026-10-23 00:19:59,463 composite:ls_reb5: net Sharpe -0.61 gross 0.03 turnover 40.4x
+2026-10-23 00:19:59,478 composite:ls_reb21: net Sharpe -0.32 gross -0.06 turnover 12.4x
+2026-10-23 00:19:59,492 composite:ls_reb63: net Sharpe -0.29 gross -0.17 turnover 4.3x
+2026-10-23 00:19:59,509 composite:ls_smooth_reb21: net Sharpe -0.27 gross -0.14 turnover 7.5x
+2026-10-23 00:19:59,524 composite:ls_buffer: net Sharpe -0.40 gross 0.02 turnover 29.1x
+2026-10-23 00:19:59,545 composite:lo_top_q_active: net Sharpe -0.09 gross 0.15 turnover 15.2x
+2026-10-23 00:19:59,571 composite:ls_sector_neutral_reb21: net Sharpe -0.49 gross -0.14 turnover 12.6x
+2026-10-23 00:20:08,305 literature:ls_reb5: net Sharpe -0.66 gross -0.18 turnover 29.4x
+2026-10-23 00:20:08,318 literature:ls_reb21: net Sharpe -0.54 gross -0.40 turnover 8.1x
+2026-10-23 00:20:08,333 literature:ls_reb63: net Sharpe -0.66 gross -0.60 turnover 3.1x
+2026-10-23 00:20:08,347 literature:ls_smooth_reb21: net Sharpe -0.60 gross -0.54 turnover 4.0x
+2026-10-23 00:20:08,365 literature:ls_buffer: net Sharpe -0.51 gross -0.28 turnover 15.1x
+2026-10-23 00:20:08,379 literature:lo_top_q_active: net Sharpe -0.35 gross -0.17 turnover 11.2x
+2026-10-23 00:20:08,393 literature:ls_sector_neutral_reb21: net Sharpe -0.58 gross -0.39 turnover 8.2x
+variant                                 netSR grossSR  netRet   turn      p  pHolm   DSR
+naive:ls_reb5                           -0.29    0.49  -0.020   52.7  0.794  1.000  0.00
+naive:ls_reb21                           0.10    0.45   0.005   15.3  0.386  1.000  0.06
+naive:ls_reb63                           0.14    0.32   0.004    5.1  0.345  1.000  0.07
+naive:ls_smooth_reb21                    0.10    0.29   0.006   12.0  0.387  1.000  0.06
+naive:ls_buffer                         -0.05    0.53  -0.004   44.5  0.558  1.000  0.02
+naive:lo_top_q_active                    0.43    0.73   0.026   18.2  0.112  1.000  0.26
+naive:ls_sector_neutral_reb21           -0.08    0.38  -0.003   15.6  0.595  1.000  0.02
+naive:lo_top_q_absolute                  0.91    0.99   0.197   18.2  0.005    nan   nan
+critic_v1:ls_reb5                       -0.29    0.49  -0.020   52.7  0.794  1.000  0.00
+critic_v1:ls_reb21                       0.10    0.45   0.005   15.3  0.386  1.000  0.06
+critic_v1:ls_reb63                       0.14    0.32   0.004    5.1  0.345  1.000  0.07
+critic_v1:ls_smooth_reb21                0.10    0.29   0.006   12.0  0.387  1.000  0.06
+critic_v1:ls_buffer                     -0.05    0.53  -0.004   44.5  0.558  1.000  0.02
+critic_v1:lo_top_q_active                0.43    0.73   0.026   18.2  0.112  1.000  0.26
+critic_v1:ls_sector_neutral_reb21       -0.08    0.38  -0.003   15.6  0.595  1.000  0.02
+critic_v1:lo_top_q_absolute              0.91    0.99   0.197   18.2  0.005    nan   nan
+composite:ls_reb5                       -0.61    0.03  -0.038   40.4  0.959  1.000  0.00
+composite:ls_reb21                      -0.32   -0.06  -0.015   12.4  0.814  1.000  0.00
+composite:ls_reb63                      -0.29   -0.17  -0.011    4.3  0.791  1.000  0.00
+composite:ls_smooth_reb21               -0.27   -0.14  -0.015    7.5  0.780  1.000  0.00
+composite:ls_buffer                     -0.40    0.02  -0.027   29.1  0.869  1.000  0.00
+composite:lo_top_q_active               -0.09    0.15  -0.006   15.2  0.600  1.000  0.02
+composite:ls_sector_neutral_reb21       -0.49   -0.14  -0.018   12.6  0.919  1.000  0.00
+composite:lo_top_q_absolute              0.79    0.86   0.163   15.2  0.013    nan   nan
+literature:ls_reb5                      -0.66   -0.18  -0.041   29.4  0.969  1.000  0.00
+literature:ls_reb21                     -0.54   -0.40  -0.030    8.1  0.937  1.000  0.00
+literature:ls_reb63                     -0.66   -0.60  -0.034    3.1  0.969  1.000  0.00
+literature:ls_smooth_reb21              -0.60   -0.54  -0.036    4.0  0.956  1.000  0.00
+literature:ls_buffer                    -0.51   -0.28  -0.034   15.1  0.924  1.000  0.00
+literature:lo_top_q_active              -0.35   -0.17  -0.022   11.2  0.842  1.000  0.00
+literature:ls_sector_neutral_reb21      -0.58   -0.39  -0.025    8.2  0.949  1.000  0.00
+literature:lo_top_q_absolute             0.83    0.89   0.147   11.2  0.010    nan   nan
+
+== cost_aware holdout
+python.exe : 2026-10-23 00:20:20,782 naive:ls_reb5: net Sharpe -0.63 gross 0.50 turnover 59.7x
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_robustness.ps1:9 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|INFO| ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-23 00:2... turnover 59.7x:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-23 00:20:20,792 naive:ls_reb21: net Sharpe -0.36 gross 0.09 turnover 15.3x
+2026-10-23 00:20:20,803 naive:ls_reb63: net Sharpe -0.21 gross 0.03 turnover 5.1x
+2026-10-23 00:20:20,810 naive:ls_smooth_reb21: net Sharpe -0.60 gross -0.39 turnover 11.2x
+2026-10-23 00:20:20,817 naive:ls_buffer: net Sharpe -0.42 gross 0.43 turnover 51.9x
+2026-10-23 00:20:20,824 naive:lo_top_q_active: net Sharpe -0.30 gross 0.07 turnover 18.0x
+2026-10-23 00:20:20,831 naive:ls_sector_neutral_reb21: net Sharpe -0.76 gross -0.21 turnover 15.5x
+2026-10-23 00:20:22,177 critic_v1:ls_reb5: net Sharpe -0.63 gross 0.50 turnover 59.7x
+2026-10-23 00:20:22,188 critic_v1:ls_reb21: net Sharpe -0.36 gross 0.09 turnover 15.3x
+2026-10-23 00:20:22,195 critic_v1:ls_reb63: net Sharpe -0.21 gross 0.03 turnover 5.1x
+2026-10-23 00:20:22,200 critic_v1:ls_smooth_reb21: net Sharpe -0.60 gross -0.39 turnover 11.2x
+2026-10-23 00:20:22,206 critic_v1:ls_buffer: net Sharpe -0.42 gross 0.43 turnover 51.9x
+2026-10-23 00:20:22,212 critic_v1:lo_top_q_active: net Sharpe -0.30 gross 0.07 turnover 18.0x
+2026-10-23 00:20:22,218 critic_v1:ls_sector_neutral_reb21: net Sharpe -0.76 gross -0.21 turnover 15.5x
+2026-10-23 00:20:30,254 composite:ls_reb5: net Sharpe 0.00 gross 0.69 turnover 37.4x
+2026-10-23 00:20:30,259 composite:ls_reb21: net Sharpe -0.13 gross 0.15 turnover 12.1x
+2026-10-23 00:20:30,267 composite:ls_reb63: net Sharpe 0.31 gross 0.46 turnover 4.4x
+2026-10-23 00:20:30,272 composite:ls_smooth_reb21: net Sharpe -0.03 gross 0.13 turnover 7.7x
+2026-10-23 00:20:30,278 composite:ls_buffer: net Sharpe 0.19 gross 0.66 turnover 26.8x
+2026-10-23 00:20:30,283 composite:lo_top_q_active: net Sharpe 0.23 gross 0.47 turnover 14.3x
+2026-10-23 00:20:30,289 composite:ls_sector_neutral_reb21: net Sharpe -0.36 gross -0.01 turnover 12.2x
+2026-10-23 00:20:32,138 literature:ls_reb5: net Sharpe -0.36 gross 0.27 turnover 30.6x
+2026-10-23 00:20:32,143 literature:ls_reb21: net Sharpe -0.30 gross -0.11 turnover 8.5x
+2026-10-23 00:20:32,148 literature:ls_reb63: net Sharpe -0.31 gross -0.23 turnover 3.3x
+2026-10-23 00:20:32,154 literature:ls_smooth_reb21: net Sharpe -0.30 gross -0.20 turnover 4.5x
+2026-10-23 00:20:32,159 literature:ls_buffer: net Sharpe -0.06 gross 0.25 turnover 16.7x
+2026-10-23 00:20:32,165 literature:lo_top_q_active: net Sharpe -0.23 gross -0.00 turnover 12.0x
+2026-10-23 00:20:32,171 literature:ls_sector_neutral_reb21: net Sharpe -0.34 gross -0.14 turnover 8.5x
+variant                                 netSR grossSR  netRet   turn      p  pHolm   DSR
+naive:ls_reb5                           -0.63    0.50  -0.033   59.7  0.812  1.000  0.05
+naive:ls_reb21                          -0.36    0.09  -0.012   15.3  0.695  1.000  0.10
+naive:ls_reb63                          -0.21    0.03  -0.005    5.1  0.619  1.000  0.14
+naive:ls_smooth_reb21                   -0.60   -0.39  -0.032   11.2  0.800  1.000  0.05
+naive:ls_buffer                         -0.42    0.43  -0.026   51.9  0.723  1.000  0.08
+naive:lo_top_q_active                   -0.30    0.07  -0.014   18.0  0.662  1.000  0.11
+naive:ls_sector_neutral_reb21           -0.76   -0.21  -0.021   15.5  0.857  1.000  0.03
+naive:lo_top_q_absolute                  0.84    0.96   0.131   18.0  0.118    nan   nan
+critic_v1:ls_reb5                       -0.63    0.50  -0.033   59.7  0.812  1.000  0.05
+critic_v1:ls_reb21                      -0.36    0.09  -0.012   15.3  0.695  1.000  0.10
+critic_v1:ls_reb63                      -0.21    0.03  -0.005    5.1  0.619  1.000  0.14
+critic_v1:ls_smooth_reb21               -0.60   -0.39  -0.032   11.2  0.800  1.000  0.05
+critic_v1:ls_buffer                     -0.42    0.43  -0.026   51.9  0.723  1.000  0.08
+critic_v1:lo_top_q_active               -0.30    0.07  -0.014   18.0  0.662  1.000  0.11
+critic_v1:ls_sector_neutral_reb21       -0.76   -0.21  -0.021   15.5  0.857  1.000  0.03
+critic_v1:lo_top_q_absolute              0.84    0.96   0.131   18.0  0.118    nan   nan
+composite:ls_reb5                        0.00    0.69   0.000   37.4  0.498  1.000  0.22
+composite:ls_reb21                      -0.13    0.15  -0.006   12.1  0.573  1.000  0.16
+composite:ls_reb63                       0.31    0.46   0.009    4.4  0.329  1.000  0.37
+composite:ls_smooth_reb21               -0.03    0.13  -0.001    7.7  0.518  1.000  0.20
+composite:ls_buffer                      0.19    0.66   0.011   26.8  0.396  1.000  0.30
+composite:lo_top_q_active                0.23    0.47   0.014   14.3  0.372  1.000  0.32
+composite:ls_sector_neutral_reb21       -0.36   -0.01  -0.013   12.2  0.694  1.000  0.10
+composite:lo_top_q_absolute              1.00    1.09   0.160   14.3  0.080    nan   nan
+literature:ls_reb5                      -0.36    0.27  -0.018   30.6  0.694  1.000  0.10
+literature:ls_reb21                     -0.30   -0.11  -0.013    8.5  0.662  1.000  0.11
+literature:ls_reb63                     -0.31   -0.23  -0.012    3.3  0.669  1.000  0.11
+literature:ls_smooth_reb21              -0.30   -0.20  -0.014    4.5  0.663  1.000  0.11
+literature:ls_buffer                    -0.06    0.25  -0.003   16.7  0.532  1.000  0.19
+literature:lo_top_q_active              -0.23   -0.00  -0.012   12.0  0.628  1.000  0.13
+literature:ls_sector_neutral_reb21      -0.34   -0.14  -0.014    8.5  0.685  1.000  0.10
+literature:lo_top_q_absolute             0.98    1.07   0.134   12.0  0.084    nan   nan
+
+== ff
+naive_net                                     alpha -0.0071/yr  t=-0.26  p=0.799  R2=0.09  MKT +0.08 MOM +0.09
+naive_gross                                   alpha +0.0456/yr  t=+1.62  p=0.106  R2=0.09  MKT +0.08 MOM +0.09
+critic_v1_net                                 alpha -0.0071/yr  t=-0.26  p=0.799  R2=0.09  MKT +0.08 MOM +0.09
+critic_v1_gross                               alpha +0.0456/yr  t=+1.62  p=0.106  R2=0.09  MKT +0.08 MOM +0.09
+random_net                                    alpha -0.0574/yr  t=-2.68  p=0.007  R2=0.09  MKT +0.06 MOM +0.03
+random_gross                                  alpha -0.0229/yr  t=-1.07  p=0.287  R2=0.09  MKT +0.06 MOM +0.03
+composite_net                                 alpha -0.0354/yr  t=-1.86  p=0.063  R2=0.34  MKT +0.08 MOM +0.21
+composite_gross                               alpha +0.0050/yr  t=+0.26  p=0.796  R2=0.34  MKT +0.08 MOM +0.21
+literature_net                                alpha -0.0364/yr  t=-2.46  p=0.014  R2=0.59  MKT -0.03 MOM +0.21
+literature_gross                              alpha -0.0071/yr  t=-0.48  p=0.632  R2=0.59  MKT -0.03 MOM +0.21
+cost_aware_daily_u192:naive:ls_reb5_net       alpha -0.0266/yr  t=-1.11  p=0.266  R2=0.12  MKT +0.09 MOM +0.09
+cost_aware_daily_u192:naive:ls_reb5_gross     alpha +0.0260/yr  t=+1.08  p=0.279  R2=0.12  MKT +0.09 MOM +0.09
+cost_aware_daily_u192:naive:ls_reb21_net      alpha +0.0002/yr  t=+0.02  p=0.988  R2=0.09  MKT +0.05 MOM +0.02
+cost_aware_daily_u192:naive:ls_reb21_gross    alpha +0.0155/yr  t=+1.02  p=0.307  R2=0.09  MKT +0.05 MOM +0.02
+cost_aware_daily_u192:naive:ls_reb63_net      alpha +0.0022/yr  t=+0.22  p=0.824  R2=0.13  MKT +0.02 MOM -0.03
+cost_aware_daily_u192:naive:ls_reb63_gross    alpha +0.0073/yr  t=+0.73  p=0.463  R2=0.13  MKT +0.02 MOM -0.03
+cost_aware_daily_u192:naive:ls_smooth_reb21_net alpha +0.0008/yr  t=+0.04  p=0.969  R2=0.14  MKT +0.04 MOM -0.07
+cost_aware_daily_u192:naive:ls_smooth_reb21_gross alpha +0.0128/yr  t=+0.62  p=0.537  R2=0.14  MKT +0.04 MOM -0.07
+cost_aware_daily_u192:naive:ls_buffer_net     alpha -0.0116/yr  t=-0.42  p=0.672  R2=0.11  MKT +0.10 MOM +0.09
+cost_aware_daily_u192:naive:ls_buffer_gross   alpha +0.0330/yr  t=+1.20  p=0.229  R2=0.12  MKT +0.10 MOM +0.09
+cost_aware_daily_u192:naive:lo_top_q_active_net alpha +0.0225/yr  t=+1.05  p=0.292  R2=0.12  MKT +0.06 MOM +0.02
+cost_aware_daily_u192:naive:lo_top_q_active_gross alpha +0.0408/yr  t=+1.90  p=0.057  R2=0.12  MKT +0.06 MOM +0.02
+cost_aware_daily_u192:naive:ls_sector_neutral_reb21_net alpha -0.0060/yr  t=-0.50  p=0.614  R2=0.10  MKT +0.04 MOM +0.02
+cost_aware_daily_u192:naive:ls_sector_neutral_reb21_gross alpha +0.0096/yr  t=+0.81  p=0.416  R2=0.10  MKT +0.04 MOM +0.02
+cost_aware_daily_u192:naive:lo_top_q_absolute_net alpha +0.0648/yr  t=+2.36  p=0.018  R2=0.89  MKT +1.03 MOM -0.03
+cost_aware_daily_u192:critic_v1:ls_reb5_net   alpha -0.0266/yr  t=-1.11  p=0.266  R2=0.12  MKT +0.09 MOM +0.09
+cost_aware_daily_u192:critic_v1:ls_reb5_gross alpha +0.0260/yr  t=+1.08  p=0.279  R2=0.12  MKT +0.09 MOM +0.09
+cost_aware_daily_u192:critic_v1:ls_reb21_net  alpha +0.0002/yr  t=+0.02  p=0.988  R2=0.09  MKT +0.05 MOM +0.02
+cost_aware_daily_u192:critic_v1:ls_reb21_gross alpha +0.0155/yr  t=+1.02  p=0.307  R2=0.09  MKT +0.05 MOM +0.02
+cost_aware_daily_u192:critic_v1:ls_reb63_net  alpha +0.0022/yr  t=+0.22  p=0.824  R2=0.13  MKT +0.02 MOM -0.03
+cost_aware_daily_u192:critic_v1:ls_reb63_gross alpha +0.0073/yr  t=+0.73  p=0.463  R2=0.13  MKT +0.02 MOM -0.03
+cost_aware_daily_u192:critic_v1:ls_smooth_reb21_net alpha +0.0008/yr  t=+0.04  p=0.969  R2=0.14  MKT +0.04 MOM -0.07
+cost_aware_daily_u192:critic_v1:ls_smooth_reb21_gross alpha +0.0128/yr  t=+0.62  p=0.537  R2=0.14  MKT +0.04 MOM -0.07
+cost_aware_daily_u192:critic_v1:ls_buffer_net alpha -0.0116/yr  t=-0.42  p=0.672  R2=0.11  MKT +0.10 MOM +0.09
+cost_aware_daily_u192:critic_v1:ls_buffer_gross alpha +0.0330/yr  t=+1.20  p=0.229  R2=0.12  MKT +0.10 MOM +0.09
+cost_aware_daily_u192:critic_v1:lo_top_q_active_net alpha +0.0225/yr  t=+1.05  p=0.292  R2=0.12  MKT +0.06 MOM +0.02
+cost_aware_daily_u192:critic_v1:lo_top_q_active_gross alpha +0.0408/yr  t=+1.90  p=0.057  R2=0.12  MKT +0.06 MOM +0.02
+cost_aware_daily_u192:critic_v1:ls_sector_neutral_reb21_net alpha -0.0060/yr  t=-0.50  p=0.614  R2=0.10  MKT +0.04 MOM +0.02
+cost_aware_daily_u192:critic_v1:ls_sector_neutral_reb21_gross alpha +0.0096/yr  t=+0.81  p=0.416  R2=0.10  MKT +0.04 MOM +0.02
+cost_aware_daily_u192:critic_v1:lo_top_q_absolute_net alpha +0.0648/yr  t=+2.36  p=0.018  R2=0.89  MKT +1.03 MOM -0.03
+cost_aware_daily_u192:composite:ls_reb5_net   alpha -0.0416/yr  t=-2.34  p=0.019  R2=0.37  MKT +0.08 MOM +0.21
+cost_aware_daily_u192:composite:ls_reb5_gross alpha -0.0012/yr  t=-0.07  p=0.947  R2=0.37  MKT +0.08 MOM +0.21
+cost_aware_daily_u192:composite:ls_reb21_net  alpha -0.0175/yr  t=-1.27  p=0.203  R2=0.35  MKT +0.05 MOM +0.16
+cost_aware_daily_u192:composite:ls_reb21_gross alpha -0.0051/yr  t=-0.37  p=0.711  R2=0.34  MKT +0.05 MOM +0.16
+cost_aware_daily_u192:composite:ls_reb63_net  alpha -0.0122/yr  t=-1.07  p=0.283  R2=0.26  MKT +0.03 MOM +0.11
+cost_aware_daily_u192:composite:ls_reb63_gross alpha -0.0078/yr  t=-0.69  p=0.490  R2=0.26  MKT +0.03 MOM +0.11
+cost_aware_daily_u192:composite:ls_smooth_reb21_net alpha -0.0168/yr  t=-1.03  p=0.303  R2=0.31  MKT +0.05 MOM +0.17
+cost_aware_daily_u192:composite:ls_smooth_reb21_gross alpha -0.0093/yr  t=-0.57  p=0.569  R2=0.31  MKT +0.05 MOM +0.17
+cost_aware_daily_u192:composite:ls_buffer_net alpha -0.0306/yr  t=-1.57  p=0.116  R2=0.38  MKT +0.08 MOM +0.24
+cost_aware_daily_u192:composite:ls_buffer_gross alpha -0.0015/yr  t=-0.08  p=0.939  R2=0.38  MKT +0.08 MOM +0.24
+cost_aware_daily_u192:composite:lo_top_q_active_net alpha -0.0074/yr  t=-0.40  p=0.692  R2=0.31  MKT +0.07 MOM +0.20
+cost_aware_daily_u192:composite:lo_top_q_active_gross alpha +0.0077/yr  t=+0.41  p=0.680  R2=0.31  MKT +0.07 MOM +0.20
+cost_aware_daily_u192:composite:ls_sector_neutral_reb21_net alpha -0.0194/yr  t=-1.73  p=0.083  R2=0.28  MKT +0.03 MOM +0.11
+cost_aware_daily_u192:composite:ls_sector_neutral_reb21_gross alpha -0.0068/yr  t=-0.61  p=0.544  R2=0.28  MKT +0.03 MOM +0.11
+cost_aware_daily_u192:composite:lo_top_q_absolute_net alpha +0.0335/yr  t=+1.51  p=0.132  R2=0.91  MKT +1.04 MOM +0.15
+cost_aware_daily_u192:literature:ls_reb5_net  alpha -0.0382/yr  t=-2.74  p=0.006  R2=0.61  MKT -0.03 MOM +0.21
+cost_aware_daily_u192:literature:ls_reb5_gross alpha -0.0088/yr  t=-0.63  p=0.529  R2=0.61  MKT -0.03 MOM +0.21
+cost_aware_daily_u192:literature:ls_reb21_net alpha -0.0280/yr  t=-2.31  p=0.021  R2=0.63  MKT -0.04 MOM +0.18
+cost_aware_daily_u192:literature:ls_reb21_gross alpha -0.0200/yr  t=-1.65  p=0.099  R2=0.63  MKT -0.04 MOM +0.18
+cost_aware_daily_u192:literature:ls_reb63_net alpha -0.0320/yr  t=-2.75  p=0.006  R2=0.57  MKT -0.04 MOM +0.15
+cost_aware_daily_u192:literature:ls_reb63_gross alpha -0.0288/yr  t=-2.48  p=0.013  R2=0.57  MKT -0.04 MOM +0.15
+cost_aware_daily_u192:literature:ls_smooth_reb21_net alpha -0.0331/yr  t=-2.55  p=0.011  R2=0.61  MKT -0.05 MOM +0.18
+cost_aware_daily_u192:literature:ls_smooth_reb21_gross alpha -0.0291/yr  t=-2.24  p=0.025  R2=0.61  MKT -0.05 MOM +0.18
+cost_aware_daily_u192:literature:ls_buffer_net alpha -0.0306/yr  t=-2.12  p=0.034  R2=0.63  MKT -0.04 MOM +0.23
+cost_aware_daily_u192:literature:ls_buffer_gross alpha -0.0156/yr  t=-1.08  p=0.281  R2=0.63  MKT -0.04 MOM +0.23
+cost_aware_daily_u192:literature:lo_top_q_active_net alpha -0.0180/yr  t=-1.26  p=0.207  R2=0.58  MKT -0.04 MOM +0.21
+cost_aware_daily_u192:literature:lo_top_q_active_gross alpha -0.0068/yr  t=-0.48  p=0.634  R2=0.58  MKT -0.04 MOM +0.21
+cost_aware_daily_u192:literature:ls_sector_neutral_reb21_net alpha -0.0234/yr  t=-2.37  p=0.018  R2=0.57  MKT -0.03 MOM +0.13
+cost_aware_daily_u192:literature:ls_sector_neutral_reb21_gross alpha -0.0151/yr  t=-1.53  p=0.125  R2=0.57  MKT -0.03 MOM +0.13
+cost_aware_daily_u192:literature:lo_top_q_absolute_net alpha +0.0229/yr  t=+1.17  p=0.240  R2=0.91  MKT +0.93 MOM +0.17
+
+== ff holdout
+naive_net                                     alpha -0.0630/yr  t=-1.64  p=0.101  R2=0.13  MKT +0.07 MOM +0.11
+naive_gross                                   alpha -0.0039/yr  t=-0.10  p=0.920  R2=0.13  MKT +0.07 MOM +0.11
+critic_v1_net                                 alpha -0.0630/yr  t=-1.64  p=0.101  R2=0.13  MKT +0.07 MOM +0.11
+critic_v1_gross                               alpha -0.0039/yr  t=-0.10  p=0.920  R2=0.13  MKT +0.07 MOM +0.11
+random_net                                    alpha -0.0539/yr  t=-1.67  p=0.094  R2=0.20  MKT -0.04 MOM +0.17
+random_gross                                  alpha -0.0303/yr  t=-0.94  p=0.348  R2=0.20  MKT -0.04 MOM +0.17
+composite_net                                 alpha -0.0393/yr  t=-1.28  p=0.201  R2=0.30  MKT +0.08 MOM +0.19
+composite_gross                               alpha -0.0017/yr  t=-0.06  p=0.956  R2=0.30  MKT +0.08 MOM +0.19
+literature_net                                alpha -0.0416/yr  t=-1.49  p=0.135  R2=0.40  MKT -0.07 MOM +0.19
+literature_gross                              alpha -0.0112/yr  t=-0.40  p=0.688  R2=0.40  MKT -0.07 MOM +0.20
+cost_aware_daily_u192_holdout:naive:ls_reb5_net alpha -0.0513/yr  t=-1.66  p=0.097  R2=0.14  MKT +0.08 MOM +0.07
+cost_aware_daily_u192_holdout:naive:ls_reb5_gross alpha +0.0091/yr  t=+0.29  p=0.770  R2=0.14  MKT +0.08 MOM +0.08
+cost_aware_daily_u192_holdout:naive:ls_reb21_net alpha -0.0209/yr  t=-1.02  p=0.308  R2=0.10  MKT +0.01 MOM +0.07
+cost_aware_daily_u192_holdout:naive:ls_reb21_gross alpha -0.0050/yr  t=-0.25  p=0.806  R2=0.10  MKT +0.01 MOM +0.07
+cost_aware_daily_u192_holdout:naive:ls_reb63_net alpha -0.0091/yr  t=-0.67  p=0.500  R2=0.02  MKT +0.02 MOM -0.01
+cost_aware_daily_u192_holdout:naive:ls_reb63_gross alpha -0.0040/yr  t=-0.29  p=0.769  R2=0.02  MKT +0.02 MOM -0.01
+cost_aware_daily_u192_holdout:naive:ls_smooth_reb21_net alpha -0.0462/yr  t=-1.31  p=0.189  R2=0.04  MKT +0.03 MOM +0.05
+cost_aware_daily_u192_holdout:naive:ls_smooth_reb21_gross alpha -0.0346/yr  t=-0.98  p=0.327  R2=0.04  MKT +0.03 MOM +0.05
+cost_aware_daily_u192_holdout:naive:ls_buffer_net alpha -0.0473/yr  t=-1.33  p=0.183  R2=0.14  MKT +0.07 MOM +0.11
+cost_aware_daily_u192_holdout:naive:ls_buffer_gross alpha +0.0054/yr  t=+0.15  p=0.880  R2=0.14  MKT +0.07 MOM +0.11
+cost_aware_daily_u192_holdout:naive:lo_top_q_active_net alpha -0.0309/yr  t=-1.11  p=0.265  R2=0.15  MKT +0.04 MOM +0.10
+cost_aware_daily_u192_holdout:naive:lo_top_q_active_gross alpha -0.0130/yr  t=-0.47  p=0.641  R2=0.15  MKT +0.04 MOM +0.10
+cost_aware_daily_u192_holdout:naive:ls_sector_neutral_reb21_net alpha -0.0287/yr  t=-1.64  p=0.101  R2=0.09  MKT +0.00 MOM +0.05
+cost_aware_daily_u192_holdout:naive:ls_sector_neutral_reb21_gross alpha -0.0128/yr  t=-0.73  p=0.466  R2=0.09  MKT +0.00 MOM +0.05
+cost_aware_daily_u192_holdout:naive:lo_top_q_absolute_net alpha +0.0196/yr  t=+0.49  p=0.627  R2=0.84  MKT +0.87 MOM -0.11
+cost_aware_daily_u192_holdout:critic_v1:ls_reb5_net alpha -0.0513/yr  t=-1.66  p=0.097  R2=0.14  MKT +0.08 MOM +0.07
+cost_aware_daily_u192_holdout:critic_v1:ls_reb5_gross alpha +0.0091/yr  t=+0.29  p=0.770  R2=0.14  MKT +0.08 MOM +0.08
+cost_aware_daily_u192_holdout:critic_v1:ls_reb21_net alpha -0.0209/yr  t=-1.02  p=0.308  R2=0.10  MKT +0.01 MOM +0.07
+cost_aware_daily_u192_holdout:critic_v1:ls_reb21_gross alpha -0.0050/yr  t=-0.25  p=0.806  R2=0.10  MKT +0.01 MOM +0.07
+cost_aware_daily_u192_holdout:critic_v1:ls_reb63_net alpha -0.0091/yr  t=-0.67  p=0.500  R2=0.02  MKT +0.02 MOM -0.01
+cost_aware_daily_u192_holdout:critic_v1:ls_reb63_gross alpha -0.0040/yr  t=-0.29  p=0.769  R2=0.02  MKT +0.02 MOM -0.01
+cost_aware_daily_u192_holdout:critic_v1:ls_smooth_reb21_net alpha -0.0462/yr  t=-1.31  p=0.189  R2=0.04  MKT +0.03 MOM +0.05
+cost_aware_daily_u192_holdout:critic_v1:ls_smooth_reb21_gross alpha -0.0346/yr  t=-0.98  p=0.327  R2=0.04  MKT +0.03 MOM +0.05
+cost_aware_daily_u192_holdout:critic_v1:ls_buffer_net alpha -0.0473/yr  t=-1.33  p=0.183  R2=0.14  MKT +0.07 MOM +0.11
+cost_aware_daily_u192_holdout:critic_v1:ls_buffer_gross alpha +0.0054/yr  t=+0.15  p=0.880  R2=0.14  MKT +0.07 MOM +0.11
+cost_aware_daily_u192_holdout:critic_v1:lo_top_q_active_net alpha -0.0309/yr  t=-1.11  p=0.265  R2=0.15  MKT +0.04 MOM +0.10
+cost_aware_daily_u192_holdout:critic_v1:lo_top_q_active_gross alpha -0.0130/yr  t=-0.47  p=0.641  R2=0.15  MKT +0.04 MOM +0.10
+cost_aware_daily_u192_holdout:critic_v1:ls_sector_neutral_reb21_net alpha -0.0287/yr  t=-1.64  p=0.101  R2=0.09  MKT +0.00 MOM +0.05
+cost_aware_daily_u192_holdout:critic_v1:ls_sector_neutral_reb21_gross alpha -0.0128/yr  t=-0.73  p=0.466  R2=0.09  MKT +0.00 MOM +0.05
+cost_aware_daily_u192_holdout:critic_v1:lo_top_q_absolute_net alpha +0.0196/yr  t=+0.49  p=0.627  R2=0.84  MKT +0.87 MOM -0.11
+cost_aware_daily_u192_holdout:composite:ls_reb5_net alpha -0.0373/yr  t=-1.34  p=0.182  R2=0.30  MKT +0.07 MOM +0.18
+cost_aware_daily_u192_holdout:composite:ls_reb5_gross alpha +0.0012/yr  t=+0.04  p=0.965  R2=0.30  MKT +0.07 MOM +0.18
+cost_aware_daily_u192_holdout:composite:ls_reb21_net alpha -0.0375/yr  t=-1.75  p=0.080  R2=0.34  MKT +0.04 MOM +0.15
+cost_aware_daily_u192_holdout:composite:ls_reb21_gross alpha -0.0246/yr  t=-1.15  p=0.252  R2=0.34  MKT +0.04 MOM +0.15
+cost_aware_daily_u192_holdout:composite:ls_reb63_net alpha -0.0161/yr  t=-0.98  p=0.327  R2=0.34  MKT +0.04 MOM +0.09
+cost_aware_daily_u192_holdout:composite:ls_reb63_gross alpha -0.0112/yr  t=-0.68  p=0.495  R2=0.34  MKT +0.04 MOM +0.09
+cost_aware_daily_u192_holdout:composite:ls_smooth_reb21_net alpha -0.0376/yr  t=-1.55  p=0.121  R2=0.34  MKT +0.06 MOM +0.14
+cost_aware_daily_u192_holdout:composite:ls_smooth_reb21_gross alpha -0.0292/yr  t=-1.20  p=0.229  R2=0.34  MKT +0.06 MOM +0.14
+cost_aware_daily_u192_holdout:composite:ls_buffer_net alpha -0.0288/yr  t=-0.99  p=0.321  R2=0.34  MKT +0.05 MOM +0.21
+cost_aware_daily_u192_holdout:composite:ls_buffer_gross alpha -0.0008/yr  t=-0.03  p=0.978  R2=0.34  MKT +0.05 MOM +0.21
+cost_aware_daily_u192_holdout:composite:lo_top_q_active_net alpha -0.0291/yr  t=-0.98  p=0.329  R2=0.32  MKT +0.08 MOM +0.19
+cost_aware_daily_u192_holdout:composite:lo_top_q_active_gross alpha -0.0147/yr  t=-0.49  p=0.622  R2=0.32  MKT +0.08 MOM +0.19
+cost_aware_daily_u192_holdout:composite:ls_sector_neutral_reb21_net alpha -0.0322/yr  t=-1.84  p=0.066  R2=0.36  MKT -0.02 MOM +0.13
+cost_aware_daily_u192_holdout:composite:ls_sector_neutral_reb21_gross alpha -0.0194/yr  t=-1.10  p=0.269  R2=0.36  MKT -0.02 MOM +0.13
+cost_aware_daily_u192_holdout:composite:lo_top_q_absolute_net alpha +0.0212/yr  t=+0.52  p=0.602  R2=0.84  MKT +0.91 MOM -0.03
+cost_aware_daily_u192_holdout:literature:ls_reb5_net alpha -0.0333/yr  t=-1.33  p=0.184  R2=0.39  MKT -0.07 MOM +0.18
+cost_aware_daily_u192_holdout:literature:ls_reb5_gross alpha -0.0017/yr  t=-0.07  p=0.947  R2=0.39  MKT -0.07 MOM +0.18
+cost_aware_daily_u192_holdout:literature:ls_reb21_net alpha -0.0241/yr  t=-1.15  p=0.252  R2=0.47  MKT -0.09 MOM +0.16
+cost_aware_daily_u192_holdout:literature:ls_reb21_gross alpha -0.0147/yr  t=-0.70  p=0.485  R2=0.47  MKT -0.09 MOM +0.17
+cost_aware_daily_u192_holdout:literature:ls_reb63_net alpha -0.0184/yr  t=-0.95  p=0.344  R2=0.42  MKT -0.08 MOM +0.11
+cost_aware_daily_u192_holdout:literature:ls_reb63_gross alpha -0.0145/yr  t=-0.74  p=0.458  R2=0.42  MKT -0.08 MOM +0.12
+cost_aware_daily_u192_holdout:literature:ls_smooth_reb21_net alpha -0.0236/yr  t=-1.01  p=0.314  R2=0.42  MKT -0.09 MOM +0.14
+cost_aware_daily_u192_holdout:literature:ls_smooth_reb21_gross alpha -0.0183/yr  t=-0.78  p=0.436  R2=0.43  MKT -0.09 MOM +0.14
+cost_aware_daily_u192_holdout:literature:ls_buffer_net alpha -0.0178/yr  t=-0.68  p=0.495  R2=0.44  MKT -0.09 MOM +0.20
+cost_aware_daily_u192_holdout:literature:ls_buffer_gross alpha -0.0000/yr  t=-0.00  p=0.999  R2=0.44  MKT -0.09 MOM +0.20
+cost_aware_daily_u192_holdout:literature:lo_top_q_active_net alpha -0.0224/yr  t=-0.79  p=0.428  R2=0.31  MKT -0.07 MOM +0.16
+cost_aware_daily_u192_holdout:literature:lo_top_q_active_gross alpha -0.0104/yr  t=-0.37  p=0.713  R2=0.31  MKT -0.07 MOM +0.16
+cost_aware_daily_u192_holdout:literature:ls_sector_neutral_reb21_net alpha -0.0170/yr  t=-0.89  p=0.372  R2=0.49  MKT -0.11 MOM +0.13
+cost_aware_daily_u192_holdout:literature:ls_sector_neutral_reb21_gross alpha -0.0080/yr  t=-0.42  p=0.675  R2=0.49  MKT -0.11 MOM +0.13
+cost_aware_daily_u192_holdout:literature:lo_top_q_absolute_net alpha +0.0279/yr  t=+0.59  p=0.555  R2=0.75  MKT +0.76 MOM -0.05
+
+== library_tests
+panel end 2025-12-31 library 70
+discovery_2013_2023: raw p<.05 IC 24, Holm 6 | raw p<.05 net 1, Holm 1 | RC p (IC) 0.002 best -cs_rank(ts_mean(daily_return, 3)) | RC p (net) 0.655
+   -cs_rank(ts_mean(daily_return, 3))                                     IC +0.0161 t +4.25 pHolm 0.001 netSR -0.22
+   -cs_rank(momentum_5d)                                                  IC +0.0148 t +4.12 pHolm 0.001 netSR -0.13
+   -cs_rank(close_to_sma20)                                               IC +0.0143 t +4.03 pHolm 0.002 netSR -0.08
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0111 t +3.23 pHolm 0.041 netSR +0.01
+   cs_rank(momentum_252_21d)                                              IC +0.0138 t +3.22 pHolm 0.043 netSR -0.10
+holdout_2025: raw p<.05 IC 6, Holm 0 | raw p<.05 net 1, Holm 0 | RC p (IC) 0.084 best cs_rank(momentum_252_21d) | RC p (net) 0.527
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0234 t +2.49 pHolm 0.337 netSR +0.75
+   cs_rank(ocf_yield) + cs_rank(momentum_252_21d)                         IC +0.0205 t +2.44 pHolm 0.378 netSR +0.31
+   cs_rank(momentum_252_21d)                                              IC +0.0257 t +2.31 pHolm 0.529 netSR +0.03
+   regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_hi IC +0.0158 t +2.13 pHolm 0.826 netSR +1.52
+   cs_rank(revenue_growth)                                                IC +0.0146 t +1.91 pHolm 1.000 netSR +0.02
+
+== 8-K PEAD
+Item 2.02 events: 18187
+2013_2023: breadth 186, IC +0.0040 (HAC t +2.16), net Sharpe -0.51, gross -0.27, turnover 6.4x, FF alpha -0.0143 (t -1.87)
+2024_2025: breadth 189, IC +0.0103 (HAC t +2.52), net Sharpe +1.07, gross +1.29, turnover 6.3x, FF alpha +0.0228 (t +1.27)
+
+== phase
+naive_reb5 {'gross_min': 0.09, 'gross_mean': 0.43, 'gross_max': 0.79, 'net_min': -0.62, 'net_max': 0.11, 'staggered_gross': 0.49, 'staggered_net': -0.29}
+naive_reb21 {'gross_min': -0.12, 'gross_mean': 0.3, 'gross_max': 0.77, 'net_min': -0.33, 'net_max': 0.53, 'staggered_gross': 0.45, 'staggered_net': 0.1}
+composite_reb5 {'gross_min': -0.13, 'gross_mean': 0.03, 'gross_max': 0.23, 'net_min': -0.77, 'net_max': -0.38, 'staggered_gross': 0.03, 'staggered_net': -0.61}
+composite_reb21 {'gross_min': -0.33, 'gross_mean': -0.05, 'gross_max': 0.28, 'net_min': -0.55, 'net_max': 0.04, 'staggered_gross': -0.06, 'staggered_net': -0.32}
+
+ALLDONE

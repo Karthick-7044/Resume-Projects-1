@@ -1,0 +1,42 @@
+# Ticker Universe Configuration (v2.0, 36 stocks)
+# Selection rule: the original 10 stocks (continuity with the project documentation) plus every US large-cap candidate
+# (68 screened) with >= 20 FNSPID news articles in EVERY year 2013-2023 (28 passed; NVDA and V were already included).
+# Note on survivorship bias: all constituents are present-day large-cap survivors, so long historical backtests are
+# optimistic. Point-in-time index membership is a documented future requirement.
+ticker,company_name,sector,industry,exchange,active,universe_version
+AAPL,Apple Inc.,Technology,Consumer Electronics,NASDAQ,True,v2.0
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,NASDAQ,True,v2.0
+NVDA,NVIDIA Corporation,Technology,Semiconductors,NASDAQ,True,v2.0
+AMZN,Amazon.com Inc.,Consumer Cyclical,Internet Retail,NASDAQ,True,v2.0
+GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,NASDAQ,True,v2.0
+META,Meta Platforms Inc.,Communication Services,Internet Content & Information,NASDAQ,True,v2.0
+JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,NYSE,True,v2.0
+V,Visa Inc.,Financial Services,Credit Services,NYSE,True,v2.0
+XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,NYSE,True,v2.0
+JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,NYSE,True,v2.0
+WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,NYSE,True,v2.0
+MS,Morgan Stanley,Financial Services,Capital Markets,NYSE,True,v2.0
+MRK,Merck & Co. Inc.,Healthcare,Drug Manufacturers - General,NYSE,True,v2.0
+ABT,Abbott Laboratories,Healthcare,Medical Devices,NYSE,True,v2.0
+TMO,Thermo Fisher Scientific Inc.,Healthcare,Diagnostics & Research,NYSE,True,v2.0
+AMGN,Amgen Inc.,Healthcare,Drug Manufacturers - General,NASDAQ,True,v2.0
+GILD,Gilead Sciences Inc.,Healthcare,Drug Manufacturers - General,NASDAQ,True,v2.0
+COP,ConocoPhillips,Energy,Oil & Gas E&P,NYSE,True,v2.0
+SLB,Schlumberger Limited,Energy,Oil & Gas Equipment & Services,NYSE,True,v2.0
+KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,NYSE,True,v2.0
+PEP,PepsiCo Inc.,Consumer Defensive,Beverages - Non-Alcoholic,NASDAQ,True,v2.0
+COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,NASDAQ,True,v2.0
+NKE,NIKE Inc.,Consumer Cyclical,Footwear & Accessories,NYSE,True,v2.0
+CMCSA,Comcast Corporation,Communication Services,Telecom Services,NASDAQ,True,v2.0
+ORCL,Oracle Corporation,Technology,Software - Infrastructure,NYSE,True,v2.0
+QCOM,QUALCOMM Incorporated,Technology,Semiconductors,NASDAQ,True,v2.0
+TXN,Texas Instruments Incorporated,Technology,Semiconductors,NASDAQ,True,v2.0
+ADBE,Adobe Inc.,Technology,Software - Application,NASDAQ,True,v2.0
+CRM,Salesforce Inc.,Technology,Software - Application,NYSE,True,v2.0
+CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery,NYSE,True,v2.0
+GE,General Electric Company,Industrials,Specialty Industrial Machinery,NYSE,True,v2.0
+UPS,United Parcel Service Inc.,Industrials,Integrated Freight & Logistics,NYSE,True,v2.0
+MMM,3M Company,Industrials,Conglomerates,NYSE,True,v2.0
+NEE,NextEra Energy Inc.,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0
+DUK,Duke Energy Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0
+SO,The Southern Company,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0

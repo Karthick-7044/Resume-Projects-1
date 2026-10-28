@@ -1,0 +1,11 @@
+ticker,company_name,aliases
+AAPL,Apple Inc.,"Apple;Apple Inc;Apple Computer;iPhone;Tim Cook"
+MSFT,Microsoft Corporation,"Microsoft;Microsoft Corp;Satya Nadella;Windows;Azure"
+NVDA,NVIDIA Corporation,"NVIDIA;NVIDIA Corp;Jensen Huang;GeForce"
+AMZN,Amazon.com Inc.,"Amazon;Amazon.com;AWS;Andy Jassy;Jeff Bezos"
+GOOGL,Alphabet Inc.,"Alphabet;Google;Sundar Pichai;YouTube"
+META,Meta Platforms Inc.,"Meta;Meta Platforms;Facebook;Mark Zuckerberg;Instagram"
+JPM,JPMorgan Chase & Co.,"JPMorgan;JPMorgan Chase;Jamie Dimon;J.P. Morgan"
+V,Visa Inc.,"Visa;Visa Inc;Visa Europe"
+XOM,Exxon Mobil Corporation,"Exxon;ExxonMobil;Exxon Mobil;Darren Woods"
+JNJ,Johnson & Johnson,"Johnson & Johnson;J&J;Joaquin Duato"

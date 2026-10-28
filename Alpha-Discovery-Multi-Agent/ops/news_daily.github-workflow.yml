@@ -1,0 +1,27 @@
+# Copy to .github/workflows/news_daily.yml in a git repository. Requires the repository secret FINNHUB_API_KEY.
+name: news-daily
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"      # 21:30 UTC, after the US close in both EST and EDT
+  workflow_dispatch: {}
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Fetch last 3 days (append-only)
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python -m app.pipeline.news_update --mode daily
+      - name: Score new headlines with FinBERT (cached)
+        run: python -m app.nlp.news_scoring
+      - uses: actions/upload-artifact@v4
+        with:
+          name: news-data
+          path: |
+            data/raw/news_finnhub/
+            data/raw/news_finnhub_raw/
+            data/processed/news/

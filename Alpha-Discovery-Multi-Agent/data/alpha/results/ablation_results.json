@@ -1,0 +1,1018 @@
+{
+  "generated_at": "2026-09-30T10:24:45.671658",
+  "dataset_version": "v2.0.0",
+  "budget": 6,
+  "top_k": 3,
+  "seed": 42,
+  "periods": {
+    "train": [
+      "2020-01-01",
+      "2023-12-31"
+    ],
+    "valid": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2025-12-31"
+    ]
+  },
+  "configs": {
+    "A": {
+      "label": "Technical only",
+      "domains": [
+        "technical"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20260930_102445_A",
+      "n_tested": 6,
+      "verdicts": {
+        "REJECT": 5,
+        "ACCEPT": 1
+      },
+      "n_selected": 1,
+      "selected": [
+        {
+          "experiment_id": "exp_0b8d9a6d2d",
+          "title": "Risk-adjusted momentum",
+          "formula": "cs_rank(momentum_60d / volatility_60d)",
+          "domains": "technical",
+          "dominant_domain": "technical",
+          "verdict": "ACCEPT",
+          "critique": "ACCEPT: 'Risk-adjusted momentum' - train IC 0.0152 / Sharpe 0.30, validation IC 0.0139 / Sharpe 0.92; novelty: Rank correlation 0.92 with the 'momentum' style: little incremental information",
+          "train": {
+            "ann_return": 0.03952246443778814,
+            "ann_vol": 0.13373764745924754,
+            "sharpe": 0.29552235431561186,
+            "gross_sharpe": 0.4448657138197189,
+            "max_drawdown": -0.17791809194604202,
+            "calmar": 0.22213853580317333,
+            "annual_turnover": 19.979642147117296,
+            "hit_rate": 0.49801192842942343,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.33497999401376694,
+            "rank_ic": 0.015151001649990845,
+            "rank_ic_t": 1.137003628419702,
+            "rank_ic_5d": 0.0030453791647821506,
+            "cost_sensitivity": {
+              "0": 0.4448657138197189,
+              "5": 0.37021988514026705,
+              "10": 0.29552235431561186,
+              "20": 0.14607667796957452,
+              "50": -0.30079271317378115
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 423,
+                "sharpe": 1.046839041431779,
+                "ann_return": 0.11636625922438337,
+                "rank_ic": 0.017322157747689665
+              },
+              "Bear / High Volatility": {
+                "days": 525,
+                "sharpe": -0.37945603882362516,
+                "ann_return": -0.055166631228344046,
+                "rank_ic": 0.008541584575838162
+              },
+              "Sideways / Normal Volatility": {
+                "days": 58,
+                "sharpe": 1.9841392891774556,
+                "ann_return": 0.33619229254105715,
+                "rank_ic": 0.05914315569487984
+              }
+            }
+          },
+          "valid": {
+            "ann_return": 0.0929444242118036,
+            "ann_vol": 0.1009778671427095,
+            "sharpe": 0.9204435272973984,
+            "gross_sharpe": 1.1049055883805832,
+            "max_drawdown": -0.08374812117916897,
+            "calmar": 1.1098090667963794,
+            "annual_turnover": 18.640000000000004,
+            "hit_rate": 0.5674603174603174,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.4000584390595345,
+            "rank_ic": 0.013949013949013954,
+            "rank_ic_t": 0.5839373330694994,
+            "rank_ic_5d": 0.029575757575757578,
+            "cost_sensitivity": {
+              "0": 1.1049055883805832,
+              "5": 1.0127713234023572,
+              "10": 0.9204435272973984,
+              "20": 0.7354072169369849,
+              "50": 0.1808516614307819
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 224,
+                "sharpe": 1.1885904195451655,
+                "ann_return": 0.12003623759776108,
+                "rank_ic": 0.01704545454545454
+              },
+              "Bear / High Volatility": {
+                "days": 28,
+                "sharpe": -1.217626922770173,
+                "ann_return": -0.12379008287585623,
+                "rank_ic": -0.010822510822510826
+              }
+            }
+          },
+          "test": {
+            "ann_return": 0.02414118072299015,
+            "ann_vol": 0.10647283283469143,
+            "sharpe": 0.22673559142050334,
+            "gross_sharpe": 0.3928410156794425,
+            "max_drawdown": -0.12232402232083905,
+            "calmar": 0.1973543729593126,
+            "annual_turnover": 17.569156626506025,
+            "hit_rate": 0.5421686746987951,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.20276426476367906,
+            "rank_ic": 0.019155409516855296,
+            "rank_ic_t": 0.7798505003587602,
+            "rank_ic_5d": 0.026345083487940627,
+            "cost_sensitivity": {
+              "0": 0.3928410156794425,
+              "5": 0.30969269453018117,
+              "10": 0.22673559142050334,
+              "20": 0.061521420399298844,
+              "50": -0.4263582791022629
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 183,
+                "sharpe": 1.3074020792959085,
+                "ann_return": 0.12229217157371838,
+                "rank_ic": 0.014538830932273558
+              },
+              "Bear / High Volatility": {
+                "days": 66,
+                "sharpe": -1.8308763460044142,
+                "ann_return": -0.24800474845402887,
+                "rank_ic": 0.031955922865013774
+              }
+            }
+          }
+        }
+      ],
+      "combined": {
+        "formula": "cs_zscore(cs_rank(momentum_60d / volatility_60d))",
+        "train": {
+          "ann_return": 0.03952246443778814,
+          "ann_vol": 0.13373764745924754,
+          "sharpe": 0.29552235431561186,
+          "gross_sharpe": 0.4448657138197189,
+          "max_drawdown": -0.17791809194604202,
+          "calmar": 0.22213853580317333,
+          "annual_turnover": 19.979642147117296,
+          "hit_rate": 0.49801192842942343,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.33497999401376694,
+          "rank_ic": 0.015151001649990845,
+          "rank_ic_t": 1.137003628419702,
+          "rank_ic_5d": 0.0030453791647821506,
+          "cost_sensitivity": {
+            "0": 0.4448657138197189,
+            "5": 0.37021988514026705,
+            "10": 0.29552235431561186,
+            "20": 0.14607667796957452,
+            "50": -0.30079271317378115
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 423,
+              "sharpe": 1.046839041431779,
+              "ann_return": 0.11636625922438337,
+              "rank_ic": 0.017322157747689665
+            },
+            "Bear / High Volatility": {
+              "days": 525,
+              "sharpe": -0.37945603882362516,
+              "ann_return": -0.055166631228344046,
+              "rank_ic": 0.008541584575838162
+            },
+            "Sideways / Normal Volatility": {
+              "days": 58,
+              "sharpe": 1.9841392891774556,
+              "ann_return": 0.33619229254105715,
+              "rank_ic": 0.05914315569487984
+            }
+          }
+        },
+        "valid": {
+          "ann_return": 0.0929444242118036,
+          "ann_vol": 0.1009778671427095,
+          "sharpe": 0.9204435272973984,
+          "gross_sharpe": 1.1049055883805832,
+          "max_drawdown": -0.08374812117916897,
+          "calmar": 1.1098090667963794,
+          "annual_turnover": 18.640000000000004,
+          "hit_rate": 0.5674603174603174,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.4000584390595345,
+          "rank_ic": 0.013949013949013954,
+          "rank_ic_t": 0.5839373330694994,
+          "rank_ic_5d": 0.029575757575757578,
+          "cost_sensitivity": {
+            "0": 1.1049055883805832,
+            "5": 1.0127713234023572,
+            "10": 0.9204435272973984,
+            "20": 0.7354072169369849,
+            "50": 0.1808516614307819
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 224,
+              "sharpe": 1.1885904195451655,
+              "ann_return": 0.12003623759776108,
+              "rank_ic": 0.01704545454545454
+            },
+            "Bear / High Volatility": {
+              "days": 28,
+              "sharpe": -1.217626922770173,
+              "ann_return": -0.12379008287585623,
+              "rank_ic": -0.010822510822510826
+            }
+          }
+        },
+        "test": {
+          "ann_return": 0.02414118072299015,
+          "ann_vol": 0.10647283283469143,
+          "sharpe": 0.22673559142050334,
+          "gross_sharpe": 0.3928410156794425,
+          "max_drawdown": -0.12232402232083905,
+          "calmar": 0.1973543729593126,
+          "annual_turnover": 17.569156626506025,
+          "hit_rate": 0.5421686746987951,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.20276426476367906,
+          "rank_ic": 0.019155409516855296,
+          "rank_ic_t": 0.7798505003587602,
+          "rank_ic_5d": 0.026345083487940627,
+          "cost_sensitivity": {
+            "0": 0.3928410156794425,
+            "5": 0.30969269453018117,
+            "10": 0.22673559142050334,
+            "20": 0.061521420399298844,
+            "50": -0.4263582791022629
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 183,
+              "sharpe": 1.3074020792959085,
+              "ann_return": 0.12229217157371838,
+              "rank_ic": 0.014538830932273558
+            },
+            "Bear / High Volatility": {
+              "days": 66,
+              "sharpe": -1.8308763460044142,
+              "ann_return": -0.24800474845402887,
+              "rank_ic": 0.031955922865013774
+            }
+          }
+        }
+      },
+      "experiments": [
+        {
+          "experiment_id": "exp_d07c8ca08a",
+          "iteration": 0,
+          "hypothesis_id": "T_LOWVOL",
+          "hypothesis_title": "Low-volatility anomaly",
+          "formula": "-cs_rank(volatility_60d)",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": -7.700336700336701,
+          "train_rank_ic": -0.0011517354089413943,
+          "train_sharpe": -0.6245457618452036,
+          "valid_rank_ic": -0.06700336700336701,
+          "valid_sharpe": -2.275264304473778,
+          "annual_turnover": 6.953797216699804,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Low-volatility anomaly' - train IC -0.0012 / Sharpe -0.62, validation IC -0.0670 / Sharpe -2.28; plausibility: Training rank IC -0.0012 contradicts the hypothesis' expected positive relation; stability: IC sign is consistent in only 50% of training years; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']; concentration: 41% of absolute P&L comes from a single stock; novelty: Rank correlation 1.00 with the 'low_volatility' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_07ebc237e9",
+          "iteration": 1,
+          "hypothesis_id": "T_LOWVOL",
+          "hypothesis_title": "Low-volatility anomaly",
+          "formula": "-cs_rank(ts_mean(volatility_20d, 20))",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": -7.777296777296778,
+          "train_rank_ic": -0.006778763793005022,
+          "train_sharpe": -0.6924184716245199,
+          "valid_rank_ic": -0.06777296777296778,
+          "valid_sharpe": -2.556501224890691,
+          "annual_turnover": 8.737335984095429,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Low-volatility anomaly' - train IC -0.0068 / Sharpe -0.69, validation IC -0.0678 / Sharpe -2.56; plausibility: Training rank IC -0.0068 contradicts the hypothesis' expected positive relation; stability: IC sign is consistent in only 50% of training years; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']; concentration: 46% of absolute P&L comes from a single stock; novelty: Rank correlation 0.90 with the 'low_volatility' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_9306d3b6a1",
+          "iteration": 2,
+          "hypothesis_id": "T_LOWVOL",
+          "hypothesis_title": "Low-volatility anomaly",
+          "formula": "-cs_rank(ts_mean(volatility_20d, 60))",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": -7.45021645021645,
+          "train_rank_ic": -0.0075376622720054335,
+          "train_sharpe": -0.6412976469515018,
+          "valid_rank_ic": -0.0645021645021645,
+          "valid_sharpe": -2.299021517428205,
+          "annual_turnover": 4.068071570576543,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Low-volatility anomaly' - train IC -0.0075 / Sharpe -0.64, validation IC -0.0645 / Sharpe -2.30; plausibility: Training rank IC -0.0075 contradicts the hypothesis' expected positive relation; concentration: 55% of absolute P&L comes from a single stock; stability: IC sign is consistent in only 50% of training years; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']; novelty: Rank correlation 0.95 with the 'low_volatility' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_0b8d9a6d2d",
+          "iteration": 3,
+          "hypothesis_id": "T_RISKADJ",
+          "hypothesis_title": "Risk-adjusted momentum",
+          "formula": "cs_rank(momentum_60d / volatility_60d)",
+          "domains": "technical",
+          "verdict": "ACCEPT",
+          "score": 1.5250122767257448,
+          "train_rank_ic": 0.015151001649990845,
+          "train_sharpe": 0.29552235431561186,
+          "valid_rank_ic": 0.013949013949013954,
+          "valid_sharpe": 0.9204435272973984,
+          "annual_turnover": 19.979642147117296,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "ACCEPT: 'Risk-adjusted momentum' - train IC 0.0152 / Sharpe 0.30, validation IC 0.0139 / Sharpe 0.92; novelty: Rank correlation 0.92 with the 'momentum' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_9d526c2bb9",
+          "iteration": 4,
+          "hypothesis_id": "T_RISKADJ",
+          "hypothesis_title": "Risk-adjusted momentum",
+          "formula": "cs_rank(momentum_20d / volatility_20d)",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": 0.17137864902110056,
+          "train_rank_ic": 0.0008683107315145539,
+          "train_sharpe": 0.004444241987014324,
+          "valid_rank_ic": 0.004425204425204422,
+          "valid_sharpe": 0.5154328260026337,
+          "annual_turnover": 33.84715705765408,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Risk-adjusted momentum' - train IC 0.0009 / Sharpe 0.00, validation IC 0.0044 / Sharpe 0.52; plausibility: Training rank IC 0.0009 is economically negligible; stability: IC sign is consistent in only 50% of training years; regime_dependence: IC is positive in ['Bull / Low Volatility'] but negative in ['Bear / High Volatility']; transaction_costs: Sharpe falls from 0.28 (0 bps) to -0.27 (20 bps); annual turnover 34x"
+        },
+        {
+          "experiment_id": "exp_bf71001e03",
+          "iteration": 5,
+          "hypothesis_id": "T_RSI",
+          "hypothesis_title": "RSI mean reversion",
+          "formula": "-cs_rank(rsi_14)",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": -1.8177008177008167,
+          "train_rank_ic": -0.01681444931303525,
+          "train_sharpe": -0.47116102336681864,
+          "valid_rank_ic": -0.008177008177008166,
+          "valid_sharpe": -1.0742226061682631,
+          "annual_turnover": 35.670775347912524,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'RSI mean reversion' - train IC -0.0168 / Sharpe -0.47, validation IC -0.0082 / Sharpe -1.07; plausibility: Training rank IC -0.0168 contradicts the hypothesis' expected positive relation"
+        }
+      ]
+    },
+    "D": {
+      "label": "C + regime",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20260930_102445_D",
+      "n_tested": 6,
+      "verdicts": {
+        "ACCEPT": 3,
+        "REJECT": 3
+      },
+      "n_selected": 3,
+      "selected": [
+        {
+          "experiment_id": "exp_9cbe831324",
+          "title": "Value in stress, growth in calm",
+          "formula": "if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))",
+          "domains": "regime,valuation,fundamental",
+          "dominant_domain": "regime",
+          "verdict": "ACCEPT",
+          "critique": "ACCEPT: 'Value in stress, growth in calm' - train IC 0.0139 / Sharpe 0.18, validation IC 0.0354 / Sharpe 1.61; all checks passed",
+          "train": {
+            "ann_return": 0.022890958948483673,
+            "ann_vol": 0.12714433116643628,
+            "sharpe": 0.18003916288268193,
+            "gross_sharpe": 0.2615173894110113,
+            "max_drawdown": -0.2207655503771997,
+            "calmar": 0.10368899907332559,
+            "annual_turnover": 10.36055666003976,
+            "hit_rate": 0.49502982107355864,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.21972104480034005,
+            "rank_ic": 0.013910168127224221,
+            "rank_ic_t": 1.0816566183421967,
+            "rank_ic_5d": 0.011845261540784562,
+            "cost_sensitivity": {
+              "0": 0.2615173894110113,
+              "5": 0.2207990578992626,
+              "10": 0.18003916288268193,
+              "20": 0.09848392039021628,
+              "50": -0.14487268107622667
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 423,
+                "sharpe": -0.11898313398517599,
+                "ann_return": -0.014127322631926705,
+                "rank_ic": 0.006580210311247718
+              },
+              "Bear / High Volatility": {
+                "days": 525,
+                "sharpe": 0.464736581693378,
+                "ann_return": 0.06242263433991847,
+                "rank_ic": 0.023433570317626714
+              },
+              "Sideways / Normal Volatility": {
+                "days": 58,
+                "sharpe": -0.5363183736762346,
+                "ann_return": -0.06496070436168329,
+                "rank_ic": -0.018834900731452456
+              }
+            }
+          },
+          "valid": {
+            "ann_return": 0.21306283624852698,
+            "ann_vol": 0.13232062548605492,
+            "sharpe": 1.6102012476579577,
+            "gross_sharpe": 1.6462407869509401,
+            "max_drawdown": -0.10449274640171646,
+            "calmar": 2.039020349119918,
+            "annual_turnover": 4.5600000000000005,
+            "hit_rate": 0.5515873015873016,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.49393818505979564,
+            "rank_ic": 0.03544973544973545,
+            "rank_ic_t": 1.2700634523445853,
+            "rank_ic_5d": 0.0901818181818182,
+            "cost_sensitivity": {
+              "0": 1.6462407869509401,
+              "5": 1.6282691714696267,
+              "10": 1.6102012476579577,
+              "20": 1.5737929057959583,
+              "50": 1.4626904629868225
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 224,
+                "sharpe": 1.849409434674934,
+                "ann_return": 0.246002939799215,
+                "rank_ic": 0.051298701298701295
+              },
+              "Bear / High Volatility": {
+                "days": 28,
+                "sharpe": -0.3951015182572765,
+                "ann_return": -0.05045799215697718,
+                "rank_ic": -0.09134199134199135
+              }
+            }
+          },
+          "test": {
+            "ann_return": -0.10023745007036707,
+            "ann_vol": 0.12044728903308204,
+            "sharpe": -0.8322100968402524,
+            "gross_sharpe": -0.7695221134675068,
+            "max_drawdown": -0.16225255665719107,
+            "calmar": -0.6177865676542146,
+            "annual_turnover": 7.367710843373495,
+            "hit_rate": 0.46987951807228917,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.25097380727208896,
+            "rank_ic": -0.016380674211999516,
+            "rank_ic_t": -0.6229995249819558,
+            "rank_ic_5d": -0.06864564007421149,
+            "cost_sensitivity": {
+              "0": -0.7695221134675068,
+              "5": -0.8008980552993308,
+              "10": -0.8322100968402524,
+              "20": -0.8945812692646613,
+              "50": -1.0785854356348692
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 183,
+                "sharpe": -0.2611902506434319,
+                "ann_return": -0.03310130214222869,
+                "rank_ic": -0.011160788209968535
+              },
+              "Bear / High Volatility": {
+                "days": 66,
+                "sharpe": -2.8369508347143944,
+                "ann_return": -0.2863876784165688,
+                "rank_ic": -0.030853994490358118
+              }
+            }
+          }
+        },
+        {
+          "experiment_id": "exp_e26ace0331",
+          "title": "Flight to quality in high-volatility regimes",
+          "formula": "if_else(regime_high_vol, cs_rank(roe), cs_rank(momentum_60d))",
+          "domains": "regime,fundamental,technical",
+          "dominant_domain": "technical",
+          "verdict": "ACCEPT",
+          "critique": "ACCEPT: 'Flight to quality in high-volatility regimes' - train IC 0.0150 / Sharpe 0.35, validation IC 0.0289 / Sharpe 1.44; all checks passed",
+          "train": {
+            "ann_return": 0.0417098355895941,
+            "ann_vol": 0.11891872707634298,
+            "sharpe": 0.3507423651013132,
+            "gross_sharpe": 0.4781540592380539,
+            "max_drawdown": -0.234819794660456,
+            "calmar": 0.17762487038158586,
+            "annual_turnover": 15.210178926441353,
+            "hit_rate": 0.4960238568588469,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.2797593442568453,
+            "rank_ic": 0.014977667780663829,
+            "rank_ic_t": 1.175522268303344,
+            "rank_ic_5d": 0.02849389416553596,
+            "cost_sensitivity": {
+              "0": 0.4781540592380539,
+              "5": 0.41452648608981996,
+              "10": 0.3507423651013132,
+              "20": 0.22287184576437685,
+              "50": -0.16012605852743014
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 423,
+                "sharpe": 1.2609105673667118,
+                "ann_return": 0.14483710688536092,
+                "rank_ic": 0.018325094920839603
+              },
+              "Bear / High Volatility": {
+                "days": 525,
+                "sharpe": -0.4288345035670904,
+                "ann_return": -0.04985330024401228,
+                "rank_ic": 0.00636240201919064
+              },
+              "Sideways / Normal Volatility": {
+                "days": 58,
+                "sharpe": 0.7236205383815533,
+                "ann_return": 0.11839622446086985,
+                "rank_ic": 0.06854754440961337
+              }
+            }
+          },
+          "valid": {
+            "ann_return": 0.17405094281490316,
+            "ann_vol": 0.12048937716677673,
+            "sharpe": 1.4445335091573142,
+            "gross_sharpe": 1.5888615472641892,
+            "max_drawdown": -0.07000584950759525,
+            "calmar": 2.486234279551448,
+            "annual_turnover": 17.280000000000005,
+            "hit_rate": 0.5793650793650794,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.5182071933672731,
+            "rank_ic": 0.028860028860028863,
+            "rank_ic_t": 1.1313375322733827,
+            "rank_ic_5d": 0.06327272727272729,
+            "cost_sensitivity": {
+              "0": 1.5888615472641892,
+              "5": 1.5167770558550677,
+              "10": 1.4445335091573142,
+              "20": 1.2996852993513024,
+              "50": 0.8643407606013668
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 224,
+                "sharpe": 1.2034976422609496,
+                "ann_return": 0.14980138829821305,
+                "rank_ic": 0.028787878787878786
+              },
+              "Bear / High Volatility": {
+                "days": 28,
+                "sharpe": 4.45532892090564,
+                "ann_return": 0.3680473789484242,
+                "rank_ic": 0.029437229437229446
+              }
+            }
+          },
+          "test": {
+            "ann_return": 0.04333935655814555,
+            "ann_vol": 0.1120308693149546,
+            "sharpe": 0.3868519170042746,
+            "gross_sharpe": 0.5463940144876955,
+            "max_drawdown": -0.11876645567293798,
+            "calmar": 0.364912435187041,
+            "annual_turnover": 17.650120481927715,
+            "hit_rate": 0.5220883534136547,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.23540733169091074,
+            "rank_ic": -0.008348545697943289,
+            "rank_ic_t": -0.3533520840272018,
+            "rank_ic_5d": 0.022387136672850947,
+            "cost_sensitivity": {
+              "0": 0.5463940144876955,
+              "5": 0.4665259286590838,
+              "10": 0.3868519170042746,
+              "20": 0.22828157690087264,
+              "50": -0.2379109499077447
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 183,
+                "sharpe": 0.8303987303691223,
+                "ann_return": 0.08661191826922178,
+                "rank_ic": 0.00374234144725948
+              },
+              "Bear / High Volatility": {
+                "days": 66,
+                "sharpe": -0.5819220437013818,
+                "ann_return": -0.07664365545892944,
+                "rank_ic": -0.0418732782369146
+              }
+            }
+          }
+        },
+        {
+          "experiment_id": "exp_84de0a0558",
+          "title": "Sentiment matters more in calm markets",
+          "formula": "if_else(regime_bull, cs_rank(av_sentiment_20d), cs_rank(roe))",
+          "domains": "regime,news,fundamental",
+          "dominant_domain": "fundamental",
+          "verdict": "ACCEPT",
+          "critique": "ACCEPT: 'Sentiment matters more in calm markets' - train IC 0.0087 / Sharpe -0.14, validation IC 0.0098 / Sharpe 0.64; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']",
+          "train": {
+            "ann_return": -0.0163648090406521,
+            "ann_vol": 0.11368442569978865,
+            "sharpe": -0.14394943669652127,
+            "gross_sharpe": -0.06070160682165977,
+            "max_drawdown": -0.2405566975055542,
+            "calmar": -0.06802890632581225,
+            "annual_turnover": 8.146163021868789,
+            "hit_rate": 0.4829467939972715,
+            "active_day_share": 0.7286282306163022,
+            "max_ticker_pnl_share": 0.22573325532469585,
+            "rank_ic": 0.00868392558163174,
+            "rank_ic_t": 0.6347700321116186,
+            "rank_ic_5d": 0.011172954030096887,
+            "cost_sensitivity": {
+              "0": -0.06070160682165977,
+              "5": -0.10232392841922337,
+              "10": -0.14394943669652127,
+              "20": -0.22714285220022776,
+              "50": -0.4750635723775737
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 423,
+                "sharpe": -0.2882657950359169,
+                "ann_return": -0.01586088183741179,
+                "rank_ic": -0.003748006379585325
+              },
+              "Bear / High Volatility": {
+                "days": 525,
+                "sharpe": -0.47932524133154075,
+                "ann_return": -0.05577356807592045,
+                "rank_ic": 0.00636240201919064
+              },
+              "Sideways / Normal Volatility": {
+                "days": 58,
+                "sharpe": 2.8906884230522643,
+                "ann_return": 0.3919805384531971,
+                "rank_ic": 0.06227795193312434
+              }
+            }
+          },
+          "valid": {
+            "ann_return": 0.07704747776194469,
+            "ann_vol": 0.1195534924452459,
+            "sharpe": 0.6444602845645143,
+            "gross_sharpe": 0.8305196008990011,
+            "max_drawdown": -0.09370017034790434,
+            "calmar": 0.8222768163160324,
+            "annual_turnover": 22.22916666666667,
+            "hit_rate": 0.5357142857142857,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.5345004751046138,
+            "rank_ic": 0.009849305089742404,
+            "rank_ic_t": 0.38072327978797577,
+            "rank_ic_5d": 0.04207216589051679,
+            "cost_sensitivity": {
+              "0": 0.8305196008990011,
+              "5": 0.7375544161870395,
+              "10": 0.6444602845645143,
+              "20": 0.45810203206922234,
+              "50": -0.09846086925047866
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 224,
+                "sharpe": 0.4375594331573992,
+                "ann_return": 0.0540491466514634,
+                "rank_ic": 0.007400814546306521
+              },
+              "Bear / High Volatility": {
+                "days": 28,
+                "sharpe": 3.190448323442118,
+                "ann_return": 0.2610341266457951,
+                "rank_ic": 0.029437229437229446
+              }
+            }
+          },
+          "test": {
+            "ann_return": -0.17620588319698866,
+            "ann_vol": 0.149572984105215,
+            "sharpe": -1.1780595556817877,
+            "gross_sharpe": -1.0412860801776525,
+            "max_drawdown": -0.16839133355447533,
+            "calmar": -1.0464070773570142,
+            "annual_turnover": 13.073413654618475,
+            "hit_rate": 0.4533333333333333,
+            "active_day_share": 0.6024096385542169,
+            "max_ticker_pnl_share": 0.25212874669870505,
+            "rank_ic": -0.03141143798141814,
+            "rank_ic_t": -0.8923717734561014,
+            "rank_ic_5d": -0.08503922498065428,
+            "cost_sensitivity": {
+              "0": -1.0412860801776525,
+              "5": -1.109678709602348,
+              "10": -1.1780595556817877,
+              "20": -1.314631547561616,
+              "50": -1.7200427747542684
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 183,
+                "sharpe": -0.8894260045370659,
+                "ann_return": -0.09241550486842232,
+                "rank_ic": -0.022780419770633564
+              },
+              "Bear / High Volatility": {
+                "days": 66,
+                "sharpe": -1.0177521117811663,
+                "ann_return": -0.14804310740343965,
+                "rank_ic": -0.0418732782369146
+              }
+            }
+          }
+        }
+      ],
+      "combined": {
+        "formula": "cs_zscore(if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))) + cs_zscore(if_else(regime_high_vol, cs_rank(roe), cs_rank(momentum_60d))) + cs_zscore(if_else(regime_bull, cs_rank(av_sentiment_20d), cs_rank(roe)))",
+        "train": {
+          "ann_return": -0.02157061488770876,
+          "ann_vol": 0.10434913040894143,
+          "sharpe": -0.20671580877745793,
+          "gross_sharpe": -0.07321688343971115,
+          "max_drawdown": -0.2301535130400284,
+          "calmar": -0.0937227270737214,
+          "annual_turnover": 11.392604373757456,
+          "hit_rate": 0.4747612551159618,
+          "active_day_share": 0.7286282306163022,
+          "max_ticker_pnl_share": 0.25125783323240075,
+          "rank_ic": 0.008920212465451782,
+          "rank_ic_t": 0.680872696890455,
+          "rank_ic_5d": 0.005882075846716141,
+          "cost_sensitivity": {
+            "0": -0.07321688343971115,
+            "5": -0.13992222444064548,
+            "10": -0.20671580877745793,
+            "20": -0.3403843239236383,
+            "50": -0.7387304880914765
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 423,
+              "sharpe": -0.02306993710122447,
+              "ann_return": -0.001360759099065691,
+              "rank_ic": -0.020584760972573144
+            },
+            "Bear / High Volatility": {
+              "days": 525,
+              "sharpe": -0.4627897082481622,
+              "ann_return": -0.046712620787148586,
+              "rank_ic": 0.013416619802030827
+            },
+            "Sideways / Normal Volatility": {
+              "days": 58,
+              "sharpe": 0.971420868657237,
+              "ann_return": 0.1384218327494361,
+              "rank_ic": 0.04554335230813789
+            }
+          }
+        },
+        "valid": {
+          "ann_return": 0.19605874114649116,
+          "ann_vol": 0.14057162529317518,
+          "sharpe": 1.3947248652606274,
+          "gross_sharpe": 1.5188743568010115,
+          "max_drawdown": -0.09524595196338026,
+          "calmar": 2.058446969188475,
+          "annual_turnover": 17.325833333333335,
+          "hit_rate": 0.5238095238095238,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.6120389264376462,
+          "rank_ic": 0.03339400077993606,
+          "rank_ic_t": 1.091704100579557,
+          "rank_ic_5d": 0.07687865483297983,
+          "cost_sensitivity": {
+            "0": 1.5188743568010115,
+            "5": 1.4568522705516254,
+            "10": 1.3947248652606274,
+            "20": 1.2702277036063894,
+            "50": 0.8961214267665741
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 224,
+              "sharpe": 1.2082417335821969,
+              "ann_return": 0.1774436859880637,
+              "rank_ic": 0.037356413005026505
+            },
+            "Bear / High Volatility": {
+              "days": 28,
+              "sharpe": 4.669336103467039,
+              "ann_return": 0.34497918241391073,
+              "rank_ic": 0.0016947029792125526
+            }
+          }
+        },
+        "test": {
+          "ann_return": -0.10598270812983511,
+          "ann_vol": 0.15135199927107632,
+          "sharpe": -0.7002398953450008,
+          "gross_sharpe": -0.576155765511627,
+          "max_drawdown": -0.16151645402548565,
+          "calmar": -0.6561728262874823,
+          "annual_turnover": 12.304257028112453,
+          "hit_rate": 0.5066666666666667,
+          "active_day_share": 0.6024096385542169,
+          "max_ticker_pnl_share": 0.3164568755816114,
+          "rank_ic": -0.03538776645589281,
+          "rank_ic_t": -0.8885051336600895,
+          "rank_ic_5d": -0.0955271247913665,
+          "cost_sensitivity": {
+            "0": -0.576155765511627,
+            "5": -0.6382374977310393,
+            "10": -0.7002398953450008,
+            "20": -0.8238847579222525,
+            "50": -1.189791513607451
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 183,
+              "sharpe": 0.17140474575981823,
+              "ann_return": 0.019056292806466583,
+              "rank_ic": -0.010204067080072363
+            },
+            "Bear / High Volatility": {
+              "days": 66,
+              "sharpe": -2.2396424801922326,
+              "ann_return": -0.29752587580391915,
+              "rank_ic": -0.06591346266900851
+            }
+          }
+        }
+      },
+      "experiments": [
+        {
+          "experiment_id": "exp_e26ace0331",
+          "iteration": 0,
+          "hypothesis_id": "R_QUALSTRESS",
+          "hypothesis_title": "Flight to quality in high-volatility regimes",
+          "formula": "if_else(regime_high_vol, cs_rank(roe), cs_rank(momentum_60d))",
+          "domains": "regime,fundamental,technical",
+          "verdict": "ACCEPT",
+          "score": 3.247136263292215,
+          "train_rank_ic": 0.014977667780663829,
+          "train_sharpe": 0.3507423651013132,
+          "valid_rank_ic": 0.028860028860028863,
+          "valid_sharpe": 1.4445335091573142,
+          "annual_turnover": 15.210178926441353,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "ACCEPT: 'Flight to quality in high-volatility regimes' - train IC 0.0150 / Sharpe 0.35, validation IC 0.0289 / Sharpe 1.44; all checks passed"
+        },
+        {
+          "experiment_id": "exp_4f017a64b6",
+          "iteration": 1,
+          "hypothesis_id": "R_QUALSTRESS",
+          "hypothesis_title": "Flight to quality in high-volatility regimes",
+          "formula": "regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_high_vol) * cs_rank(momentum_60d)",
+          "domains": "regime,fundamental,technical",
+          "verdict": "REJECT",
+          "score": 3.509354581517435,
+          "train_rank_ic": 0.0012809179258862961,
+          "train_sharpe": -0.2704522565365157,
+          "valid_rank_ic": 0.034439634439634444,
+          "valid_sharpe": 1.4615645502159633,
+          "annual_turnover": 16.668071570576547,
+          "dominant_domain": "regime",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Flight to quality in high-volatility regimes' - train IC 0.0013 / Sharpe -0.27, validation IC 0.0344 / Sharpe 1.46; plausibility: Training rank IC 0.0013 is economically negligible; stability: IC sign is consistent in only 50% of training years; regime_dependence: IC is positive in ['Bull / Low Volatility'] but negative in ['Bear / High Volatility']"
+        },
+        {
+          "experiment_id": "exp_124c794ee1",
+          "iteration": 2,
+          "hypothesis_id": "R_SENTBULL",
+          "hypothesis_title": "Sentiment matters more in calm markets",
+          "formula": "if_else(regime_high_vol, -cs_rank(volatility_60d), cs_rank(sentiment_20d))",
+          "domains": "regime,news,technical",
+          "verdict": "REJECT",
+          "score": -7.450216450216449,
+          "train_rank_ic": 0.012026821812061396,
+          "train_sharpe": 0.10530387705503962,
+          "valid_rank_ic": -0.06450216450216449,
+          "valid_sharpe": -0.8361152974138535,
+          "annual_turnover": 8.256381709741552,
+          "dominant_domain": "regime",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Sentiment matters more in calm markets' - train IC 0.0120 / Sharpe 0.11, validation IC -0.0645 / Sharpe -0.84; stability: Rank IC changes sign out of sample (train 0.0120, validation -0.0645); leakage: Low coverage: 52% of training cells; novelty: Rank correlation 1.00 with the 'low_volatility' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_84de0a0558",
+          "iteration": 3,
+          "hypothesis_id": "R_SENTBULL",
+          "hypothesis_title": "Sentiment matters more in calm markets",
+          "formula": "if_else(regime_bull, cs_rank(av_sentiment_20d), cs_rank(roe))",
+          "domains": "regime,news,fundamental",
+          "verdict": "ACCEPT",
+          "score": 1.046045580115369,
+          "train_rank_ic": 0.00868392558163174,
+          "train_sharpe": -0.14394943669652127,
+          "valid_rank_ic": 0.009849305089742404,
+          "valid_sharpe": 0.6444602845645143,
+          "annual_turnover": 8.146163021868789,
+          "dominant_domain": "fundamental",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "ACCEPT: 'Sentiment matters more in calm markets' - train IC 0.0087 / Sharpe -0.14, validation IC 0.0098 / Sharpe 0.64; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']"
+        },
+        {
+          "experiment_id": "exp_9cbe831324",
+          "iteration": 4,
+          "hypothesis_id": "R_VALUEBEAR",
+          "hypothesis_title": "Value in stress, growth in calm",
+          "formula": "if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))",
+          "domains": "regime,valuation,fundamental",
+          "verdict": "ACCEPT",
+          "score": 3.9475238568880346,
+          "train_rank_ic": 0.013910168127224221,
+          "train_sharpe": 0.18003916288268193,
+          "valid_rank_ic": 0.03544973544973545,
+          "valid_sharpe": 1.6102012476579577,
+          "annual_turnover": 10.36055666003976,
+          "dominant_domain": "regime",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "ACCEPT: 'Value in stress, growth in calm' - train IC 0.0139 / Sharpe 0.18, validation IC 0.0354 / Sharpe 1.61; all checks passed"
+        },
+        {
+          "experiment_id": "exp_ed37e0fed0",
+          "iteration": 5,
+          "hypothesis_id": "R_VALUEBEAR",
+          "hypothesis_title": "Value in stress, growth in calm",
+          "formula": "if_else(regime_bull, cs_rank(revenue_growth), cs_rank(earnings_yield))",
+          "domains": "regime,fundamental,valuation",
+          "verdict": "REJECT",
+          "score": 3.5447306118637165,
+          "train_rank_ic": 0.001742339803760684,
+          "train_sharpe": -0.422503569217626,
+          "valid_rank_ic": 0.03405483405483405,
+          "valid_sharpe": 1.3569888255212457,
+          "annual_turnover": 9.188230616302189,
+          "dominant_domain": "fundamental",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Value in stress, growth in calm' - train IC 0.0017 / Sharpe -0.42, validation IC 0.0341 / Sharpe 1.36; plausibility: Training rank IC 0.0017 is economically negligible; stability: IC sign is consistent in only 50% of training years"
+        }
+      ]
+    }
+  }
+}

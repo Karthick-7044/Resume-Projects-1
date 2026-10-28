@@ -1,0 +1,826 @@
+== discovery seed 11  2026-10-24T13:22:00
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:22:13,387 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:22:18,970 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:22:19,012 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 13:46:15,963 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 13:46:35,855 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 13:46:48,230 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 13:46:58,557 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 13:47:22,341 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 13:47:43,101 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 12  2026-10-24T13:47:45
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:48:09,720 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:48:10,940 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:48:10,983 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 13:50:47,508 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 13  2026-10-24T13:50:49
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:51:05,155 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:51:06,157 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:51:06,199 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 13:53:42,597 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 14  2026-10-24T13:53:44
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:53:58,249 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:53:59,046 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:53:59,087 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 13:56:38,593 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 15  2026-10-24T13:56:40
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:56:55,320 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:56:56,274 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:56:56,317 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 13:59:39,904 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 16  2026-10-24T13:59:41
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 13:59:55,400 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 13:59:56,407 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 13:59:56,458 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 14:02:31,211 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 17  2026-10-24T14:02:32
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 14:02:47,083 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:02:48,312 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 14:02:48,354 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 14:05:20,833 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== discovery seed 18  2026-10-24T14:05:22
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 14:05:36,604 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:05:37,342 Rejected LLM hypothesis 'Quality in LowRate Environments': literature citation dated 2020 or 
+later
+2026-10-24 14:05:37,388 Rejected LLM hypothesis 'Sentiment Boost in Calm Markets': literature citation dated 2020 or 
+later
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 14:08:24,476 Full: tested 65 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 2, 'REVISE': 2}; selected 2; combined 
+test IC -0.010462421994528162 Sharpe -0.1256034391883522
+Full           tested= 65 selected=2 test rank IC=-0.010462421994528162 Sharpe=-0.1256034391883522
+
+== walk-forward llm 2022-2025  2026-10-24T14:08:26
+== RESTART after seed-in-prompt fix (seeds 12-18 were cache replays and were removed) 2026-10-24T14:15:06
+skip seed 11 (done)
+== discovery seed 12  2026-10-24T14:15:07
+2026-10-24 14:21:50,318 Revision LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun after 
+the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-24 14:21:51,964 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:21:57,339 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:21:57,339 Quant Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:21:57,508 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:22:04,341 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:22:04,343 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:22:26,326 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:22:26,640 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:22:26,640 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:23:03,527 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:23:04,070 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:23:04,071 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:23:12,849 Full: tested 61 {'REJECT': 43, 'INVALID': 13, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 61 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 13  2026-10-24T14:23:14
+2026-10-24 14:23:29,236 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:23:30,173 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:23:30,895 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:23:30,895 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:23:51,531 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:23:51,977 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:23:51,977 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:24:14,014 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:24:14,410 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:24:14,410 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:24:47,574 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:24:48,013 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:24:48,013 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:25:15,223 Full: tested 60 {'REJECT': 37, 'INVALID': 18, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 14  2026-10-24T14:25:17
+2026-10-24 14:25:29,972 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:25:30,867 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:25:31,668 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:25:31,668 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:25:52,324 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:25:52,730 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:25:52,730 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:26:14,755 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:26:15,144 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:26:15,145 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:26:42,110 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:26:42,465 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:26:42,465 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:27:17,447 Full: tested 60 {'REJECT': 39, 'INVALID': 16, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 15  2026-10-24T14:27:19
+2026-10-24 14:27:32,637 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:27:33,543 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:27:34,307 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:27:34,307 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:27:55,545 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:27:56,034 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:27:56,034 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:28:18,692 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:28:19,105 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:28:19,105 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:28:46,388 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:28:46,887 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:28:46,887 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:29:21,777 Full: tested 60 {'REJECT': 39, 'INVALID': 16, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 16  2026-10-24T14:29:23
+2026-10-24 14:29:35,609 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:29:36,539 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:29:37,298 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:29:37,298 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:29:58,138 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:29:58,528 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:29:58,528 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:30:21,796 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:30:22,166 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:30:22,166 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:30:53,535 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:30:53,921 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:30:53,921 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:31:22,641 Full: tested 60 {'REJECT': 38, 'INVALID': 17, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 17  2026-10-24T14:31:24
+2026-10-24 14:31:36,093 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:31:36,994 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:31:37,805 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:31:37,805 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:31:58,481 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:31:58,884 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:31:58,885 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:32:20,608 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:32:21,031 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:32:21,031 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:32:48,821 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:32:49,202 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:32:49,202 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:33:27,868 Full: tested 60 {'REJECT': 40, 'INVALID': 15, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== discovery seed 18  2026-10-24T14:33:29
+2026-10-24 14:33:42,197 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 14:33:43,074 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:33:43,805 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:33:43,805 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:34:05,045 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:34:05,444 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:34:05,444 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:34:27,155 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:34:27,537 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:34:27,537 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:34:57,194 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 14:34:57,634 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 14:34:57,634 Research Agent LLM failed: all LLM providers failed: groq: Groq daily quota exhausted; rerun 
+after the quota resets | gemini: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-24 14:35:31,979 Full: tested 60 {'REJECT': 40, 'INVALID': 15, 'REVISE': 4, 'ACCEPT': 1}; selected 1; combined 
+test IC 0.009791733877218016 Sharpe 0.5483393118593989
+Full           tested= 60 selected=1 test rank IC=0.009791733877218016 Sharpe=0.5483393118593989
+
+== walk-forward llm 2022-2025  2026-10-24T14:35:33
+python.exe : 2026-10-24 14:35:49,490 library (llm): 130 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_llm_discovery.ps1:13 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|Nativ ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-24 14:3...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-24 14:38:54,892 2022: critic passed 0 | naive=0.0212 critic_v1=0.0059 critic=cash composite=0.0047 
+literature=0.0206 random=-0.0015
+2026-10-24 14:40:33,935 2023: critic passed 0 | naive=0.0198 critic_v1=0.0198 critic=cash composite=0.0104 
+literature=0.0028 random=-0.0064
+2026-10-24 14:42:10,927 2024: critic passed 0 | naive=0.034 critic_v1=0.034 critic=cash composite=0.0285 
+literature=0.0261 random=-0.0003
+2026-10-24 14:43:48,366 2025: critic passed 0 | naive=0.0229 critic_v1=0.0229 critic=cash composite=0.0084 
+literature=0.0022 random=-0.0003
+random null: mean IC 0.0021 p95 0.0096
+naive IC 0.0245 t 3.39 monthly t 3.68 Holm p 0.0009 null p 0.0 net Sharpe -0.23 gross Sharpe -0.07 years+ 1.0 invested 4
+critic_v1 IC 0.0207 t 2.8 monthly t 2.96 Holm p 0.0061 null p 0.0 net Sharpe -0.49 gross Sharpe -0.32 years+ 1.0 invested 4
+random IC -0.0021 t -0.38 monthly t -0.29 Holm p None null p 0.87 net Sharpe -0.11 gross Sharpe 0.17 years+ 0.0 invested 4
+composite IC 0.013 t 2.87 monthly t 3.14 Holm p 0.0051 null p 0.01 net Sharpe -0.79 gross Sharpe -0.46 years+ 1.0 invested 4
+literature IC 0.0129 t 2.22 monthly t 2.33 Holm p 0.0199 null p 0.01 net Sharpe -0.65 gross Sharpe -0.51 years+ 1.0 invested 4
+
+== cost-aware llm  2026-10-24T14:43:50
+composite:ls_reb21                      -0.34    0.09  -0.011   13.7  0.753  1.000  0.02
+composite:ls_reb63                       0.21    0.40   0.005    4.8  0.340  1.000  0.17
+composite:ls_smooth_reb21               -0.22   -0.02  -0.010    8.6  0.670  1.000  0.03
+composite:ls_buffer                     -0.42    0.54  -0.019   42.4  0.800  1.000  0.01
+composite:lo_top_q_active               -0.30    0.08  -0.013   16.5  0.722  1.000  0.02
+composite:ls_sector_neutral_reb21       -0.60   -0.05  -0.015   13.8  0.885  1.000  0.00
+composite:lo_top_q_absolute              0.56    0.66   0.093   16.5  0.133    nan   nan
+literature:ls_reb5                      -0.53    0.03  -0.029   29.9  0.855  1.000  0.01
+literature:ls_reb21                     -0.31   -0.15  -0.016    8.2  0.735  1.000  0.02
+literature:ls_reb63                     -0.31   -0.24  -0.014    3.2  0.734  1.000  0.02
+literature:ls_smooth_reb21              -0.38   -0.30  -0.020    4.2  0.778  1.000  0.02
+literature:ls_buffer                    -0.33   -0.07  -0.020   15.7  0.747  1.000  0.02
+literature:lo_top_q_active              -0.04    0.15  -0.003   11.3  0.535  1.000  0.07
+literature:ls_sector_neutral_reb21      -0.41   -0.22  -0.018    8.2  0.795  1.000  0.01
+literature:lo_top_q_absolute             0.69    0.76   0.103   11.3  0.085    nan   nan
+
+== FF5+Mom llm  2026-10-24T14:44:30
+cost_aware_daily_llm_2022_2025:literature:ls_reb5_net alpha -0.0423/yr  t=-2.34  p=0.019  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_llm_2022_2025:literature:ls_reb5_gross alpha -0.0120/yr  t=-0.66  p=0.509  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_llm_2022_2025:literature:ls_reb21_net alpha -0.0271/yr  t=-1.79  p=0.074  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_llm_2022_2025:literature:ls_reb21_gross alpha -0.0185/yr  t=-1.22  p=0.222  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_llm_2022_2025:literature:ls_reb63_net alpha -0.0224/yr  t=-1.59  p=0.111  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_llm_2022_2025:literature:ls_reb63_gross alpha -0.0190/yr  t=-1.35  p=0.177  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_llm_2022_2025:literature:ls_smooth_reb21_net alpha -0.0304/yr  t=-1.86  p=0.063  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_llm_2022_2025:literature:ls_smooth_reb21_gross alpha -0.0260/yr  t=-1.59  p=0.112  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_llm_2022_2025:literature:ls_buffer_net alpha -0.0339/yr  t=-1.81  p=0.070  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_llm_2022_2025:literature:ls_buffer_gross alpha -0.0178/yr  t=-0.95  p=0.343  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_active_net alpha -0.0133/yr  t=-0.69  p=0.489  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_active_gross alpha -0.0019/yr  t=-0.10  p=0.920  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_llm_2022_2025:literature:ls_sector_neutral_reb21_net alpha -0.0244/yr  t=-1.80  p=0.072  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_llm_2022_2025:literature:ls_sector_neutral_reb21_gross alpha -0.0160/yr  t=-1.18  p=0.237  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_absolute_net alpha +0.0312/yr  t=+1.02  p=0.306  R2=0.82  MKT +0.81 MOM +0.00
+
+== library tests llm  2026-10-24T14:44:36
+panel end 2025-12-31 library 130
+discovery_2013_2023: raw p<.05 IC 12, Holm 3 | raw p<.05 net 2, Holm 0 | RC p (IC) 0.000 best -cs_rank(momentum_5d) * cs_rank(vix_chg_5d) | RC p (net) 0.129
+   -cs_rank(momentum_5d) * cs_rank(vix_chg_5d)                            IC +0.0148 t +4.12 pHolm 0.003 netSR -0.13
+   cs_rank(-ts_mean(accruals_ratio, 20)) + avg_finbert_sentiment_cs_rank  IC +0.0085 t +3.48 pHolm 0.033 netSR -0.28
+   cs_rank(if_else(regime_bull * (1 - regime_high_vol), ts_mean(momentum_ IC +0.0168 t +3.40 pHolm 0.043 netSR -0.51
+   cs_rank(regime_prob_bull * momentum_252_21d)                           IC +0.0138 t +3.22 pHolm 0.082 netSR -0.10
+   regime_bull * (-cs_rank(momentum_5d) * cs_rank(vix_chg_5d))            IC +0.0126 t +3.18 pHolm 0.091 netSR -0.58
+holdout_2025: raw p<.05 IC 3, Holm 0 | raw p<.05 net 0, Holm 0 | RC p (IC) 0.040 best cs_rank(regime_prob_bull * momentum_252_21d) | RC p (net) 0.619
+   cs_rank(regime_prob_bull * momentum_252_21d)                           IC +0.0257 t +2.31 pHolm 1.000 netSR +0.03
+   cs_rank(book_to_market) * ts_zscore(ts_delta(yield_curve_10y2y,20),20) IC +0.0191 t +2.27 pHolm 1.000 netSR -0.21
+   cs_rank(if_else(regime_bull * (1 - regime_high_vol), ts_mean(momentum_ IC +0.0249 t +2.02 pHolm 1.000 netSR -0.70
+   cs_rank(regime_prob_bull * (1 - regime_prob_high_vol) * momentum_60d)  IC +0.0113 t +1.21 pHolm 1.000 netSR -0.11
+   -(ewm(news_vol_surprise * sent_decay_pstd, 5))                         IC +0.0068 t +1.20 pHolm 1.000 netSR +0.47
+
+== walk-forward offline 2022-2025  2026-10-24T14:46:10
+python.exe : 2026-10-24 14:46:18,246 library (offline): 70 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_llm_discovery.ps1:13 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|Nativ ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-24 14:4...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-24 14:48:41,065 2022: critic passed 0 | naive=0.0075 critic_v1=0.0075 critic=cash composite=0.0147 
+literature=0.0206 random=0.0033
+2026-10-24 14:50:19,329 2023: critic passed 0 | naive=0.0125 critic_v1=0.0125 critic=cash composite=0.014 
+literature=0.0028 random=0.0026
+2026-10-24 14:51:55,538 2024: critic passed 0 | naive=0.0231 critic_v1=0.0231 critic=cash composite=0.0324 
+literature=0.0261 random=0.0027
+2026-10-24 14:53:31,922 2025: critic passed 0 | naive=0.0161 critic_v1=0.0161 critic=cash composite=0.0217 
+literature=0.0022 random=0.0104
+random null: mean IC 0.0064 p95 0.0144
+naive IC 0.0148 t 2.19 monthly t 2.74 Holm p 0.0186 null p 0.035 net Sharpe -0.62 gross Sharpe -0.35 years+ 1.0 invested 4
+critic_v1 IC 0.0148 t 2.19 monthly t 2.74 Holm p 0.0186 null p 0.035 net Sharpe -0.62 gross Sharpe -0.35 years+ 1.0 invested 4
+random IC 0.0047 t 0.96 monthly t 1.02 Holm p None null p 0.615 net Sharpe -0.32 gross Sharpe -0.06 years+ 1.0 invested 4
+composite IC 0.0207 t 3.53 monthly t 3.99 Holm p 0.0003 null p 0.0 net Sharpe -0.46 gross Sharpe -0.24 years+ 1.0 invested 4
+literature IC 0.0129 t 2.22 monthly t 2.33 Holm p 0.0199 null p 0.09 net Sharpe -0.65 gross Sharpe -0.51 years+ 1.0 invested 4
+
+== cost-aware offline  2026-10-24T14:53:33
+composite:ls_reb21                      -0.10    0.16  -0.004   11.9  0.578  1.000  0.12
+composite:ls_reb63                       0.22    0.34   0.008    4.3  0.332  1.000  0.29
+composite:ls_smooth_reb21               -0.09    0.05  -0.005    7.1  0.574  1.000  0.12
+composite:ls_buffer                     -0.10    0.35  -0.006   26.5  0.575  1.000  0.12
+composite:lo_top_q_active                0.25    0.47   0.016   14.3  0.308  1.000  0.31
+composite:ls_sector_neutral_reb21       -0.34    0.01  -0.012   12.1  0.749  1.000  0.05
+composite:lo_top_q_absolute              0.66    0.74   0.122   14.3  0.094    nan   nan
+literature:ls_reb5                      -0.53    0.03  -0.029   29.9  0.855  1.000  0.02
+literature:ls_reb21                     -0.31   -0.15  -0.016    8.2  0.735  1.000  0.05
+literature:ls_reb63                     -0.31   -0.24  -0.014    3.2  0.734  1.000  0.05
+literature:ls_smooth_reb21              -0.38   -0.30  -0.020    4.2  0.778  1.000  0.04
+literature:ls_buffer                    -0.33   -0.07  -0.020   15.7  0.747  1.000  0.05
+literature:lo_top_q_active              -0.04    0.15  -0.003   11.3  0.535  1.000  0.14
+literature:ls_sector_neutral_reb21      -0.41   -0.22  -0.018    8.2  0.795  1.000  0.03
+literature:lo_top_q_absolute             0.69    0.76   0.103   11.3  0.085    nan   nan
+
+== FF5+Mom offline  2026-10-24T14:54:11
+cost_aware_daily_offline_2022_2025:literature:ls_reb5_net alpha -0.0423/yr  t=-2.34  p=0.019  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_offline_2022_2025:literature:ls_reb5_gross alpha -0.0120/yr  t=-0.66  p=0.509  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_offline_2022_2025:literature:ls_reb21_net alpha -0.0271/yr  t=-1.79  p=0.074  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_offline_2022_2025:literature:ls_reb21_gross alpha -0.0185/yr  t=-1.22  p=0.222  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_offline_2022_2025:literature:ls_reb63_net alpha -0.0224/yr  t=-1.59  p=0.111  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_offline_2022_2025:literature:ls_reb63_gross alpha -0.0190/yr  t=-1.35  p=0.177  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_offline_2022_2025:literature:ls_smooth_reb21_net alpha -0.0304/yr  t=-1.86  p=0.063  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_offline_2022_2025:literature:ls_smooth_reb21_gross alpha -0.0260/yr  t=-1.59  p=0.112  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_offline_2022_2025:literature:ls_buffer_net alpha -0.0339/yr  t=-1.81  p=0.070  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_offline_2022_2025:literature:ls_buffer_gross alpha -0.0178/yr  t=-0.95  p=0.343  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_active_net alpha -0.0133/yr  t=-0.69  p=0.489  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_active_gross alpha -0.0019/yr  t=-0.10  p=0.920  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_offline_2022_2025:literature:ls_sector_neutral_reb21_net alpha -0.0244/yr  t=-1.80  p=0.072  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_offline_2022_2025:literature:ls_sector_neutral_reb21_gross alpha -0.0160/yr  t=-1.18  p=0.237  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_absolute_net alpha +0.0312/yr  t=+1.02  p=0.306  R2=0.82  MKT +0.81 MOM +0.00
+
+== library tests offline  2026-10-24T14:54:17
+panel end 2025-12-31 library 70
+discovery_2013_2023: raw p<.05 IC 24, Holm 6 | raw p<.05 net 1, Holm 1 | RC p (IC) 0.002 best -cs_rank(ts_mean(daily_return, 3)) | RC p (net) 0.655
+   -cs_rank(ts_mean(daily_return, 3))                                     IC +0.0161 t +4.25 pHolm 0.001 netSR -0.22
+   -cs_rank(momentum_5d)                                                  IC +0.0148 t +4.12 pHolm 0.001 netSR -0.13
+   -cs_rank(close_to_sma20)                                               IC +0.0143 t +4.03 pHolm 0.002 netSR -0.08
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0111 t +3.23 pHolm 0.041 netSR +0.01
+   cs_rank(momentum_252_21d)                                              IC +0.0138 t +3.22 pHolm 0.043 netSR -0.10
+holdout_2025: raw p<.05 IC 6, Holm 0 | raw p<.05 net 1, Holm 0 | RC p (IC) 0.084 best cs_rank(momentum_252_21d) | RC p (net) 0.527
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0234 t +2.49 pHolm 0.337 netSR +0.75
+   cs_rank(ocf_yield) + cs_rank(momentum_252_21d)                         IC +0.0205 t +2.44 pHolm 0.378 netSR +0.31
+   cs_rank(momentum_252_21d)                                              IC +0.0257 t +2.31 pHolm 0.529 netSR +0.03
+   regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_hi IC +0.0158 t +2.13 pHolm 0.826 netSR +1.52
+   cs_rank(revenue_growth)                                                IC +0.0146 t +1.91 pHolm 1.000 netSR +0.02
+
+ALLDONE 2026-10-24T14:55:16
+== RUN 2 2026-10-24T15:00:28: seeds 19-26, strict LLM-only, Groq model chain (seeds 13-18 removed: knowledge-base fallback after quota)
+== discovery seed 19  2026-10-24T15:00:37
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 15:00:49,681 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 15:25:00,441 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:28:55,629 Full: tested 64 {'REJECT': 47, 'INVALID': 12, 'REVISE': 5}; selected 0; combined test IC None 
+Sharpe None
+Full           tested= 64 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 20  2026-10-24T15:28:57
+2026-10-24 15:29:15,575 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:46:30,570 Rejected LLM hypothesis 'Accruals Quality Filter on News Sentiment': contains a calendar year 
+outside the literature citation
+2026-10-24 15:52:07,631 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:52:39,253 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:52:40,100 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:52:40,100 Revision LLM failed: all LLM providers failed: groq:openai/gpt-oss-120b: Groq daily quota 
+exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: Gemini daily quota exhausted; rerun after the quota 
+resets (no fallback is used silently)
+2026-10-24 15:52:42,569 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:52:44,781 Revision LLM failed: all LLM providers failed: 
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-24 15:52:49,378 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:52:51,898 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:52:54,761 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:52:54,894 Research Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:52:55,125 Full: tested 49 {'REJECT': 37, 'INVALID': 11, 'REVISE': 1}; selected 0; combined test IC None 
+Sharpe None
+Full           tested= 49 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 21  2026-10-24T15:53:09
+                      config={"recursion_limit": 50 * budget + 100, **tracing_config(run_id, config)})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4001, in invoke
+    for chunk in self.stream(
+        input,
+        ^^^^^^
+    ...<11 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3102, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 3100 reached without hitting a stop condition. You can 
+increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT
+
+== discovery seed 22  2026-10-24T15:58:09
+2026-10-24 15:58:22,700 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:58:27,642 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:58:35,471 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:58:36,200 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:58:36,200 Revision LLM failed: all LLM providers failed: groq:openai/gpt-oss-120b: Groq daily quota 
+exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: Gemini daily quota exhausted; rerun after the quota 
+resets (no fallback is used silently)
+2026-10-24 15:58:38,482 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:58:41,019 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:58:43,986 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:58:46,492 Revision LLM failed: all LLM providers failed: 
+2026-10-24 15:58:47,070 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:58:47,071 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:58:47,071 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:58:47,212 Research Agent LLM failed: all LLM providers failed: 
+2026-10-24 15:58:47,217 Full: tested 7 {'REVISE': 3, 'INVALID': 2, 'REJECT': 2}; selected 0; combined test IC None 
+Sharpe None
+Full           tested=  7 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 23  2026-10-24T15:58:48
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 15:59:01,259 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 15:59:02,104 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:04,026 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:06,032 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:06,775 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:59:06,775 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-20b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota 
+resets | groq:openai/gpt-oss-120b: Groq daily quota exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: 
+Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-24 15:59:06,776 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 24  2026-10-24T15:59:08
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 15:59:18,314 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 15:59:19,040 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:20,946 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:22,943 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:23,640 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:59:23,640 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-20b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota 
+resets | groq:openai/gpt-oss-120b: Groq daily quota exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: 
+Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-24 15:59:23,642 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 25  2026-10-24T15:59:24
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 15:59:34,756 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 15:59:35,525 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:37,412 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:39,467 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:40,348 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:59:40,348 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-20b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota 
+resets | groq:openai/gpt-oss-120b: Groq daily quota exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: 
+Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-24 15:59:40,351 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== discovery seed 26  2026-10-24T15:59:41
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-24 15:59:51,625 === Config Full: All domains + macro, critic and memory ===
+2026-10-24 15:59:52,304 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:54,210 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:56,184 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-24 15:59:56,883 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-24 15:59:56,884 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-20b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota 
+resets | groq:openai/gpt-oss-120b: Groq daily quota exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: 
+Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-24 15:59:56,887 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== walk-forward llm 2022-2025  2026-10-24T15:59:58
+python.exe : 2026-10-24 16:00:07,293 library (llm): 225 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_llm_discovery.ps1:15 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|Nativ ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-24 16:0...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-24 16:04:17,272 2022: critic passed 0 | naive=0.0212 critic_v1=0.0059 critic=cash composite=0.0058 
+literature=0.0206 random=0.005
+2026-10-24 16:06:05,271 2023: critic passed 0 | naive=0.0198 critic_v1=0.0198 critic=cash composite=0.0141 
+literature=0.0028 random=-0.0023
+2026-10-24 16:07:49,946 2024: critic passed 0 | naive=0.034 critic_v1=0.034 critic=cash composite=0.0246 
+literature=0.0261 random=0.001
+2026-10-24 16:09:37,224 2025: critic passed 0 | naive=0.0229 critic_v1=0.0229 critic=cash composite=0.0096 
+literature=0.0022 random=0.0041
+random null: mean IC 0.0016 p95 0.0074
+naive IC 0.0245 t 3.39 monthly t 3.68 Holm p 0.0008 null p 0.0 net Sharpe -0.23 gross Sharpe -0.07 years+ 1.0 invested 4
+critic_v1 IC 0.0207 t 2.8 monthly t 2.96 Holm p 0.0061 null p 0.0 net Sharpe -0.49 gross Sharpe -0.32 years+ 1.0 invested 4
+random IC 0.0019 t 0.35 monthly t 0.43 Holm p None null p 0.525 net Sharpe 0.03 gross Sharpe 0.22 years+ 0.75 invested 4
+composite IC 0.0135 t 3.16 monthly t 3.72 Holm p 0.0008 null p 0.0 net Sharpe -0.68 gross Sharpe -0.39 years+ 1.0 invested 4
+literature IC 0.0129 t 2.22 monthly t 2.33 Holm p 0.0199 null p 0.005 net Sharpe -0.65 gross Sharpe -0.51 years+ 1.0 invested 4
+
+== cost-aware llm  2026-10-24T16:09:38
+composite:ls_reb21                      -0.40   -0.07  -0.015   12.1  0.786  1.000  0.02
+composite:ls_reb63                       0.05    0.20   0.002    4.2  0.457  1.000  0.12
+composite:ls_smooth_reb21               -0.35   -0.19  -0.015    7.0  0.758  1.000  0.02
+composite:ls_buffer                     -0.19    0.46  -0.009   30.4  0.647  1.000  0.05
+composite:lo_top_q_active               -0.26   -0.01  -0.015   14.2  0.701  1.000  0.04
+composite:ls_sector_neutral_reb21       -0.60   -0.15  -0.017   12.6  0.883  1.000  0.01
+composite:lo_top_q_absolute              0.54    0.63   0.091   14.2  0.140    nan   nan
+literature:ls_reb5                      -0.53    0.03  -0.029   29.9  0.855  1.000  0.01
+literature:ls_reb21                     -0.31   -0.15  -0.016    8.2  0.735  1.000  0.03
+literature:ls_reb63                     -0.31   -0.24  -0.014    3.2  0.734  1.000  0.03
+literature:ls_smooth_reb21              -0.38   -0.30  -0.020    4.2  0.778  1.000  0.02
+literature:ls_buffer                    -0.33   -0.07  -0.020   15.7  0.747  1.000  0.03
+literature:lo_top_q_active              -0.04    0.15  -0.003   11.3  0.535  1.000  0.09
+literature:ls_sector_neutral_reb21      -0.41   -0.22  -0.018    8.2  0.795  1.000  0.02
+literature:lo_top_q_absolute             0.69    0.76   0.103   11.3  0.085    nan   nan
+
+== FF5+Mom llm  2026-10-24T16:10:33
+cost_aware_daily_llm_2022_2025:literature:ls_reb5_net alpha -0.0423/yr  t=-2.34  p=0.019  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_llm_2022_2025:literature:ls_reb5_gross alpha -0.0120/yr  t=-0.66  p=0.509  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_llm_2022_2025:literature:ls_reb21_net alpha -0.0271/yr  t=-1.79  p=0.074  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_llm_2022_2025:literature:ls_reb21_gross alpha -0.0185/yr  t=-1.22  p=0.222  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_llm_2022_2025:literature:ls_reb63_net alpha -0.0224/yr  t=-1.59  p=0.111  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_llm_2022_2025:literature:ls_reb63_gross alpha -0.0190/yr  t=-1.35  p=0.177  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_llm_2022_2025:literature:ls_smooth_reb21_net alpha -0.0304/yr  t=-1.86  p=0.063  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_llm_2022_2025:literature:ls_smooth_reb21_gross alpha -0.0260/yr  t=-1.59  p=0.112  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_llm_2022_2025:literature:ls_buffer_net alpha -0.0339/yr  t=-1.81  p=0.070  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_llm_2022_2025:literature:ls_buffer_gross alpha -0.0178/yr  t=-0.95  p=0.343  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_active_net alpha -0.0133/yr  t=-0.69  p=0.489  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_active_gross alpha -0.0019/yr  t=-0.10  p=0.920  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_llm_2022_2025:literature:ls_sector_neutral_reb21_net alpha -0.0244/yr  t=-1.80  p=0.072  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_llm_2022_2025:literature:ls_sector_neutral_reb21_gross alpha -0.0160/yr  t=-1.18  p=0.237  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_llm_2022_2025:literature:lo_top_q_absolute_net alpha +0.0312/yr  t=+1.02  p=0.306  R2=0.82  MKT +0.81 MOM +0.00
+
+== library tests llm  2026-10-24T16:10:39
+panel end 2025-12-31 library 225
+discovery_2013_2023: raw p<.05 IC 26, Holm 1 | raw p<.05 net 2, Holm 0 | RC p (IC) 0.000 best -cs_rank(momentum_5d) * cs_rank(vix_chg_5d) | RC p (net) 0.166
+   -cs_rank(momentum_5d) * cs_rank(vix_chg_5d)                            IC +0.0148 t +4.12 pHolm 0.004 netSR -0.13
+   cs_rank(-ts_mean(accruals_ratio, 20)) + avg_finbert_sentiment_cs_rank  IC +0.0085 t +3.48 pHolm 0.057 netSR -0.28
+   cs_rank(if_else(regime_bull * (1 - regime_high_vol), ts_mean(momentum_ IC +0.0168 t +3.40 pHolm 0.074 netSR -0.51
+   cs_rank(regime_prob_bull * momentum_252_21d)                           IC +0.0138 t +3.22 pHolm 0.144 netSR -0.10
+   regime_bull * (-cs_rank(momentum_5d) * cs_rank(vix_chg_5d))            IC +0.0126 t +3.18 pHolm 0.160 netSR -0.58
+holdout_2025: raw p<.05 IC 4, Holm 0 | raw p<.05 net 0, Holm 0 | RC p (IC) 0.061 best cs_rank(regime_prob_bull * momentum_252_21d) | RC p (net) 0.599
+   cs_rank(regime_prob_bull * momentum_252_21d)                           IC +0.0257 t +2.31 pHolm 1.000 netSR +0.03
+   cs_rank(book_to_market) * ts_zscore(ts_delta(yield_curve_10y2y,20),20) IC +0.0191 t +2.27 pHolm 1.000 netSR -0.21
+   cs_rank(if_else(regime_bull * (1 - regime_high_vol), ts_mean(momentum_ IC +0.0249 t +2.02 pHolm 1.000 netSR -0.70
+   cs_rank(ewm(earnings_yield, 60)) * cs_rank(ewm(dollar_volume_20d, 20)) IC +0.0081 t +1.90 pHolm 1.000 netSR +0.64
+   cs_rank(ewm(earnings_yield, 20)) * cs_rank(dollar_volume_20d)          IC +0.0070 t +1.57 pHolm 1.000 netSR +0.50
+
+== walk-forward offline 2022-2025  2026-10-24T16:13:11
+python.exe : 2026-10-24 16:13:19,671 library (offline): 70 distinct valid formulas; universe 192 stocks
+At C:\Users\hp\Downloads\final-year project (2)\final-year project\scripts\run_llm_discovery.ps1:15 char:5
++     & $py @a 2>&1 | Where-Object { "$_" -notmatch "Warning|warn|Nativ ...
++     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-24 16:1...erse 192 stocks:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-10-24 16:15:43,014 2022: critic passed 0 | naive=0.0075 critic_v1=0.0075 critic=cash composite=0.0147 
+literature=0.0206 random=0.0033
+2026-10-24 16:17:20,033 2023: critic passed 0 | naive=0.0125 critic_v1=0.0125 critic=cash composite=0.014 
+literature=0.0028 random=0.0026
+2026-10-24 16:18:55,160 2024: critic passed 0 | naive=0.0231 critic_v1=0.0231 critic=cash composite=0.0324 
+literature=0.0261 random=0.0027
+2026-10-24 16:20:32,544 2025: critic passed 0 | naive=0.0161 critic_v1=0.0161 critic=cash composite=0.0217 
+literature=0.0022 random=0.0104
+random null: mean IC 0.0064 p95 0.0144
+naive IC 0.0148 t 2.19 monthly t 2.74 Holm p 0.0186 null p 0.035 net Sharpe -0.62 gross Sharpe -0.35 years+ 1.0 invested 4
+critic_v1 IC 0.0148 t 2.19 monthly t 2.74 Holm p 0.0186 null p 0.035 net Sharpe -0.62 gross Sharpe -0.35 years+ 1.0 invested 4
+random IC 0.0047 t 0.96 monthly t 1.02 Holm p None null p 0.615 net Sharpe -0.32 gross Sharpe -0.06 years+ 1.0 invested 4
+composite IC 0.0207 t 3.53 monthly t 3.99 Holm p 0.0003 null p 0.0 net Sharpe -0.46 gross Sharpe -0.24 years+ 1.0 invested 4
+literature IC 0.0129 t 2.22 monthly t 2.33 Holm p 0.0199 null p 0.09 net Sharpe -0.65 gross Sharpe -0.51 years+ 1.0 invested 4
+
+== cost-aware offline  2026-10-24T16:20:33
+composite:ls_reb21                      -0.10    0.16  -0.004   11.9  0.578  1.000  0.12
+composite:ls_reb63                       0.22    0.34   0.008    4.3  0.332  1.000  0.29
+composite:ls_smooth_reb21               -0.09    0.05  -0.005    7.1  0.574  1.000  0.12
+composite:ls_buffer                     -0.10    0.35  -0.006   26.5  0.575  1.000  0.12
+composite:lo_top_q_active                0.25    0.47   0.016   14.3  0.308  1.000  0.31
+composite:ls_sector_neutral_reb21       -0.34    0.01  -0.012   12.1  0.749  1.000  0.05
+composite:lo_top_q_absolute              0.66    0.74   0.122   14.3  0.094    nan   nan
+literature:ls_reb5                      -0.53    0.03  -0.029   29.9  0.855  1.000  0.02
+literature:ls_reb21                     -0.31   -0.15  -0.016    8.2  0.735  1.000  0.05
+literature:ls_reb63                     -0.31   -0.24  -0.014    3.2  0.734  1.000  0.05
+literature:ls_smooth_reb21              -0.38   -0.30  -0.020    4.2  0.778  1.000  0.04
+literature:ls_buffer                    -0.33   -0.07  -0.020   15.7  0.747  1.000  0.05
+literature:lo_top_q_active              -0.04    0.15  -0.003   11.3  0.535  1.000  0.14
+literature:ls_sector_neutral_reb21      -0.41   -0.22  -0.018    8.2  0.795  1.000  0.03
+literature:lo_top_q_absolute             0.69    0.76   0.103   11.3  0.085    nan   nan
+
+== FF5+Mom offline  2026-10-24T16:21:12
+cost_aware_daily_offline_2022_2025:literature:ls_reb5_net alpha -0.0423/yr  t=-2.34  p=0.019  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_offline_2022_2025:literature:ls_reb5_gross alpha -0.0120/yr  t=-0.66  p=0.509  R2=0.50  MKT -0.05 MOM +0.17
+cost_aware_daily_offline_2022_2025:literature:ls_reb21_net alpha -0.0271/yr  t=-1.79  p=0.074  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_offline_2022_2025:literature:ls_reb21_gross alpha -0.0185/yr  t=-1.22  p=0.222  R2=0.55  MKT -0.07 MOM +0.15
+cost_aware_daily_offline_2022_2025:literature:ls_reb63_net alpha -0.0224/yr  t=-1.59  p=0.111  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_offline_2022_2025:literature:ls_reb63_gross alpha -0.0190/yr  t=-1.35  p=0.177  R2=0.53  MKT -0.07 MOM +0.11
+cost_aware_daily_offline_2022_2025:literature:ls_smooth_reb21_net alpha -0.0304/yr  t=-1.86  p=0.063  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_offline_2022_2025:literature:ls_smooth_reb21_gross alpha -0.0260/yr  t=-1.59  p=0.112  R2=0.53  MKT -0.08 MOM +0.14
+cost_aware_daily_offline_2022_2025:literature:ls_buffer_net alpha -0.0339/yr  t=-1.81  p=0.070  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_offline_2022_2025:literature:ls_buffer_gross alpha -0.0178/yr  t=-0.95  p=0.343  R2=0.54  MKT -0.07 MOM +0.18
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_active_net alpha -0.0133/yr  t=-0.69  p=0.489  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_active_gross alpha -0.0019/yr  t=-0.10  p=0.920  R2=0.47  MKT -0.07 MOM +0.16
+cost_aware_daily_offline_2022_2025:literature:ls_sector_neutral_reb21_net alpha -0.0244/yr  t=-1.80  p=0.072  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_offline_2022_2025:literature:ls_sector_neutral_reb21_gross alpha -0.0160/yr  t=-1.18  p=0.237  R2=0.52  MKT -0.08 MOM +0.10
+cost_aware_daily_offline_2022_2025:literature:lo_top_q_absolute_net alpha +0.0312/yr  t=+1.02  p=0.306  R2=0.82  MKT +0.81 MOM +0.00
+
+== library tests offline  2026-10-24T16:21:18
+panel end 2025-12-31 library 70
+discovery_2013_2023: raw p<.05 IC 24, Holm 6 | raw p<.05 net 1, Holm 1 | RC p (IC) 0.002 best -cs_rank(ts_mean(daily_return, 3)) | RC p (net) 0.655
+   -cs_rank(ts_mean(daily_return, 3))                                     IC +0.0161 t +4.25 pHolm 0.001 netSR -0.22
+   -cs_rank(momentum_5d)                                                  IC +0.0148 t +4.12 pHolm 0.001 netSR -0.13
+   -cs_rank(close_to_sma20)                                               IC +0.0143 t +4.03 pHolm 0.002 netSR -0.08
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0111 t +3.23 pHolm 0.041 netSR +0.01
+   cs_rank(momentum_252_21d)                                              IC +0.0138 t +3.22 pHolm 0.043 netSR -0.10
+holdout_2025: raw p<.05 IC 6, Holm 0 | raw p<.05 net 1, Holm 0 | RC p (IC) 0.084 best cs_rank(momentum_252_21d) | RC p (net) 0.527
+   regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))         IC +0.0234 t +2.49 pHolm 0.337 netSR +0.75
+   cs_rank(ocf_yield) + cs_rank(momentum_252_21d)                         IC +0.0205 t +2.44 pHolm 0.378 netSR +0.31
+   cs_rank(momentum_252_21d)                                              IC +0.0257 t +2.31 pHolm 0.529 netSR +0.03
+   regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_hi IC +0.0158 t +2.13 pHolm 0.826 netSR +1.52
+   cs_rank(revenue_growth)                                                IC +0.0146 t +1.91 pHolm 1.000 netSR +0.02
+
+ALLDONE 2026-10-24T16:22:13
+== RUN 3 2026-10-26T12:23:54: seeds 21-28 after quota reset (empty seeds 22-26 removed)

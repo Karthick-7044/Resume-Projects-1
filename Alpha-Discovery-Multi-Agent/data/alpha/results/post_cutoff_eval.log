@@ -1,0 +1,6 @@
+﻿test ['2025-01-01', '2026-10-23'] panel end 2026-10-23 formulas {'llm_v4_novel': 3, 'llm_v4_all': 329, 'kb_composite': 70}
+llm_v4_novel   IC +0.0068 (t +0.81) resid IC +0.0072 (t +1.95) L/S gross +0.36 net +0.18 | L/O net +0.43 | FF alpha +0.006 (t +0.15) | Holm {'residual_ic': 0.10118644097194363, 'rank_ic': 0.6229514504201537, 'lo_net': 0.6229514504201537, 'ls_net': 0.6229514504201537}
+llm_v4_all     IC +0.0031 (t +0.47) resid IC +0.0058 (t +1.26) L/S gross +0.14 net +0.00 | L/O net -0.19 | FF alpha -0.007 (t -0.28)
+kb_composite   IC +0.0091 (t +1.43) resid IC +0.0064 (t +1.33) L/S gross -0.01 net -0.17 | L/O net -0.21 | FF alpha -0.031 (t -1.14)
+EVAL EXIT 0
+ALL DONE

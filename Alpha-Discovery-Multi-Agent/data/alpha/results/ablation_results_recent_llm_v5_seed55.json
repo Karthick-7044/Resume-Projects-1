@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-10-26T10:25:52.017478",
+  "dataset_version": "v2.0.0",
+  "budget": 60,
+  "top_k": 3,
+  "seed": 55,
+  "window": "recent",
+  "periods": {
+    "train": [
+      "2020-01-01",
+      "2023-12-31"
+    ],
+    "valid": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2026-10-23"
+    ]
+  },
+  "configs": {
+    "Full": {
+      "label": "All domains + macro, critic and memory",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "macro",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20261026_102552_recent_Full",
+      "n_tested": 5,
+      "verdicts": {
+        "REJECT": 3,
+        "INVALID": 2
+      },
+      "n_selected": 0,
+      "selected": [],
+      "combined": null,
+      "experiments": [
+        {
+          "experiment_id": "exp_d2f4d6df77",
+          "iteration": 0,
+          "hypothesis_id": "LLM_e39c0295",
+          "hypothesis_title": "Growth Momentum in Low\u2011Volatility Regimes",
+          "formula": "cs_rank(momentum_252_21d)*(1-regime_prob_high_vol)+cs_rank(revenue_growth)*regime_prob_high_vol",
+          "domains": "regime,technical,fundamental",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": 0.011997040671538643,
+          "train_sharpe": -0.12805350039993305,
+          "valid_rank_ic": 0.02368815078892422,
+          "valid_sharpe": 0.8518953403682243,
+          "annual_turnover": 6.1237018297793915,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Growth Momentum in Low\u2011Volatility Regimes' - train IC 0.0120 / Sharpe -0.13, validation IC 0.0237 / Sharpe 0.85; year_consistency: Rank IC positive in only 60% of years (< 67%); novelty_gate: Rank correlation +0.60 with known factor 'regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))' exceeds 0.50: not a new factor"
+        },
+        {
+          "experiment_id": "exp_b5322836f4",
+          "iteration": 1,
+          "hypothesis_id": "LLM_e39c0295",
+          "hypothesis_title": "Growth Momentum in Low\u2011Volatility Regimes",
+          "formula": "ts_mean(cs_rank(momentum_252_21d)*(1-regime_prob_high_vol)+cs_rank(revenue_growth)*regime_prob_high_vol, 5)",
+          "domains": "regime,technical,fundamental",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "smooth",
+          "parent_id": "exp_d2f4d6df77",
+          "critique": "ORIGINALITY: structurally 83% similar to an earlier formula (cs_rank(momentum_252_21d)*(1-regime_prob_high_vol)+cs_rank(revenue_growth)*regime_prob_high_vol); propose something different"
+        },
+        {
+          "experiment_id": "exp_50a22c147c",
+          "iteration": 2,
+          "hypothesis_id": "LLM_e39c0295",
+          "hypothesis_title": "Growth Momentum in Low\u2011Volatility Regimes",
+          "formula": "if_else(gt(1-regime_prob_high_vol,0.5),cs_rank(momentum_252_21d)+cs_rank(revenue_growth),cs_rank(revenue_growth))",
+          "domains": "fundamental,regime,technical",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": 0.013061046722723738,
+          "train_sharpe": -0.09666287164536136,
+          "valid_rank_ic": 0.025807637020484758,
+          "valid_sharpe": 0.8500947413200788,
+          "annual_turnover": 4.27509796469301,
+          "dominant_domain": "fundamental",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Growth Momentum in Low\u2011Volatility Regimes' - train IC 0.0131 / Sharpe -0.10, validation IC 0.0258 / Sharpe 0.85; novelty_gate: Rank correlation +0.87 with known factor 'cs_rank(revenue_growth)' exceeds 0.50: not a new factor"
+        },
+        {
+          "experiment_id": "exp_a6a3afa016",
+          "iteration": 3,
+          "hypothesis_id": "LLM_e39c0295",
+          "hypothesis_title": "Growth Momentum in Low\u2011Volatility Regimes",
+          "formula": "cs_rank(momentum_252_21d)*cs_rank(revenue_growth)*(1-regime_prob_high_vol)-cs_rank(volatility_20d)",
+          "domains": "technical,regime,fundamental",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": 0.0011570442099306305,
+          "train_sharpe": -0.6947091498399421,
+          "valid_rank_ic": 0.0075000509387414685,
+          "valid_sharpe": 0.26814566707277193,
+          "annual_turnover": 9.84999310605124,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Growth Momentum in Low\u2011Volatility Regimes' - train IC 0.0012 / Sharpe -0.69, validation IC 0.0075 / Sharpe 0.27; year_consistency: Rank IC positive in only 60% of years (< 67%); novelty_gate: Rank correlation +0.84 with known factor '-cs_rank(ts_mean(volatility_20d, 20))' exceeds 0.50: not a new factor; plausibility: Training rank IC 0.0012 is economically negligible; regime_dependence: IC is positive in ['Bull / Low Volatility'] but negative in ['Bear / High Volatility']"
+        },
+        {
+          "experiment_id": "exp_c02a318d2d",
+          "iteration": 4,
+          "hypothesis_id": "LLM_e39c0295",
+          "hypothesis_title": "Growth Momentum in Low\u2011Volatility Regimes",
+          "formula": "regime_bull * (cs_rank(momentum_252_21d)*cs_rank(revenue_growth)*(1-regime_prob_high_vol)-cs_rank(volatility_20d))",
+          "domains": "regime,technical,fundamental",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "gate_bull",
+          "parent_id": "exp_a6a3afa016",
+          "critique": "DEGENERATE: factor has no cross-sectional variation on most dates (market-wide features must be combined with stock-level features)"
+        }
+      ]
+    }
+  }
+}

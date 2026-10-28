@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-10-27T16:12:25.826915",
+  "dataset_version": "v2.0.0",
+  "budget": 60,
+  "top_k": 3,
+  "seed": 65,
+  "window": "recent",
+  "periods": {
+    "train": [
+      "2020-01-01",
+      "2023-12-31"
+    ],
+    "valid": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2026-10-23"
+    ]
+  },
+  "configs": {
+    "Full": {
+      "label": "All domains + macro, critic and memory",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "macro",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20261027_161225_recent_Full",
+      "n_tested": 7,
+      "verdicts": {
+        "REJECT": 5,
+        "INVALID": 2
+      },
+      "n_selected": 0,
+      "selected": [],
+      "combined": null,
+      "experiments": [
+        {
+          "experiment_id": "exp_d030b192fc",
+          "iteration": 0,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "cs_rank(eps_growth) * cs_rank(sentiment_20d) * (1 - cs_rank(fed_funds_chg_60d))",
+          "domains": "fundamental,news,macro",
+          "verdict": "REJECT",
+          "score": -1.5144171185706166,
+          "train_rank_ic": 0.00046315519421747623,
+          "train_sharpe": -0.4150786517157312,
+          "valid_rank_ic": -0.005144171185706165,
+          "valid_sharpe": -2.9124279393938597,
+          "annual_turnover": 13.636339924714044,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Accommodative Rates Boost Earnings-Driven Momentum' - train IC 0.0005 / Sharpe -0.42, validation IC -0.0051 / Sharpe -2.91; stability: Rank IC changes sign out of sample (train 0.0005, validation -0.0051); year_consistency: Rank IC positive in only 40% of years (< 67%); cost_gate: Validation Sharpe after costs -2.91 <= 0.00; plausibility: Training rank IC 0.0005 is economically negligible; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']; transaction_costs: Sharpe falls from 0.09 (0 bps) to -0.90 (20 bps); annual turnover 14x"
+        },
+        {
+          "experiment_id": "exp_cd390b0563",
+          "iteration": 1,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "regime_high_vol * (cs_rank(eps_growth) * cs_rank(sentiment_20d) * (1 - cs_rank(fed_funds_chg_60d)))",
+          "domains": "regime,fundamental,news,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "gate_high_vol",
+          "parent_id": "exp_d030b192fc",
+          "critique": "ORIGINALITY: structurally 83% similar to an earlier formula (cs_rank(eps_growth) * cs_rank(sentiment_20d) * (1 - cs_rank(fed_funds_chg_60d))); propose something different"
+        },
+        {
+          "experiment_id": "exp_d0b06d0739",
+          "iteration": 2,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "cs_rank(ts_delta(eps_growth, 20)) * cs_rank(sent_momentum) * (1 - cs_rank(treasury_10y_chg_20d))",
+          "domains": "news,macro,fundamental",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": 0.0018170390600814623,
+          "train_sharpe": -0.966638025701566,
+          "valid_rank_ic": 0.002610963903548412,
+          "valid_sharpe": 0.7175552525956279,
+          "annual_turnover": 17.304159416821552,
+          "dominant_domain": "news",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Accommodative Rates Boost Earnings-Driven Momentum' - train IC 0.0018 / Sharpe -0.97, validation IC 0.0026 / Sharpe 0.72; year_consistency: Rank IC positive in only 60% of years (< 67%); plausibility: Training rank IC 0.0018 is economically negligible"
+        },
+        {
+          "experiment_id": "exp_549740ae42",
+          "iteration": 3,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "cs_rank(ts_mean(ts_delta(eps_growth, 20), 5)) * cs_rank(ts_mean(sent_momentum, 5)) * if_else(gt(lt(treasury_10y_chg_20d, 0) + lt(treasury_10y, ts_mean(treasury_10y, 252)), 0.5), 1, 0.5)",
+          "domains": "news,fundamental,macro",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": 0.003761047895810245,
+          "train_sharpe": -0.7396584637022521,
+          "valid_rank_ic": 0.00042022912229955453,
+          "valid_sharpe": -0.10377788543007002,
+          "annual_turnover": 17.639883159141778,
+          "dominant_domain": null,
+          "revision_action": "llm_revision",
+          "parent_id": "exp_d0b06d0739",
+          "critique": "REJECT: 'Accommodative Rates Boost Earnings-Driven Momentum' - train IC 0.0038 / Sharpe -0.74, validation IC 0.0004 / Sharpe -0.10; year_consistency: Rank IC positive in only 60% of years (< 67%); cost_gate: Validation Sharpe after costs -0.10 <= 0.00; plausibility: Training rank IC 0.0038 is economically negligible; stability: Validation IC 0.0004 is below 30% of training IC 0.0038; complexity: 36-node expression is likely over-engineered"
+        },
+        {
+          "experiment_id": "exp_13b23861ac",
+          "iteration": 4,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "cs_rank(ts_mean(eps_growth, 20)) * cs_rank(sent_decay) * if_else(lt(treasury_10y_chg_20d, 0), 1, 0.5)",
+          "domains": "news,macro,fundamental",
+          "verdict": "REJECT",
+          "score": -1.5596899111947198,
+          "train_rank_ic": 0.0008498044656145759,
+          "train_sharpe": -0.5033184628556794,
+          "valid_rank_ic": -0.005596899111947197,
+          "valid_sharpe": -1.1066821001586786,
+          "annual_turnover": 14.440303418693299,
+          "dominant_domain": null,
+          "revision_action": "llm_revision",
+          "parent_id": "exp_549740ae42",
+          "critique": "REJECT: 'Accommodative Rates Boost Earnings-Driven Momentum' - train IC 0.0008 / Sharpe -0.50, validation IC -0.0056 / Sharpe -1.11; stability: Rank IC changes sign out of sample (train 0.0008, validation -0.0056); year_consistency: Rank IC positive in only 40% of years (< 67%); cost_gate: Validation Sharpe after costs -1.11 <= 0.00; plausibility: Training rank IC 0.0008 is economically negligible; regime_dependence: IC is positive in ['Bull / Low Volatility'] but negative in ['Bear / High Volatility']; transaction_costs: Sharpe falls from 0.00 (0 bps) to -0.98 (20 bps); annual turnover 14x"
+        },
+        {
+          "experiment_id": "exp_c4953be080",
+          "iteration": 5,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "cs_rank(eps_growth) * cs_rank(news_count_weighted_pstd) * (1 - cs_rank(yield_curve_chg_20d))",
+          "domains": "fundamental,news,macro",
+          "verdict": "REJECT",
+          "score": -1.6770319426809002,
+          "train_rank_ic": -0.005046023566523206,
+          "train_sharpe": -0.8028097237122991,
+          "valid_rank_ic": -0.006770319426809002,
+          "valid_sharpe": -1.5261573657189178,
+          "annual_turnover": 13.090470285205713,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Accommodative Rates Boost Earnings-Driven Momentum' - train IC -0.0050 / Sharpe -0.80, validation IC -0.0068 / Sharpe -1.53; plausibility: Training rank IC -0.0050 contradicts the hypothesis' expected positive relation; year_consistency: Rank IC positive in only 0% of years (< 67%); cost_gate: Validation Sharpe after costs -1.53 <= 0.00"
+        },
+        {
+          "experiment_id": "exp_d1d0917daf",
+          "iteration": 6,
+          "hypothesis_id": "LLM_dedb9a27",
+          "hypothesis_title": "Accommodative Rates Boost Earnings-Driven Momentum",
+          "formula": "ts_mean(cs_rank(eps_growth) * cs_rank(news_count_weighted_pstd) * (1 - cs_rank(yield_curve_chg_20d)), 5)",
+          "domains": "fundamental,news,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "smooth",
+          "parent_id": "exp_c4953be080",
+          "critique": "ORIGINALITY: structurally 83% similar to an earlier formula (cs_rank(eps_growth) * cs_rank(news_count_weighted_pstd) * (1 - cs_rank(yield_curve_chg_20d))); propose something different"
+        }
+      ]
+    }
+  }
+}

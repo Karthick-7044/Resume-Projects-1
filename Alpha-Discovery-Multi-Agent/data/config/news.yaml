@@ -1,0 +1,57 @@
+# News-factor pipeline configuration (FNSPID + FinBERT). Every threshold lives here, not in code.
+provider: fnspid
+window:
+  start: "2013-01-01"        # FNSPID-covered evaluation window for ALL news factors
+  end: "2023-12-31"
+tickers: universe            # "universe" = every ticker in data/config/universe.csv
+ticker_aliases:               # same-issuer symbols FNSPID tags separately; mapped to the universe ticker
+  META: [FB]                  # Facebook -> Meta rename
+  GOOGL: [GOOG]               # Alphabet's other share class (same company news)
+language:
+  min_ascii_alpha_ratio: 0.90   # drop rows whose letters are < 90% ASCII (FNSPID contains Russian text)
+alignment:
+  timezone: America/New_York
+  close_time: "16:00"          # published at/after this on a trading day -> next trading day
+  low_precision_rule: next_trading_day   # stamps with minute == second == 0 are treated as date-only
+scoring:
+  model: ProsusAI/finbert
+  max_length: 128
+  batch_size: 32
+  summary_chars: 0             # 0 = title only (CPU cost: title+summary is ~2.5x slower; summaries are extractive Textrank text)
+  backend: local
+  seed: 42
+features:
+  decay_half_life_days: 3
+  decay_lookback_days: 20
+  decay_min_mass: 0.25         # minimum decayed article mass required to report sent_decay
+  baseline_window_days: 20
+  min_baseline_days: 10        # trailing days WITH news required for any z-score
+  min_articles_dispersion: 3
+  momentum_lag_days: 5
+coverage:
+  min_articles_per_ticker_year: 20
+relevance:
+  mention_weight: 1.0          # company name or ticker appears in the title
+  other_weight: 0.3
+article_types:                 # keyword lists (case-insensitive, word-boundary); first match wins in this order
+  earnings: ["earnings", "eps", "quarterly results", "q1", "q2", "q3", "q4", "revenue", "guidance", "profit", "beats", "misses"]
+  analyst_rating: ["upgrade", "upgrades", "upgraded", "downgrade", "downgrades", "downgraded", "price target", "initiates coverage", "outperform", "underperform", "overweight", "underweight", "reiterates", "analyst"]
+  m_and_a: ["acquire", "acquires", "acquisition", "merger", "takeover", "buyout", "to buy", "divest", "spin-off", "stake in"]
+  product_partnership: ["launch", "launches", "unveils", "partnership", "partners with", "collaboration", "new product", "announces", "agreement", "contract"]
+providers:
+  fnspid: {start: "2013-01-01", end: "2023-12-31"}
+  google_news_rss: {start: "2024-01-01", end: null}   # Google News RSS headline SAMPLE (14-day windows, capped ~100)
+  finnhub: {start: "2024-01-01", end: null}     # null = today; on overlapping days the provider listed first wins
+standardize_within_provider_period: true
+finnhub:
+  calls_per_minute: 60
+  pacing_seconds: 1.0
+  per_call_cap: 200            # Finnhub returns <= ~250 newest articles per call (measured 236-247): split at 200+
+  daily_lookback_days: 3
+splice:                        # thresholds for flagging a source shift at the FNSPID -> Finnhub join
+  split_date: "2024-01-01"
+  months: 6
+  count_ratio: 2.0             # flag if mean daily article count changes by more than this factor (either way)
+  sentiment_shift: 0.15        # |change in mean sentiment|
+  mention_share_shift: 0.20    # |change in share of titles mentioning the company/ticker|
+  publisher_tv_distance: 0.50  # total-variation distance between publisher-domain mixes

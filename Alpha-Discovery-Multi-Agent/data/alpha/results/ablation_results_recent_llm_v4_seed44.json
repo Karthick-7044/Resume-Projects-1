@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-10-26T08:24:10.680867",
+  "dataset_version": "v2.0.0",
+  "budget": 60,
+  "top_k": 3,
+  "seed": 44,
+  "window": "recent",
+  "periods": {
+    "train": [
+      "2020-01-01",
+      "2023-12-31"
+    ],
+    "valid": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2026-10-23"
+    ]
+  },
+  "configs": {
+    "Full": {
+      "label": "All domains + macro, critic and memory",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "macro",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20261026_082410_recent_Full",
+      "n_tested": 5,
+      "verdicts": {
+        "INVALID": 3,
+        "REJECT": 2
+      },
+      "n_selected": 0,
+      "selected": [],
+      "combined": null,
+      "experiments": [
+        {
+          "experiment_id": "exp_63fb27ea5f",
+          "iteration": 0,
+          "hypothesis_id": "LLM_01eecfba",
+          "hypothesis_title": "Yield Curve Steepening Value",
+          "formula": "if_else(yield_curve_10y2y>0,cs_rank(book_to_market),-cs_rank(book_to_market))",
+          "domains": "valuation,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "OPERATOR: syntax element Compare is not allowed; OPERATOR: syntax element Gt is not allowed"
+        },
+        {
+          "experiment_id": "exp_d5cf63e97c",
+          "iteration": 0,
+          "hypothesis_id": "LLM_01eecfba",
+          "hypothesis_title": "Yield Curve Steepening Value",
+          "formula": "cs_rank(book_to_market)*max(yield_curve_10y2y,0)",
+          "domains": "valuation,macro",
+          "verdict": "REJECT",
+          "score": -1.2026659506335935,
+          "train_rank_ic": -0.010494894428108578,
+          "train_sharpe": 0.5553993105792705,
+          "valid_rank_ic": -0.002026659506335935,
+          "valid_sharpe": 1.2696035849684433,
+          "annual_turnover": 0.8774872190765144,
+          "dominant_domain": "valuation",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Yield Curve Steepening Value' - train IC -0.0105 / Sharpe 0.56, validation IC -0.0020 / Sharpe 1.27; plausibility: Training rank IC -0.0105 contradicts the hypothesis' expected positive relation; year_consistency: Rank IC positive in only 25% of years (< 67%); novelty_gate: Rank correlation +1.00 with known factor 'value_book_to_market' exceeds 0.50: not a new factor; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']"
+        },
+        {
+          "experiment_id": "exp_4765b55aaf",
+          "iteration": 1,
+          "hypothesis_id": "LLM_01eecfba",
+          "hypothesis_title": "Yield Curve Steepening Value",
+          "formula": "regime_high_vol * (cs_rank(book_to_market)*max(yield_curve_10y2y,0))",
+          "domains": "regime,valuation,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "gate_high_vol",
+          "parent_id": "exp_d5cf63e97c",
+          "critique": "DEGENERATE: factor has no cross-sectional variation on most dates (market-wide features must be combined with stock-level features)"
+        },
+        {
+          "experiment_id": "exp_e7f1883ab3",
+          "iteration": 2,
+          "hypothesis_id": "LLM_01eecfba",
+          "hypothesis_title": "Yield Curve Steepening Value",
+          "formula": "cs_rank(book_to_market)*ts_mean(yield_curve_10y2y,20)",
+          "domains": "valuation,macro",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": -0.003408434572594782,
+          "train_sharpe": 0.13409825534989775,
+          "valid_rank_ic": 0.007689884738394435,
+          "valid_sharpe": 0.6665333596436439,
+          "annual_turnover": 1.3622174707984778,
+          "dominant_domain": "macro",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Yield Curve Steepening Value' - train IC -0.0034 / Sharpe 0.13, validation IC 0.0077 / Sharpe 0.67; plausibility: Training rank IC -0.0034 contradicts the hypothesis' expected positive relation; year_consistency: Rank IC positive in only 60% of years (< 67%); stability: IC sign is consistent in only 40% of training years; regime_dependence: IC is positive in ['Bear / High Volatility'] but negative in ['Bull / Low Volatility']"
+        },
+        {
+          "experiment_id": "exp_c0245cfe9c",
+          "iteration": 3,
+          "hypothesis_id": "LLM_01eecfba",
+          "hypothesis_title": "Yield Curve Steepening Value",
+          "formula": "ts_mean(cs_rank(book_to_market)*ts_mean(yield_curve_10y2y,20), 5)",
+          "domains": "valuation,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": "smooth",
+          "parent_id": "exp_e7f1883ab3",
+          "critique": "ORIGINALITY: structurally 88% similar to an earlier formula (cs_rank(book_to_market)*ts_mean(yield_curve_10y2y,20)); propose something different"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-26T10:04:19.973167",
+  "dataset_version": "v2.0.0",
+  "budget": 60,
+  "top_k": 3,
+  "seed": 57,
+  "window": "recent",
+  "periods": {
+    "train": [
+      "2020-01-01",
+      "2023-12-31"
+    ],
+    "valid": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "test": [
+      "2025-01-01",
+      "2026-10-23"
+    ]
+  },
+  "configs": {
+    "Full": {
+      "label": "All domains + macro, critic and memory",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "macro",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20261026_100419_recent_Full",
+      "n_tested": 0,
+      "verdicts": {},
+      "n_selected": 0,
+      "selected": [],
+      "combined": null,
+      "experiments": []
+    }
+  }
+}

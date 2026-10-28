@@ -1,0 +1,83 @@
+== v4 discovery seed 41  2026-10-26T12:33:28
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-26 12:34:00,314 === Config Full: All domains + macro, critic and memory ===
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-26 12:57:06,541 Full: tested 63 {'REJECT': 53, 'INVALID': 10}; selected 0; combined test IC None Sharpe None
+Full           tested= 63 selected=0 test rank IC=None Sharpe=None
+
+== v4 discovery seed 42  2026-10-26T12:57:09
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year project\app\data\storage\duckdb_manager.py", line 18, 
+in get_connection
+    return duckdb.connect(str(self.db_path))
+_duckdb.IOException: IO Error: Cannot open file "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\storage\quant.duckdb": The process cannot access the file because it is being used by another process.
+
+
+File is already open in 
+C:\Program Files\Python313\python.exe (PID 10628)
+During task with name 'memory' and id 'b3895104-bd00-93cc-133e-3379a1f49565'
+
+== v4 discovery seed 43  2026-10-26T13:22:36
+2026-10-26 13:53:43,061 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-26 13:53:43,062 Revision LLM failed: all LLM providers failed: gemini:gemini-2.5-flash: Gemini daily quota 
+exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-26 13:53:48,473 Revision LLM failed: all LLM providers failed: 
+2026-10-26 13:53:49,064 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:53:49,066 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:53:49,192 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:53:51,821 Full: tested 64 {'REJECT': 50, 'INVALID': 13, 'ACCEPT': 1}; selected 1; combined test IC 
+-0.0026241266094896715 Sharpe -0.044374840154236414
+Full           tested= 64 selected=1 test rank IC=-0.0026241266094896715 Sharpe=-0.044374840154236414
+
+== v4 discovery seed 44  2026-10-26T13:53:55
+2026-10-26 13:55:03,201 Revision LLM failed: all LLM providers failed: groq:openai/gpt-oss-20b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota 
+resets | gemini:gemini-2.5-flash: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used 
+silently)
+2026-10-26 13:55:08,642 Revision LLM failed: all LLM providers failed: 
+2026-10-26 13:55:09,362 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:55:09,364 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:55:09,366 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:55:09,512 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 13:55:09,516 Full: tested 5 {'INVALID': 3, 'REJECT': 2}; selected 0; combined test IC None Sharpe None
+Full           tested=  5 selected=0 test rank IC=None Sharpe=None
+
+== v4 discovery seed 45  2026-10-26T13:55:11
+2026-10-26 13:55:59,036 === Config Full: All domains + macro, critic and memory ===
+2026-10-26 13:56:00,600 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:56:02,472 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:56:04,515 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:56:05,796 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-26 13:56:05,796 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-120b: Groq daily 
+quota exhausted; rerun after the quota resets | groq:openai/gpt-oss-20b: Groq daily quota exhausted; rerun after the 
+quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota resets | 
+gemini:gemini-2.5-flash: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-26 13:56:05,800 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== v4 discovery seed 46  2026-10-26T13:56:08
+2026-10-26 13:56:54,542 === Config Full: All domains + macro, critic and memory ===
+2026-10-26 13:56:56,094 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:56:57,972 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:57:00,081 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 13:57:01,294 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-26 13:57:01,294 Research Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-120b: Groq daily 
+quota exhausted; rerun after the quota resets | groq:openai/gpt-oss-20b: Groq daily quota exhausted; rerun after the 
+quota resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota resets | 
+gemini:gemini-2.5-flash: Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-26 13:57:01,297 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== v4 discovery seed 47  2026-10-26T13:57:03
+V4 DISCOVERY DONE (stopped: Groq quota of the first key exhausted; seeds 44-48 produced nothing) 2026-10-26T14:07:17

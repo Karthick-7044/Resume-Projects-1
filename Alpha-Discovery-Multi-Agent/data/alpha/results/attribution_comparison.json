@@ -1,0 +1,143 @@
+{
+  "n": 7,
+  "mean_sec_old": 1.7585714285714287,
+  "mean_sec_new": 0.4985714285714286,
+  "dominant_domain_agreement": 0.5714285714285714,
+  "top_feature_agreement": 0.42857142857142855,
+  "rows": [
+    {
+      "formula": "if_else(regime_bull, cs_rank(roe) + cs_rank(momentum_60d), -cs_rank(volatility_60d))",
+      "sec_old": 3.28,
+      "sec_new": 0.67,
+      "dominant_domain_old": "technical",
+      "dominant_domain_new": "regime",
+      "top_feature_old": "roe",
+      "top_feature_new": "regime_bull",
+      "share_rank_corr": -0.7999999999999999,
+      "shares_old": {
+        "regime_bull": 0.025926054131733222,
+        "roe": 0.4784389795938278,
+        "momentum_60d": 0.29913347878537766,
+        "volatility_60d": 0.1965014874890613
+      },
+      "shares_new": {
+        "roe": 0.1441035579728825,
+        "momentum_60d": 0.14332888501977725,
+        "volatility_60d": 0.1799438319808724,
+        "regime_bull": 0.5326237250264678
+      }
+    },
+    {
+      "formula": "cs_rank(ocf_yield) + cs_rank(momentum_252_21d)",
+      "sec_old": 1.92,
+      "sec_new": 0.63,
+      "dominant_domain_old": "technical",
+      "dominant_domain_new": "valuation",
+      "top_feature_old": "momentum_252_21d",
+      "top_feature_new": "ocf_yield",
+      "share_rank_corr": null,
+      "shares_old": {
+        "ocf_yield": 0.3821594238597105,
+        "momentum_252_21d": 0.6178405761402895
+      },
+      "shares_new": {
+        "ocf_yield": 0.5016528488385986,
+        "momentum_252_21d": 0.49834715116140144
+      }
+    },
+    {
+      "formula": "regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))",
+      "sec_old": 1.88,
+      "sec_new": 0.57,
+      "dominant_domain_old": "technical",
+      "dominant_domain_new": "valuation",
+      "top_feature_old": "momentum_252_21d",
+      "top_feature_new": "ocf_yield",
+      "share_rank_corr": 0.5,
+      "shares_old": {
+        "regime_bull": 0.02757082225062117,
+        "ocf_yield": 0.39500515668514047,
+        "momentum_252_21d": 0.5774240210642384
+      },
+      "shares_new": {
+        "ocf_yield": 0.5009137292308894,
+        "momentum_252_21d": 0.49908627076911066,
+        "regime_bull": 0.0
+      }
+    },
+    {
+      "formula": "-cs_rank(momentum_5d) * cs_rank(vix_chg_5d)",
+      "sec_old": 1.21,
+      "sec_new": 0.44,
+      "dominant_domain_old": "technical",
+      "dominant_domain_new": "technical",
+      "top_feature_old": "momentum_5d",
+      "top_feature_new": "momentum_5d",
+      "share_rank_corr": null,
+      "shares_old": {
+        "vix_chg_5d": 0.0,
+        "momentum_5d": 1.0
+      },
+      "shares_new": {
+        "momentum_5d": 1.0,
+        "vix_chg_5d": 0.0
+      }
+    },
+    {
+      "formula": "cs_rank(revenue_growth) + cs_rank(earnings_yield)",
+      "sec_old": 1.15,
+      "sec_new": 0.37,
+      "dominant_domain_old": "fundamental",
+      "dominant_domain_new": "fundamental",
+      "top_feature_old": "revenue_growth",
+      "top_feature_new": "revenue_growth",
+      "share_rank_corr": null,
+      "shares_old": {
+        "revenue_growth": 0.5718810909943357,
+        "earnings_yield": 0.42811890900566435
+      },
+      "shares_new": {
+        "revenue_growth": 0.5027993870480322,
+        "earnings_yield": 0.4972006129519677
+      }
+    },
+    {
+      "formula": "cs_rank(roe) * (1 - regime_high_vol) - cs_rank(debt_to_assets)",
+      "sec_old": 1.54,
+      "sec_new": 0.44,
+      "dominant_domain_old": "fundamental",
+      "dominant_domain_new": "fundamental",
+      "top_feature_old": "roe",
+      "top_feature_new": "debt_to_assets",
+      "share_rank_corr": 0.5,
+      "shares_old": {
+        "debt_to_assets": 0.2556291917814054,
+        "roe": 0.5943889625518647,
+        "regime_high_vol": 0.14998184566672987
+      },
+      "shares_new": {
+        "debt_to_assets": 0.521945928064669,
+        "roe": 0.2508342912353712,
+        "regime_high_vol": 0.22721978069995977
+      }
+    },
+    {
+      "formula": "cs_rank(ts_mean(sent_decay, 5)) + cs_rank(earnings_yield)",
+      "sec_old": 1.33,
+      "sec_new": 0.37,
+      "dominant_domain_old": "valuation",
+      "dominant_domain_new": "valuation",
+      "top_feature_old": "earnings_yield",
+      "top_feature_new": "earnings_yield",
+      "share_rank_corr": null,
+      "shares_old": {
+        "earnings_yield": 0.8353556437536519,
+        "sent_decay": 0.16464435624634816
+      },
+      "shares_new": {
+        "earnings_yield": 0.5368202971929433,
+        "sent_decay": 0.46317970280705667
+      }
+    }
+  ]
+}

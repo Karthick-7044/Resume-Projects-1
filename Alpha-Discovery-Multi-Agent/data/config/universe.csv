@@ -1,0 +1,196 @@
+# Ticker Universe Configuration (v3.0, 192 stocks)
+# v2 (36 stocks) plus every S&P 500 candidate in universe_candidates_v3.csv (242 screened) with >= 20 FNSPID
+# articles in EVERY year 2013-2023 (156 passed). Same rule as v2. Survivorship bias: present-day constituents only.
+ticker,company_name,sector,industry,exchange,active,universe_version
+AAPL,Apple Inc.,Technology,Consumer Electronics,NASDAQ,True,v2.0
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,NASDAQ,True,v2.0
+NVDA,NVIDIA Corporation,Technology,Semiconductors,NASDAQ,True,v2.0
+AMZN,Amazon.com Inc.,Consumer Cyclical,Internet Retail,NASDAQ,True,v2.0
+GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,NASDAQ,True,v2.0
+META,Meta Platforms Inc.,Communication Services,Internet Content & Information,NASDAQ,True,v2.0
+JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,NYSE,True,v2.0
+V,Visa Inc.,Financial Services,Credit Services,NYSE,True,v2.0
+XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,NYSE,True,v2.0
+JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,NYSE,True,v2.0
+WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,NYSE,True,v2.0
+MS,Morgan Stanley,Financial Services,Capital Markets,NYSE,True,v2.0
+MRK,Merck & Co. Inc.,Healthcare,Drug Manufacturers - General,NYSE,True,v2.0
+ABT,Abbott Laboratories,Healthcare,Medical Devices,NYSE,True,v2.0
+TMO,Thermo Fisher Scientific Inc.,Healthcare,Diagnostics & Research,NYSE,True,v2.0
+AMGN,Amgen Inc.,Healthcare,Drug Manufacturers - General,NASDAQ,True,v2.0
+GILD,Gilead Sciences Inc.,Healthcare,Drug Manufacturers - General,NASDAQ,True,v2.0
+COP,ConocoPhillips,Energy,Oil & Gas E&P,NYSE,True,v2.0
+SLB,Schlumberger Limited,Energy,Oil & Gas Equipment & Services,NYSE,True,v2.0
+KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,NYSE,True,v2.0
+PEP,PepsiCo Inc.,Consumer Defensive,Beverages - Non-Alcoholic,NASDAQ,True,v2.0
+COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,NASDAQ,True,v2.0
+NKE,NIKE Inc.,Consumer Cyclical,Footwear & Accessories,NYSE,True,v2.0
+CMCSA,Comcast Corporation,Communication Services,Telecom Services,NASDAQ,True,v2.0
+ORCL,Oracle Corporation,Technology,Software - Infrastructure,NYSE,True,v2.0
+QCOM,QUALCOMM Incorporated,Technology,Semiconductors,NASDAQ,True,v2.0
+TXN,Texas Instruments Incorporated,Technology,Semiconductors,NASDAQ,True,v2.0
+ADBE,Adobe Inc.,Technology,Software - Application,NASDAQ,True,v2.0
+CRM,Salesforce Inc.,Technology,Software - Application,NYSE,True,v2.0
+CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery,NYSE,True,v2.0
+GE,General Electric Company,Industrials,Specialty Industrial Machinery,NYSE,True,v2.0
+UPS,United Parcel Service Inc.,Industrials,Integrated Freight & Logistics,NYSE,True,v2.0
+MMM,3M Company,Industrials,Conglomerates,NYSE,True,v2.0
+NEE,NextEra Energy Inc.,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0
+DUK,Duke Energy Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0
+SO,The Southern Company,Utilities,Utilities - Regulated Electric,NYSE,True,v2.0
+ACN,Accenture plc,Technology,Information Technology Services,NYSE,True,v3.0
+ADI,Analog Devices Inc.,Technology,Semiconductors,NASDAQ,True,v3.0
+AMAT,Applied Materials Inc.,Technology,Semiconductor Equipment,NASDAQ,True,v3.0
+MU,Micron Technology Inc.,Technology,Semiconductors,NASDAQ,True,v3.0
+NOW,ServiceNow Inc.,Technology,Software - Application,NYSE,True,v3.0
+PANW,Palo Alto Networks Inc.,Technology,Software - Infrastructure,NASDAQ,True,v3.0
+CDNS,Cadence Design Systems Inc.,Technology,Software - Application,NASDAQ,True,v3.0
+ADSK,Autodesk Inc.,Technology,Software - Application,NASDAQ,True,v3.0
+HPQ,HP Inc.,Technology,Computer Hardware,NYSE,True,v3.0
+WDC,Western Digital Corporation,Technology,Computer Hardware,NASDAQ,True,v3.0
+CTSH,Cognizant Technology Solutions Corporation,Technology,Information Technology Services,NASDAQ,True,v3.0
+APH,Amphenol Corporation,Technology,Electronic Components,NYSE,True,v3.0
+GLW,Corning Incorporated,Technology,Electronic Components,NYSE,True,v3.0
+MSI,Motorola Solutions Inc.,Technology,Communication Equipment,NYSE,True,v3.0
+FTNT,Fortinet Inc.,Technology,Software - Infrastructure,NASDAQ,True,v3.0
+AKAM,Akamai Technologies Inc.,Technology,Software - Infrastructure,NASDAQ,True,v3.0
+NTAP,NetApp Inc.,Technology,Computer Hardware,NASDAQ,True,v3.0
+PAYX,Paychex Inc.,Industrials,Staffing & Employment Services,NASDAQ,True,v3.0
+EBAY,eBay Inc.,Consumer Cyclical,Internet Retail,NASDAQ,True,v3.0
+CHTR,Charter Communications Inc.,Communication Services,Telecom Services,NASDAQ,True,v3.0
+TMUS,T-Mobile US Inc.,Communication Services,Telecom Services,NASDAQ,True,v3.0
+TTWO,Take-Two Interactive Software Inc.,Communication Services,Electronic Gaming & Multimedia,NASDAQ,True,v3.0
+CMG,Chipotle Mexican Grill Inc.,Consumer Cyclical,Restaurants,NYSE,True,v3.0
+ORLY,O'Reilly Automotive Inc.,Consumer Cyclical,Specialty Retail,NASDAQ,True,v3.0
+ROST,Ross Stores Inc.,Consumer Cyclical,Apparel Retail,NASDAQ,True,v3.0
+TJX,TJX Companies Inc.,Consumer Cyclical,Apparel Retail,NYSE,True,v3.0
+BBY,Best Buy Co. Inc.,Consumer Cyclical,Specialty Retail,NYSE,True,v3.0
+DHI,D.R. Horton Inc.,Consumer Cyclical,Residential Construction,NYSE,True,v3.0
+PHM,PulteGroup Inc.,Consumer Cyclical,Residential Construction,NYSE,True,v3.0
+HAS,Hasbro Inc.,Consumer Cyclical,Leisure,NASDAQ,True,v3.0
+MGM,MGM Resorts International,Consumer Cyclical,Resorts & Casinos,NYSE,True,v3.0
+EXPE,Expedia Group Inc.,Consumer Cyclical,Travel Services,NASDAQ,True,v3.0
+ULTA,Ulta Beauty Inc.,Consumer Cyclical,Specialty Retail,NASDAQ,True,v3.0
+DLTR,Dollar Tree Inc.,Consumer Defensive,Discount Stores,NASDAQ,True,v3.0
+KSS,Kohl's Corporation,Consumer Cyclical,Department Stores,NYSE,True,v3.0
+TSCO,Tractor Supply Company,Consumer Cyclical,Specialty Retail,NASDAQ,True,v3.0
+AAP,Advance Auto Parts Inc.,Consumer Cyclical,Specialty Retail,NYSE,True,v3.0
+BWA,BorgWarner Inc.,Consumer Cyclical,Auto Parts,NYSE,True,v3.0
+HOG,Harley-Davidson Inc.,Consumer Cyclical,Recreational Vehicles,NYSE,True,v3.0
+GRMN,Garmin Ltd.,Technology,Scientific & Technical Instruments,NYSE,True,v3.0
+RL,Ralph Lauren Corporation,Consumer Cyclical,Apparel Manufacturing,NYSE,True,v3.0
+PVH,PVH Corp.,Consumer Cyclical,Apparel Manufacturing,NYSE,True,v3.0
+VFC,V.F. Corporation,Consumer Cyclical,Apparel Manufacturing,NYSE,True,v3.0
+PM,Philip Morris International Inc.,Consumer Defensive,Tobacco,NYSE,True,v3.0
+CL,Colgate-Palmolive Company,Consumer Defensive,Household & Personal Products,NYSE,True,v3.0
+KMB,Kimberly-Clark Corporation,Consumer Defensive,Household & Personal Products,NYSE,True,v3.0
+GIS,General Mills Inc.,Consumer Defensive,Packaged Foods,NYSE,True,v3.0
+SYY,Sysco Corporation,Consumer Defensive,Food Distribution,NYSE,True,v3.0
+ADM,Archer-Daniels-Midland Company,Consumer Defensive,Farm Products,NYSE,True,v3.0
+CAG,Conagra Brands Inc.,Consumer Defensive,Packaged Foods,NYSE,True,v3.0
+CPB,The Campbell's Company,Consumer Defensive,Packaged Foods,NASDAQ,True,v3.0
+MKC,McCormick & Company Inc.,Consumer Defensive,Packaged Foods,NYSE,True,v3.0
+CLX,The Clorox Company,Consumer Defensive,Household & Personal Products,NYSE,True,v3.0
+EL,The Estee Lauder Companies Inc.,Consumer Defensive,Household & Personal Products,NYSE,True,v3.0
+TAP,Molson Coors Beverage Company,Consumer Defensive,Beverages - Brewers,NYSE,True,v3.0
+TSN,Tyson Foods Inc.,Consumer Defensive,Farm Products,NYSE,True,v3.0
+HRL,Hormel Foods Corporation,Consumer Defensive,Packaged Foods,NYSE,True,v3.0
+CI,The Cigna Group,Healthcare,Healthcare Plans,NYSE,True,v3.0
+HUM,Humana Inc.,Healthcare,Healthcare Plans,NYSE,True,v3.0
+SYK,Stryker Corporation,Healthcare,Medical Devices,NYSE,True,v3.0
+BSX,Boston Scientific Corporation,Healthcare,Medical Devices,NYSE,True,v3.0
+EW,Edwards Lifesciences Corporation,Healthcare,Medical Devices,NYSE,True,v3.0
+BIIB,Biogen Inc.,Healthcare,Drug Manufacturers - General,NASDAQ,True,v3.0
+VRTX,Vertex Pharmaceuticals Inc.,Healthcare,Biotechnology,NASDAQ,True,v3.0
+ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,NYSE,True,v3.0
+DHR,Danaher Corporation,Healthcare,Diagnostics & Research,NYSE,True,v3.0
+HCA,HCA Healthcare Inc.,Healthcare,Medical Care Facilities,NYSE,True,v3.0
+MCK,McKesson Corporation,Healthcare,Medical Distribution,NYSE,True,v3.0
+CAH,Cardinal Health Inc.,Healthcare,Medical Distribution,NYSE,True,v3.0
+BAX,Baxter International Inc.,Healthcare,Medical Instruments & Supplies,NYSE,True,v3.0
+ALGN,Align Technology Inc.,Healthcare,Medical Instruments & Supplies,NASDAQ,True,v3.0
+DXCM,DexCom Inc.,Healthcare,Medical Devices,NASDAQ,True,v3.0
+DGX,Quest Diagnostics Incorporated,Healthcare,Diagnostics & Research,NYSE,True,v3.0
+INCY,Incyte Corporation,Healthcare,Biotechnology,NASDAQ,True,v3.0
+UHS,Universal Health Services Inc.,Healthcare,Medical Care Facilities,NYSE,True,v3.0
+AON,Aon plc,Financial Services,Insurance Brokers,NYSE,True,v3.0
+PGR,The Progressive Corporation,Financial Services,Insurance - Property & Casualty,NYSE,True,v3.0
+TRV,The Travelers Companies Inc.,Financial Services,Insurance - Property & Casualty,NYSE,True,v3.0
+ALL,The Allstate Corporation,Financial Services,Insurance - Property & Casualty,NYSE,True,v3.0
+PRU,Prudential Financial Inc.,Financial Services,Insurance - Life,NYSE,True,v3.0
+AIG,American International Group Inc.,Financial Services,Insurance - Diversified,NYSE,True,v3.0
+COF,Capital One Financial Corporation,Financial Services,Credit Services,NYSE,True,v3.0
+USB,U.S. Bancorp,Financial Services,Banks - Regional,NYSE,True,v3.0
+PNC,The PNC Financial Services Group Inc.,Financial Services,Banks - Regional,NYSE,True,v3.0
+ICE,Intercontinental Exchange Inc.,Financial Services,Financial Data & Stock Exchanges,NYSE,True,v3.0
+CME,CME Group Inc.,Financial Services,Financial Data & Stock Exchanges,NASDAQ,True,v3.0
+MCO,Moody's Corporation,Financial Services,Financial Data & Stock Exchanges,NYSE,True,v3.0
+TROW,T. Rowe Price Group Inc.,Financial Services,Asset Management,NASDAQ,True,v3.0
+FITB,Fifth Third Bancorp,Financial Services,Banks - Regional,NASDAQ,True,v3.0
+KEY,KeyCorp,Financial Services,Banks - Regional,NYSE,True,v3.0
+HBAN,Huntington Bancshares Incorporated,Financial Services,Banks - Regional,NASDAQ,True,v3.0
+MTB,M&T Bank Corporation,Financial Services,Banks - Regional,NYSE,True,v3.0
+NTRS,Northern Trust Corporation,Financial Services,Asset Management,NASDAQ,True,v3.0
+AFL,Aflac Incorporated,Financial Services,Insurance - Life,NYSE,True,v3.0
+HIG,The Hartford Insurance Group Inc.,Financial Services,Insurance - Diversified,NYSE,True,v3.0
+BEN,Franklin Resources Inc.,Financial Services,Asset Management,NYSE,True,v3.0
+UNP,Union Pacific Corporation,Industrials,Railroads,NYSE,True,v3.0
+CSX,CSX Corporation,Industrials,Railroads,NASDAQ,True,v3.0
+NSC,Norfolk Southern Corporation,Industrials,Railroads,NYSE,True,v3.0
+FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics,NYSE,True,v3.0
+DE,Deere & Company,Industrials,Farm & Heavy Construction Machinery,NYSE,True,v3.0
+EMR,Emerson Electric Co.,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+ETN,Eaton Corporation plc,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+PH,Parker-Hannifin Corporation,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+ROK,Rockwell Automation Inc.,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+NOC,Northrop Grumman Corporation,Industrials,Aerospace & Defense,NYSE,True,v3.0
+RSG,Republic Services Inc.,Industrials,Waste Management,NYSE,True,v3.0
+CMI,Cummins Inc.,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+DOV,Dover Corporation,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+SWK,Stanley Black & Decker Inc.,Industrials,Tools & Accessories,NYSE,True,v3.0
+FAST,Fastenal Company,Industrials,Industrial Distribution,NASDAQ,True,v3.0
+GWW,W.W. Grainger Inc.,Industrials,Industrial Distribution,NYSE,True,v3.0
+EFX,Equifax Inc.,Industrials,Consulting Services,NYSE,True,v3.0
+URI,United Rentals Inc.,Industrials,Rental & Leasing Services,NYSE,True,v3.0
+AME,AMETEK Inc.,Industrials,Specialty Industrial Machinery,NYSE,True,v3.0
+ROP,Roper Technologies Inc.,Technology,Software - Application,NASDAQ,True,v3.0
+PWR,Quanta Services Inc.,Industrials,Engineering & Construction,NYSE,True,v3.0
+CHRW,C.H. Robinson Worldwide Inc.,Industrials,Integrated Freight & Logistics,NASDAQ,True,v3.0
+EOG,EOG Resources Inc.,Energy,Oil & Gas E&P,NYSE,True,v3.0
+OXY,Occidental Petroleum Corporation,Energy,Oil & Gas E&P,NYSE,True,v3.0
+VLO,Valero Energy Corporation,Energy,Oil & Gas Refining & Marketing,NYSE,True,v3.0
+HAL,Halliburton Company,Energy,Oil & Gas Equipment & Services,NYSE,True,v3.0
+OKE,ONEOK Inc.,Energy,Oil & Gas Midstream,NYSE,True,v3.0
+DVN,Devon Energy Corporation,Energy,Oil & Gas E&P,NYSE,True,v3.0
+APA,APA Corporation,Energy,Oil & Gas E&P,NASDAQ,True,v3.0
+EQT,EQT Corporation,Energy,Oil & Gas E&P,NYSE,True,v3.0
+D,Dominion Energy Inc.,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+AEP,American Electric Power Company Inc.,Utilities,Utilities - Regulated Electric,NASDAQ,True,v3.0
+EXC,Exelon Corporation,Utilities,Utilities - Regulated Electric,NASDAQ,True,v3.0
+XEL,Xcel Energy Inc.,Utilities,Utilities - Regulated Electric,NASDAQ,True,v3.0
+PEG,Public Service Enterprise Group Incorporated,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+ED,Consolidated Edison Inc.,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+PCG,PG&E Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+EIX,Edison International,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+ETR,Entergy Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+DTE,DTE Energy Company,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+AEE,Ameren Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+CMS,CMS Energy Corporation,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+CNP,CenterPoint Energy Inc.,Utilities,Utilities - Regulated Electric,NYSE,True,v3.0
+APD,Air Products and Chemicals Inc.,Basic Materials,Specialty Chemicals,NYSE,True,v3.0
+ECL,Ecolab Inc.,Basic Materials,Specialty Chemicals,NYSE,True,v3.0
+SHW,The Sherwin-Williams Company,Basic Materials,Specialty Chemicals,NYSE,True,v3.0
+NEM,Newmont Corporation,Basic Materials,Gold,NYSE,True,v3.0
+NUE,Nucor Corporation,Basic Materials,Steel,NYSE,True,v3.0
+MLM,Martin Marietta Materials Inc.,Basic Materials,Building Materials,NYSE,True,v3.0
+VMC,Vulcan Materials Company,Basic Materials,Building Materials,NYSE,True,v3.0
+CF,CF Industries Holdings Inc.,Basic Materials,Agricultural Inputs,NYSE,True,v3.0
+MOS,The Mosaic Company,Basic Materials,Agricultural Inputs,NYSE,True,v3.0
+ALB,Albemarle Corporation,Basic Materials,Specialty Chemicals,NYSE,True,v3.0
+PKG,Packaging Corporation of America,Consumer Cyclical,Packaging & Containers,NYSE,True,v3.0
+AMT,American Tower Corporation,Real Estate,REIT - Specialty,NYSE,True,v3.0
+PLD,Prologis Inc.,Real Estate,REIT - Industrial,NYSE,True,v3.0
+CCI,Crown Castle Inc.,Real Estate,REIT - Specialty,NYSE,True,v3.0
+PSA,Public Storage,Real Estate,REIT - Industrial,NYSE,True,v3.0
+VTR,Ventas Inc.,Real Estate,REIT - Healthcare Facilities,NYSE,True,v3.0
+BXP,BXP Inc.,Real Estate,REIT - Office,NYSE,True,v3.0

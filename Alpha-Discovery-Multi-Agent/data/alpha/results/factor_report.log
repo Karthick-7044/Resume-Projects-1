@@ -1,0 +1,9 @@
+﻿accepted LLM factors: 7 test ['2025-01-01', '2026-10-23'] panel end 2026-10-23
+IC +0.0037 t +0.72 pHolm 1.0 | net SR +0.93 | Positive but not statistically significant; treat as unconfirmed. | if_else(lt(cs_rank(ts_mean(debt_to_equity, 60)), 0), ts_mean(earnings_
+IC -0.0058 t -0.81 pHolm 1.0 | net SR +0.30 | Positive but not statistically significant; treat as unconfirmed. | book_to_market_cs_rank * ts_zscore(ewm(yield_curve_10y2y,10),60) * reg
+IC +0.0059 t +0.94 pHolm 1.0 | net SR +0.60 | Positive but not statistically significant; treat as unconfirmed. | (1 - regime_high_vol) * ts_zscore(ts_mean(cs_rank(roe) + cs_rank(earni
+IC -0.0062 t -0.88 pHolm 1.0 | net SR -1.13 | Not significant on the test period. | if_else(gt(vix_zscore_60d, 0), -volatility_20d_cs_rank, cs_rank(revenu
+IC -0.0015 t -0.13 pHolm 1.0 | net SR -0.45 | Not significant on the test period. | cs_rank(-ewm(volatility_20d, 20)) * (1 - 2 * min(max(vix_zscore_60d, 0
+IC +0.0094 t +1.89 pHolm 0.2076599815753235 | net SR +0.43 | Positive but not statistically significant; treat as unconfirmed. | cs_rank(ts_zscore(roe,126)) - cs_rank(ts_zscore(pe_ratio,126))
+IC +0.0051 t +0.53 pHolm 1.0 | net SR +0.25 | Positive but not statistically significant; treat as unconfirmed. | cs_rank(ts_mean(momentum_252_21d * (regime_prob_bull - regime_prob_hig
+COMPOSITE IC +0.0013 t +0.21 | gross +0.09 net -0.12 | Not significant on the test period.

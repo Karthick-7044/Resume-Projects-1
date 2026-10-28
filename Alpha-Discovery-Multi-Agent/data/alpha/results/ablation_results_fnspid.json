@@ -1,0 +1,523 @@
+{
+  "generated_at": "2026-10-08T09:44:37.350303",
+  "dataset_version": "v2.0.0",
+  "budget": 8,
+  "top_k": 2,
+  "seed": 42,
+  "window": "fnspid",
+  "periods": {
+    "train": [
+      "2013-01-01",
+      "2019-12-31"
+    ],
+    "valid": [
+      "2020-01-01",
+      "2021-12-31"
+    ],
+    "test": [
+      "2022-01-01",
+      "2023-12-31"
+    ]
+  },
+  "configs": {
+    "Full": {
+      "label": "All domains + macro, critic and memory",
+      "domains": [
+        "cross_sectional",
+        "fundamental",
+        "macro",
+        "news",
+        "regime",
+        "technical",
+        "valuation"
+      ],
+      "use_critic": true,
+      "run_id": "alpha_20261008_094437_fnspid_Full",
+      "n_tested": 11,
+      "verdicts": {
+        "REJECT": 6,
+        "INVALID": 3,
+        "ACCEPT": 1,
+        "REVISE": 1
+      },
+      "n_selected": 1,
+      "selected": [
+        {
+          "experiment_id": "exp_179057e218",
+          "title": "Momentum Dip Buy",
+          "formula": "cs_rank(momentum_60d) - cs_rank(momentum_5d)",
+          "domains": "technical",
+          "dominant_domain": "technical",
+          "verdict": "ACCEPT",
+          "critique": "ACCEPT: 'Momentum Dip Buy' - train IC 0.0161 / Sharpe 0.11, validation IC 0.0152 / Sharpe 0.34; regime_dependence: IC is positive in ['Bull / Low Volatility', 'Bear / High Volatility'] but negative in ['Sideways / Normal Volatility']; transaction_costs: Sharpe falls from 0.73 (0 bps) to -0.50 (20 bps); annual turnover 54x",
+          "train": {
+            "ann_return": 0.009701978143366369,
+            "ann_vol": 0.08716078420994133,
+            "sharpe": 0.11131127641070244,
+            "gross_sharpe": 0.7307553827633745,
+            "max_drawdown": -0.2920227161806055,
+            "calmar": 0.03322336792924714,
+            "annual_turnover": 53.828989784335974,
+            "hit_rate": 0.5141884222474461,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.2149155326337734,
+            "rank_ic": 0.01605100042115915,
+            "rank_ic_t": 1.8704099282471107,
+            "rank_ic_5d": 0.05875535257296211,
+            "cost_sensitivity": {
+              "0": 0.7307553827633745,
+              "5": 0.42098421531168095,
+              "10": 0.11131127641070244,
+              "20": -0.5017245171039542,
+              "50": -2.198322843514561
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 1379,
+                "sharpe": -0.08451433088405004,
+                "ann_return": -0.006940575405654022,
+                "rank_ic": 0.009053737095911701
+              },
+              "Bear / High Volatility": {
+                "days": 304,
+                "sharpe": 0.8447956302391154,
+                "ann_return": 0.09015312832774511,
+                "rank_ic": 0.0552217716005384
+              },
+              "Sideways / Normal Volatility": {
+                "days": 79,
+                "sharpe": -0.10475259313049262,
+                "ann_return": -0.00937483593197557,
+                "rank_ic": -0.012539990882829024
+              }
+            }
+          },
+          "valid": {
+            "ann_return": 0.04372770860798301,
+            "ann_vol": 0.12762497587808821,
+            "sharpe": 0.3426265768680985,
+            "gross_sharpe": 0.768906381612348,
+            "max_drawdown": -0.18221770472563126,
+            "calmar": 0.23997508186059455,
+            "annual_turnover": 54.4390099009901,
+            "hit_rate": 0.4910891089108911,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.4462075843648194,
+            "rank_ic": 0.01524852042654812,
+            "rank_ic_t": 0.8779595481007422,
+            "rank_ic_5d": -0.012476867377774547,
+            "cost_sensitivity": {
+              "0": 0.768906381612348,
+              "5": 0.5560276493163057,
+              "10": 0.3426265768680985,
+              "20": -0.08368949402597942,
+              "50": -1.3235928648483586
+            },
+            "by_regime": {
+              "Bull / Low Volatility": {
+                "days": 264,
+                "sharpe": 0.18146086654202964,
+                "ann_return": 0.01684991164729993,
+                "rank_ic": 0.0026215569473533504
+              },
+              "Sideways / Normal Volatility": {
+                "days": 27,
+                "sharpe": 3.5416162935305526,
+                "ann_return": 0.548153074729484,
+                "rank_ic": 0.09842026757705416
+              },
+              "Bear / High Volatility": {
+                "days": 214,
+                "sharpe": 0.08403311356960748,
+                "ann_return": 0.013242911936673813,
+                "rank_ic": 0.02033207736787407
+              }
+            }
+          },
+          "test": {
+            "ann_return": -0.07775538819888746,
+            "ann_vol": 0.1264016876015435,
+            "sharpe": -0.6151451746751677,
+            "gross_sharpe": -0.19185747965963965,
+            "max_drawdown": -0.20105475549293084,
+            "calmar": -0.38673737414592696,
+            "annual_turnover": 53.496407185628755,
+            "hit_rate": 0.49700598802395207,
+            "active_day_share": 1.0,
+            "max_ticker_pnl_share": 0.34879062726906856,
+            "rank_ic": -0.0023179262285306684,
+            "rank_ic_t": -0.13315837100285624,
+            "rank_ic_5d": -0.0020831895921997533,
+            "cost_sensitivity": {
+              "0": -0.19185747965963965,
+              "5": -0.4036264500204463,
+              "10": -0.6151451746751677,
+              "20": -1.0354376913317898,
+              "50": -2.2411110879137883
+            },
+            "by_regime": {
+              "Bear / High Volatility": {
+                "days": 334,
+                "sharpe": -1.144328689347267,
+                "ann_return": -0.15839881113738435,
+                "rank_ic": -0.014469078476525617
+              },
+              "Bull / Low Volatility": {
+                "days": 163,
+                "sharpe": 0.8111073068159547,
+                "ann_return": 0.07964878345209091,
+                "rank_ic": 0.019135000471811568
+              },
+              "Sideways / Normal Volatility": {
+                "days": 4,
+                "sharpe": null,
+                "ann_return": null,
+                "rank_ic": 0.1380965234401021
+              }
+            }
+          }
+        }
+      ],
+      "combined": {
+        "formula": "cs_zscore(cs_rank(momentum_60d) - cs_rank(momentum_5d))",
+        "train": {
+          "ann_return": 0.009424534284513926,
+          "ann_vol": 0.08710848004485389,
+          "sharpe": 0.10819307465428218,
+          "gross_sharpe": 0.7282332625857357,
+          "max_drawdown": -0.2921068432484343,
+          "calmar": 0.03226399689821181,
+          "annual_turnover": 53.84962542565266,
+          "hit_rate": 0.5141884222474461,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.21672291808832084,
+          "rank_ic": 0.016330876771573615,
+          "rank_ic_t": 1.903299432619817,
+          "rank_ic_5d": 0.0587430610224709,
+          "cost_sensitivity": {
+            "0": 0.7282332625857357,
+            "5": 0.41816303629046503,
+            "10": 0.10819307465428218,
+            "20": -0.5054151572546896,
+            "50": -2.2033417073559365
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 1379,
+              "sharpe": -0.08549893250152342,
+              "ann_return": -0.007016125384353639,
+              "rank_ic": 0.009336707816288231
+            },
+            "Bear / High Volatility": {
+              "days": 304,
+              "sharpe": 0.8349591380262651,
+              "ann_return": 0.08909857159649093,
+              "rank_ic": 0.055597371468160656
+            },
+            "Sideways / Normal Volatility": {
+              "days": 79,
+              "sharpe": -0.11394934765331995,
+              "ann_return": -0.01018606899994998,
+              "rank_ic": -0.012682482702146811
+            }
+          }
+        },
+        "valid": {
+          "ann_return": 0.044666345300990305,
+          "ann_vol": 0.1275987864632232,
+          "sharpe": 0.35005305723549446,
+          "gross_sharpe": 0.7765841665158172,
+          "max_drawdown": -0.18067277501399093,
+          "calmar": 0.2472223349507497,
+          "annual_turnover": 54.45980198019802,
+          "hit_rate": 0.4910891089108911,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.4455975738357523,
+          "rank_ic": 0.015514033984362852,
+          "rank_ic_t": 0.8929042648833777,
+          "rank_ic_5d": -0.01200214357329858,
+          "cost_sensitivity": {
+            "0": 0.7765841665158172,
+            "5": 0.5635825727723291,
+            "10": 0.35005305723549446,
+            "20": -0.07653331086580267,
+            "50": -1.3172948594123564
+          },
+          "by_regime": {
+            "Bull / Low Volatility": {
+              "days": 264,
+              "sharpe": 0.19018745238813906,
+              "ann_return": 0.017652134610273325,
+              "rank_ic": 0.00293253912891374
+            },
+            "Sideways / Normal Volatility": {
+              "days": 27,
+              "sharpe": 3.5416162935305526,
+              "ann_return": 0.548153074729484,
+              "rank_ic": 0.10062568734624612
+            },
+            "Bear / High Volatility": {
+              "days": 214,
+              "sharpe": 0.09181882871640282,
+              "ann_return": 0.014468260851364026,
+              "rank_ic": 0.020296744269726018
+            }
+          }
+        },
+        "test": {
+          "ann_return": -0.077286040674636,
+          "ann_vol": 0.12650039472141672,
+          "sharpe": -0.6109549368983221,
+          "gross_sharpe": -0.18768819824680358,
+          "max_drawdown": -0.2003284927997342,
+          "calmar": -0.3857965464348492,
+          "annual_turnover": 53.536646706586836,
+          "hit_rate": 0.49700598802395207,
+          "active_day_share": 1.0,
+          "max_ticker_pnl_share": 0.3522119795418606,
+          "rank_ic": -0.0020524327587949855,
+          "rank_ic_t": -0.11782634230820856,
+          "rank_ic_5d": -0.0018374207292330713,
+          "cost_sensitivity": {
+            "0": -0.18768819824680358,
+            "5": -0.39944917923813844,
+            "10": -0.6109549368983221,
+            "20": -1.0312079586109943,
+            "50": -2.236691746980669
+          },
+          "by_regime": {
+            "Bear / High Volatility": {
+              "days": 334,
+              "sharpe": -1.1381165256545758,
+              "ann_return": -0.15769478985100713,
+              "rank_ic": -0.014445919404435095
+            },
+            "Bull / Low Volatility": {
+              "days": 163,
+              "sharpe": 0.8111073068159547,
+              "ann_return": 0.07964878345209091,
+              "rank_ic": 0.019903571626776854
+            },
+            "Sideways / Normal Volatility": {
+              "days": 4,
+              "sharpe": null,
+              "ann_return": null,
+              "rank_ic": 0.1380965234401021
+            }
+          }
+        }
+      },
+      "experiments": [
+        {
+          "experiment_id": "exp_3e848bb49b",
+          "iteration": 0,
+          "hypothesis_id": "LLM_41589c63",
+          "hypothesis_title": "Profitable Value",
+          "formula": "earnings_yield_cs_rank + roe_cs_rank",
+          "domains": "cross_sectional",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": -0.005519849593749715,
+          "train_sharpe": -0.5857160252659394,
+          "valid_rank_ic": 0.012913810753360245,
+          "valid_sharpe": -0.869334567991087,
+          "annual_turnover": 3.819807037457435,
+          "dominant_domain": "cross_sectional",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Profitable Value' - train IC -0.0055 / Sharpe -0.59, validation IC 0.0129 / Sharpe -0.87; plausibility: Training rank IC -0.0055 contradicts the hypothesis' expected positive relation; regime_dependence: IC is positive in ['Sideways / Normal Volatility'] but negative in ['Bull / Low Volatility', 'Bear / High Volatility']"
+        },
+        {
+          "experiment_id": "exp_5590b0e28d",
+          "iteration": 1,
+          "hypothesis_id": "LLM_41589c63",
+          "hypothesis_title": "Profitable Value",
+          "formula": "earnings_yield_cs_rank + 2 * roe_cs_rank",
+          "domains": "cross_sectional",
+          "verdict": "REJECT",
+          "score": 3.1678772221935474,
+          "train_rank_ic": 0.0035477616972904974,
+          "train_sharpe": -0.3597477294432271,
+          "valid_rank_ic": 0.03424177701924216,
+          "valid_sharpe": 0.5747980810773257,
+          "annual_turnover": 2.8999943246311033,
+          "dominant_domain": "cross_sectional",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Profitable Value' - train IC 0.0035 / Sharpe -0.36, validation IC 0.0342 / Sharpe 0.57; plausibility: Training rank IC 0.0035 is economically negligible; stability: IC sign is consistent in only 43% of training years; regime_dependence: IC is positive in ['Bull / Low Volatility', 'Sideways / Normal Volatility'] but negative in ['Bear / High Volatility']; novelty: Rank correlation 0.91 with the 'quality' style: little incremental information"
+        },
+        {
+          "experiment_id": "exp_d14ea6fdeb",
+          "iteration": 2,
+          "hypothesis_id": "LLM_41589c63",
+          "hypothesis_title": "Profitable Value",
+          "formula": "cs_rank(ts_mean(earnings_yield, 5)) + roe_cs_rank",
+          "domains": "cross_sectional,valuation",
+          "verdict": "REJECT",
+          "score": -1.0,
+          "train_rank_ic": -0.004630934904312224,
+          "train_sharpe": -0.6381265904641535,
+          "valid_rank_ic": 0.01104076744945587,
+          "valid_sharpe": -0.9398763453560289,
+          "annual_turnover": 3.297071509648128,
+          "dominant_domain": "valuation",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Profitable Value' - train IC -0.0046 / Sharpe -0.64, validation IC 0.0110 / Sharpe -0.94; plausibility: Training rank IC -0.0046 contradicts the hypothesis' expected positive relation; regime_dependence: IC is positive in ['Sideways / Normal Volatility'] but negative in ['Bull / Low Volatility', 'Bear / High Volatility']"
+        },
+        {
+          "experiment_id": "exp_179057e218",
+          "iteration": 3,
+          "hypothesis_id": "LLM_86ac7538",
+          "hypothesis_title": "Momentum Dip Buy",
+          "formula": "cs_rank(momentum_60d) - cs_rank(momentum_5d)",
+          "domains": "technical",
+          "verdict": "ACCEPT",
+          "score": 1.4105086868718366,
+          "train_rank_ic": 0.01605100042115915,
+          "train_sharpe": 0.11131127641070244,
+          "valid_rank_ic": 0.01524852042654812,
+          "valid_sharpe": 0.3426265768680985,
+          "annual_turnover": 53.828989784335974,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "ACCEPT: 'Momentum Dip Buy' - train IC 0.0161 / Sharpe 0.11, validation IC 0.0152 / Sharpe 0.34; regime_dependence: IC is positive in ['Bull / Low Volatility', 'Bear / High Volatility'] but negative in ['Sideways / Normal Volatility']; transaction_costs: Sharpe falls from 0.73 (0 bps) to -0.50 (20 bps); annual turnover 54x"
+        },
+        {
+          "experiment_id": "exp_32a7c3ebdd",
+          "iteration": 4,
+          "hypothesis_id": "LLM_86ac7538",
+          "hypothesis_title": "Momentum Dip Buy",
+          "formula": "cs_rank(momentum_60d) * (-cs_rank(momentum_5d))",
+          "domains": "technical",
+          "verdict": "REVISE",
+          "score": -2.144820172562293,
+          "train_rank_ic": 0.006154577533735446,
+          "train_sharpe": -0.512578740616653,
+          "valid_rank_ic": -0.01144820172562293,
+          "valid_sharpe": -0.25495012183391824,
+          "annual_turnover": 66.33306469920545,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REVISE: 'Momentum Dip Buy' - train IC 0.0062 / Sharpe -0.51, validation IC -0.0114 / Sharpe -0.25; stability: Rank IC changes sign out of sample (train 0.0062, validation -0.0114); regime_dependence: IC is positive in ['Bull / Low Volatility', 'Sideways / Normal Volatility'] but negative in ['Bear / High Volatility']; transaction_costs: Sharpe falls from 0.36 (0 bps) to -1.36 (20 bps); annual turnover 66x"
+        },
+        {
+          "experiment_id": "exp_c1faa0f168",
+          "iteration": 5,
+          "hypothesis_id": "LLM_86ac7538",
+          "hypothesis_title": "Momentum Dip Buy",
+          "formula": "regime_bull * ewm(cs_rank(momentum_60d) * (-cs_rank(momentum_5d)), 5)",
+          "domains": "regime,technical",
+          "verdict": "REJECT",
+          "score": -1.619834710743801,
+          "train_rank_ic": -0.004077744205348459,
+          "train_sharpe": -0.47517704627155904,
+          "valid_rank_ic": -0.006198347107438009,
+          "valid_sharpe": -0.9589411978753359,
+          "annual_turnover": 33.506560726447226,
+          "dominant_domain": "technical",
+          "revision_action": "llm_revision",
+          "parent_id": "exp_32a7c3ebdd",
+          "critique": "REJECT: 'Momentum Dip Buy' - train IC -0.0041 / Sharpe -0.48, validation IC -0.0062 / Sharpe -0.96; plausibility: Training rank IC -0.0041 contradicts the hypothesis' expected positive relation; stability: IC sign is consistent in only 57% of training years; transaction_costs: Sharpe falls from 0.06 (0 bps) to -1.01 (20 bps); annual turnover 34x"
+        },
+        {
+          "experiment_id": "exp_01fbc4f45a",
+          "iteration": 6,
+          "hypothesis_id": "LLM_86ac7538",
+          "hypothesis_title": "Momentum Dip Buy",
+          "formula": "if_else(lt(momentum_5d, 0), cs_rank(momentum_60d), 0)",
+          "domains": "technical",
+          "verdict": "REJECT",
+          "score": 0.1957009636233552,
+          "train_rank_ic": 0.00418590463866234,
+          "train_sharpe": -0.552862039689336,
+          "valid_rank_ic": 0.004265001201782072,
+          "valid_sharpe": 0.6768033737805923,
+          "annual_turnover": 58.38538592508513,
+          "dominant_domain": "technical",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Momentum Dip Buy' - train IC 0.0042 / Sharpe -0.55, validation IC 0.0043 / Sharpe 0.68; plausibility: Training rank IC 0.0042 is economically negligible; stability: IC sign is consistent in only 57% of training years; regime_dependence: IC is positive in ['Bull / Low Volatility', 'Bear / High Volatility'] but negative in ['Sideways / Normal Volatility']; transaction_costs: Sharpe falls from 0.05 (0 bps) to -1.14 (20 bps); annual turnover 58x"
+        },
+        {
+          "experiment_id": "exp_4fcffbb667",
+          "iteration": 7,
+          "hypothesis_id": "LLM_a93ec022",
+          "hypothesis_title": "Defensive Positioning in High Volatility Regimes",
+          "formula": "if_else(gt(vix_zscore_60d, 1.0), -cs_rank(volatility_20d), 0)",
+          "domains": "cross_sectional,technical,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "DEGENERATE: factor has no cross-sectional variation on most dates (market-wide features must be combined with stock-level features)"
+        },
+        {
+          "experiment_id": "exp_0095fe5614",
+          "iteration": 7,
+          "hypothesis_id": "LLM_a93ec022",
+          "hypothesis_title": "Defensive Positioning in High Volatility Regimes",
+          "formula": "if_else(gt(vix_zscore_60d, 1.0), -cs_rank(volatility_20d) + earnings_yield_cs_rank, 0)",
+          "domains": "cross_sectional,technical,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "DEGENERATE: factor has no cross-sectional variation on most dates (market-wide features must be combined with stock-level features)"
+        },
+        {
+          "experiment_id": "exp_dfa1c7e1e2",
+          "iteration": 7,
+          "hypothesis_id": "LLM_a93ec022",
+          "hypothesis_title": "Defensive Positioning in High Volatility Regimes",
+          "formula": "if_else(gt(vix_zscore_60d, 1.0), -cs_rank(volatility_60d), 0)",
+          "domains": "cross_sectional,technical,macro",
+          "verdict": "INVALID",
+          "score": null,
+          "train_rank_ic": null,
+          "train_sharpe": null,
+          "valid_rank_ic": null,
+          "valid_sharpe": null,
+          "annual_turnover": null,
+          "dominant_domain": null,
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "DEGENERATE: factor has no cross-sectional variation on most dates (market-wide features must be combined with stock-level features)"
+        },
+        {
+          "experiment_id": "exp_7eeba9adcd",
+          "iteration": 7,
+          "hypothesis_id": "LLM_a93ec022",
+          "hypothesis_title": "Defensive Positioning in High Volatility Regimes",
+          "formula": "if_else(gt(vix_zscore_60d, 1.0), -cs_rank(volatility_20d), earnings_yield_cs_rank)",
+          "domains": "cross_sectional,macro,technical",
+          "verdict": "REJECT",
+          "score": -2.0285028502850286,
+          "train_rank_ic": -0.016715274255112565,
+          "train_sharpe": -0.8318530155194422,
+          "valid_rank_ic": -0.010285028502850284,
+          "valid_sharpe": -1.426585664387042,
+          "annual_turnover": 13.670141884222476,
+          "dominant_domain": "cross_sectional",
+          "revision_action": null,
+          "parent_id": null,
+          "critique": "REJECT: 'Defensive Positioning in High Volatility Regimes' - train IC -0.0167 / Sharpe -0.83, validation IC -0.0103 / Sharpe -1.43; plausibility: Training rank IC -0.0167 contradicts the hypothesis' expected positive relation; regime_dependence: IC is positive in ['Sideways / Normal Volatility'] but negative in ['Bull / Low Volatility', 'Bear / High Volatility']; novelty: Rank correlation 0.88 with the 'value' style: little incremental information"
+        }
+      ]
+    }
+  }
+}

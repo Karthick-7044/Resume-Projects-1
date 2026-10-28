@@ -1,0 +1,610 @@
+{
+  "library": "offline",
+  "library_size": 70,
+  "universe_size": 192,
+  "rebalance_days": 21,
+  "top_k": 3,
+  "folds": [
+    {
+      "year": 2022,
+      "critic_n_passed": 0,
+      "critic_max_dsr": 0.4874054857017049,
+      "naive": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(close_to_sma20)",
+          "-cs_rank(momentum_5d)"
+        ],
+        "rank_ic": 0.007531559640639286,
+        "sharpe": -0.5381631495562222,
+        "gross_sharpe": -0.3244245601688954
+      },
+      "critic_v1": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(close_to_sma20)",
+          "-cs_rank(momentum_5d)"
+        ],
+        "rank_ic": 0.007531559640639286,
+        "sharpe": -0.5381631495562222,
+        "gross_sharpe": -0.3244245601688954
+      },
+      "critic": {
+        "selected": [],
+        "rank_ic": null,
+        "sharpe": null
+      },
+      "composite": {
+        "selected": [
+          "-cs_rank(rsi_14)",
+          "-cs_rank(close_to_sma20)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)",
+          "cs_rank(momentum_252_21d)",
+          "cs_rank(sma50_to_sma200)",
+          "ts_mean(cs_rank(close_to_sma200), 5)",
+          "-cs_rank(momentum_5d)",
+          "ts_mean(-cs_rank(momentum_5d), 5)",
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "cs_rank(revenue_growth) + cs_rank(earnings_yield)",
+          "ts_mean(cs_rank(revenue_growth) + cs_rank(earnings_yield), 5)",
+          "cs_rank(ocf_yield) + cs_rank(momentum_252_21d)",
+          "cs_rank(cash_to_assets)",
+          "-cs_rank(accruals_ratio)",
+          "cs_rank(roe)",
+          "cs_rank(revenue_growth)",
+          "cs_rank(net_income_growth)",
+          "-cs_rank(ts_sum(negative_news_count, 20) / (ts_sum(news_count, 20) + 1))",
+          "cs_rank(sentiment_20d)",
+          "cs_rank(sent_surprise)",
+          "cs_rank(sentiment_5d - sentiment_20d)",
+          "cs_rank(sent_momentum)",
+          "-cs_rank(news_vol_surprise)",
+          "ts_mean(-cs_rank(news_vol_surprise), 5)",
+          "-cs_rank(ts_mean(news_vol_surprise, 5))",
+          "if_else(regime_bull, cs_rank(sent_decay), cs_rank(roe))",
+          "if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))",
+          "regime_bull * (cs_rank(roe) + cs_rank(sent_decay))",
+          "regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))",
+          "regime_bull * (-cs_rank(momentum_5d))",
+          "if_else(gt(treasury_10y_chg_20d, 0), cs_rank(earnings_yield), cs_rank(revenue_growth))"
+        ],
+        "rank_ic": 0.01467724297040267,
+        "sharpe": -0.1535043887518115,
+        "gross_sharpe": 0.03711652838687972
+      },
+      "literature": {
+        "selected": [
+          "cs_rank(momentum_252_21d)",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(roe)",
+          "cs_rank(earnings_yield)",
+          "-cs_rank(volatility_60d)"
+        ],
+        "rank_ic": 0.020561776474991935,
+        "sharpe": 0.2981656771876774,
+        "gross_sharpe": 0.4330136738067068
+      },
+      "random": {
+        "selected": [
+          "cs_rank(sent_decay_pstd)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)",
+          "regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_high_vol) * cs_rank(momentum_60d)"
+        ],
+        "rank_ic": 0.003259578185103811,
+        "sharpe": -1.1196019606222525,
+        "gross_sharpe": -0.8257789655713247
+      }
+    },
+    {
+      "year": 2023,
+      "critic_n_passed": 0,
+      "critic_max_dsr": 0.6004864972833506,
+      "naive": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(close_to_sma20)",
+          "-cs_rank(momentum_5d)"
+        ],
+        "rank_ic": 0.012497013979697243,
+        "sharpe": -1.2009257910395716,
+        "gross_sharpe": -0.9296442742522812
+      },
+      "critic_v1": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(close_to_sma20)",
+          "-cs_rank(momentum_5d)"
+        ],
+        "rank_ic": 0.012497013979697243,
+        "sharpe": -1.2009257910395716,
+        "gross_sharpe": -0.9296442742522812
+      },
+      "critic": {
+        "selected": [],
+        "rank_ic": null,
+        "sharpe": null
+      },
+      "composite": {
+        "selected": [
+          "-cs_rank(rsi_14)",
+          "-cs_rank(close_to_sma20)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)",
+          "cs_rank(momentum_252_21d)",
+          "cs_rank(sma50_to_sma200)",
+          "ts_mean(cs_rank(close_to_sma200), 5)",
+          "-cs_rank(momentum_5d)",
+          "ts_mean(-cs_rank(momentum_5d), 5)",
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "cs_rank(revenue_growth) + cs_rank(earnings_yield)",
+          "ts_mean(cs_rank(revenue_growth) + cs_rank(earnings_yield), 5)",
+          "cs_rank(ocf_yield) + cs_rank(momentum_252_21d)",
+          "-cs_rank(accruals_ratio)",
+          "cs_rank(revenue_growth)",
+          "-cs_rank(ts_sum(negative_news_count, 20) / (ts_sum(news_count, 20) + 1))",
+          "cs_rank(sentiment_20d)",
+          "cs_rank(sent_surprise)",
+          "cs_rank(sentiment_5d - sentiment_20d)",
+          "cs_rank(sent_momentum)",
+          "-cs_rank(news_vol_surprise)",
+          "ts_mean(-cs_rank(news_vol_surprise), 5)",
+          "-cs_rank(ts_mean(news_vol_surprise, 5))",
+          "if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))",
+          "regime_bull * (cs_rank(roe) + cs_rank(sent_decay))",
+          "regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))",
+          "regime_bull * (-cs_rank(momentum_5d))",
+          "if_else(gt(treasury_10y_chg_20d, 0), cs_rank(earnings_yield), cs_rank(revenue_growth))"
+        ],
+        "rank_ic": 0.014038974682803608,
+        "sharpe": -1.2749171168156326,
+        "gross_sharpe": -1.0593971241899474
+      },
+      "literature": {
+        "selected": [
+          "cs_rank(momentum_252_21d)",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(roe)",
+          "cs_rank(earnings_yield)",
+          "-cs_rank(volatility_60d)"
+        ],
+        "rank_ic": 0.0028487743323556804,
+        "sharpe": -1.9751603324487905,
+        "gross_sharpe": -1.8464972379414206
+      },
+      "random": {
+        "selected": [
+          "-cs_rank(close_to_sma20)",
+          "cs_rank(sent_momentum)",
+          "if_else(regime_bull, cs_rank(momentum_60d), -cs_rank(volatility_60d))"
+        ],
+        "rank_ic": 0.002602251578034401,
+        "sharpe": -1.6493888729832797,
+        "gross_sharpe": -1.3335014630736375
+      }
+    },
+    {
+      "year": 2024,
+      "critic_n_passed": 0,
+      "critic_max_dsr": 0.6926243387912242,
+      "naive": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(momentum_5d)",
+          "-cs_rank(close_to_sma20)"
+        ],
+        "rank_ic": 0.023079343123741308,
+        "sharpe": -1.5385108598072454,
+        "gross_sharpe": -1.2344177373583085
+      },
+      "critic_v1": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(momentum_5d)",
+          "-cs_rank(close_to_sma20)"
+        ],
+        "rank_ic": 0.023079343123741308,
+        "sharpe": -1.5385108598072454,
+        "gross_sharpe": -1.2344177373583085
+      },
+      "critic": {
+        "selected": [],
+        "rank_ic": null,
+        "sharpe": null
+      },
+      "composite": {
+        "selected": [
+          "-cs_rank(rsi_14)",
+          "-cs_rank(close_to_sma20)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)",
+          "cs_rank(momentum_252_21d)",
+          "cs_rank(sma50_to_sma200)",
+          "ts_mean(cs_rank(close_to_sma200), 5)",
+          "-cs_rank(momentum_5d)",
+          "ts_mean(-cs_rank(momentum_5d), 5)",
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "cs_rank(revenue_growth) + cs_rank(earnings_yield)",
+          "ts_mean(cs_rank(revenue_growth) + cs_rank(earnings_yield), 5)",
+          "-cs_rank(accruals_ratio)",
+          "cs_rank(revenue_growth)",
+          "regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))",
+          "regime_bull * (-cs_rank(momentum_5d))"
+        ],
+        "rank_ic": 0.03237694739540715,
+        "sharpe": -0.5581312848181201,
+        "gross_sharpe": -0.2560477348065449
+      },
+      "literature": {
+        "selected": [
+          "cs_rank(momentum_252_21d)",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(roe)",
+          "cs_rank(earnings_yield)",
+          "-cs_rank(volatility_60d)"
+        ],
+        "rank_ic": 0.02605588570982668,
+        "sharpe": 0.1206310970870395,
+        "gross_sharpe": 0.31128359862139987
+      },
+      "random": {
+        "selected": [
+          "-cs_rank(asset_growth)",
+          "if_else(gt(treasury_10y_chg_20d, 0), cs_rank(earnings_yield), cs_rank(revenue_growth))",
+          "if_else(regime_high_vol, cs_rank(roe), cs_rank(momentum_60d))"
+        ],
+        "rank_ic": 0.002688164884240707,
+        "sharpe": 0.19538669400602354,
+        "gross_sharpe": 0.4589170980120713
+      }
+    },
+    {
+      "year": 2025,
+      "critic_n_passed": 0,
+      "critic_max_dsr": 0.6893241180730114,
+      "naive": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(momentum_252_21d)"
+        ],
+        "rank_ic": 0.01612049378156074,
+        "sharpe": 0.745272795790971,
+        "gross_sharpe": 1.0334052920510075
+      },
+      "critic_v1": {
+        "selected": [
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(momentum_252_21d)"
+        ],
+        "rank_ic": 0.01612049378156074,
+        "sharpe": 0.745272795790971,
+        "gross_sharpe": 1.0334052920510075
+      },
+      "critic": {
+        "selected": [],
+        "rank_ic": null,
+        "sharpe": null
+      },
+      "composite": {
+        "selected": [
+          "-cs_rank(rsi_14)",
+          "-cs_rank(close_to_sma20)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)",
+          "cs_rank(momentum_252_21d)",
+          "cs_rank(sma50_to_sma200)",
+          "cs_rank(close_to_sma200)",
+          "ts_mean(cs_rank(close_to_sma200), 5)",
+          "-cs_rank(momentum_5d)",
+          "ts_mean(-cs_rank(momentum_5d), 5)",
+          "-cs_rank(ts_mean(daily_return, 3))",
+          "cs_rank(revenue_growth) + cs_rank(earnings_yield)",
+          "ts_mean(cs_rank(revenue_growth) + cs_rank(earnings_yield), 5)",
+          "cs_rank(ocf_yield) + cs_rank(momentum_252_21d)",
+          "cs_rank(cash_to_assets)",
+          "-cs_rank(accruals_ratio)",
+          "cs_rank(roe)",
+          "cs_rank(revenue_growth)",
+          "cs_rank(net_income_growth)",
+          "if_else(regime_high_vol, cs_rank(ocf_yield), cs_rank(revenue_growth))",
+          "if_else(regime_bull, cs_rank(revenue_growth), cs_rank(earnings_yield))",
+          "regime_bull * (cs_rank(ocf_yield) + cs_rank(momentum_252_21d))",
+          "regime_bull * (-cs_rank(momentum_5d))",
+          "if_else(gt(treasury_10y_chg_20d, 0), cs_rank(earnings_yield), cs_rank(revenue_growth))",
+          "sign(yield_curve_chg_20d) * cs_rank(book_to_market)"
+        ],
+        "rank_ic": 0.021688277187572456,
+        "sharpe": 0.06826241276990618,
+        "gross_sharpe": 0.2536609744373378
+      },
+      "literature": {
+        "selected": [
+          "cs_rank(momentum_252_21d)",
+          "-cs_rank(momentum_5d)",
+          "cs_rank(roe)",
+          "cs_rank(earnings_yield)",
+          "-cs_rank(volatility_60d)"
+        ],
+        "rank_ic": 0.002151998620372649,
+        "sharpe": -0.9542803185136458,
+        "gross_sharpe": -0.8047891358183655
+      },
+      "random": {
+        "selected": [
+          "-cs_rank(asset_growth)",
+          "regime_prob_high_vol * cs_rank(operating_margin) + (1 - regime_prob_high_vol) * cs_rank(momentum_60d)",
+          "ts_mean(-cs_rank(close_to_sma20), 5)"
+        ],
+        "rank_ic": 0.010422828479423434,
+        "sharpe": 1.0372535663735032,
+        "gross_sharpe": 1.2378538727092687
+      }
+    }
+  ],
+  "rules": {
+    "naive": {
+      "test_years": 4,
+      "invested_years": 4,
+      "pooled_daily": {
+        "mean": 0.014815042298918368,
+        "icir": 0.0692240151967622,
+        "t_stat": 2.1912435301721915,
+        "positive_share": 0.5319361277445109,
+        "n": 1002
+      },
+      "pooled_net": {
+        "ann_return": -0.03640188391876485,
+        "ann_vol": 0.058681586009546025,
+        "sharpe": -0.6203289037355463,
+        "sortino": -0.8893576262718398,
+        "max_drawdown": -0.1799626728107956,
+        "calmar": -0.20227463479071633,
+        "hit_rate": 0.4795613160518445,
+        "days": 1003
+      },
+      "pooled_gross": {
+        "ann_return": -0.020712154411630393,
+        "ann_vol": 0.05850875028404194,
+        "sharpe": -0.3540009709843275,
+        "sortino": -0.5104207083518667,
+        "max_drawdown": -0.14197242021760703,
+        "calmar": -0.14588857737216857,
+        "hit_rate": 0.4885343968095713,
+        "days": 1003
+      },
+      "monthly_ic_t": 2.73704068386541,
+      "monthly_ic_p": 0.006199462557997082,
+      "random_null_pvalue": 0.035,
+      "share_years_positive": 1.0,
+      "yearly_ic": [
+        0.007531559640639286,
+        0.012497013979697243,
+        0.023079343123741308,
+        0.01612049378156074
+      ],
+      "dsr_net": {
+        "dsr": 0.057490041663345544,
+        "sr_daily": -0.03907704786546623,
+        "sr_annual": -0.6203289037355463,
+        "sr0_daily": 0.010549380109911658,
+        "sr0_annual": 0.1674662175403049,
+        "psr_vs_zero": 0.10727762728447654,
+        "n_obs": 1003,
+        "n_trials": 5
+      },
+      "monthly_ic_p_holm": 0.018598387673991246
+    },
+    "critic_v1": {
+      "test_years": 4,
+      "invested_years": 4,
+      "pooled_daily": {
+        "mean": 0.014815042298918368,
+        "icir": 0.0692240151967622,
+        "t_stat": 2.1912435301721915,
+        "positive_share": 0.5319361277445109,
+        "n": 1002
+      },
+      "pooled_net": {
+        "ann_return": -0.03640188391876485,
+        "ann_vol": 0.058681586009546025,
+        "sharpe": -0.6203289037355463,
+        "sortino": -0.8893576262718398,
+        "max_drawdown": -0.1799626728107956,
+        "calmar": -0.20227463479071633,
+        "hit_rate": 0.4795613160518445,
+        "days": 1003
+      },
+      "pooled_gross": {
+        "ann_return": -0.020712154411630393,
+        "ann_vol": 0.05850875028404194,
+        "sharpe": -0.3540009709843275,
+        "sortino": -0.5104207083518667,
+        "max_drawdown": -0.14197242021760703,
+        "calmar": -0.14588857737216857,
+        "hit_rate": 0.4885343968095713,
+        "days": 1003
+      },
+      "monthly_ic_t": 2.73704068386541,
+      "monthly_ic_p": 0.006199462557997082,
+      "random_null_pvalue": 0.035,
+      "share_years_positive": 1.0,
+      "yearly_ic": [
+        0.007531559640639286,
+        0.012497013979697243,
+        0.023079343123741308,
+        0.01612049378156074
+      ],
+      "dsr_net": {
+        "dsr": 0.057490041663345544,
+        "sr_daily": -0.03907704786546623,
+        "sr_annual": -0.6203289037355463,
+        "sr0_daily": 0.010549380109911658,
+        "sr0_annual": 0.1674662175403049,
+        "psr_vs_zero": 0.10727762728447654,
+        "n_obs": 1003,
+        "n_trials": 5
+      },
+      "monthly_ic_p_holm": 0.018598387673991246
+    },
+    "critic": null,
+    "random": {
+      "test_years": 4,
+      "invested_years": 4,
+      "pooled_daily": {
+        "mean": 0.004731954951272207,
+        "icir": 0.030241639160775862,
+        "t_stat": 0.957280446164463,
+        "positive_share": 0.5229540918163673,
+        "n": 1002
+      },
+      "pooled_net": {
+        "ann_return": -0.015377093120763498,
+        "ann_vol": 0.04755872899201659,
+        "sharpe": -0.3233285129075834,
+        "sortino": -0.45473392044017014,
+        "max_drawdown": -0.14339042677505143,
+        "calmar": -0.10723932877950654,
+        "hit_rate": 0.48953140578265203,
+        "days": 1003
+      },
+      "pooled_gross": {
+        "ann_return": -0.0029161080290012464,
+        "ann_vol": 0.04750864266152467,
+        "sharpe": -0.06138057973529276,
+        "sortino": -0.08661454614262423,
+        "max_drawdown": -0.10716313773682795,
+        "calmar": -0.027211857459443253,
+        "hit_rate": 0.4955134596211366,
+        "days": 1003
+      },
+      "monthly_ic_t": 1.0160404824387823,
+      "monthly_ic_p": 0.30961010924714083,
+      "random_null_pvalue": 0.615,
+      "share_years_positive": 1.0,
+      "yearly_ic": [
+        0.003259578185103811,
+        0.002602251578034401,
+        0.002688164884240707,
+        0.010422828479423434
+      ],
+      "dsr_net": {
+        "dsr": 0.16342195882542387,
+        "sr_daily": -0.020367781831661984,
+        "sr_annual": -0.32332851290758347,
+        "sr0_daily": 0.010549380109911658,
+        "sr0_annual": 0.1674662175403049,
+        "psr_vs_zero": 0.25916129839264557,
+        "n_obs": 1003,
+        "n_trials": 5
+      }
+    },
+    "composite": {
+      "test_years": 4,
+      "invested_years": 4,
+      "pooled_daily": {
+        "mean": 0.020711680059501112,
+        "icir": 0.11145804586754161,
+        "t_stat": 3.5281357372680873,
+        "positive_share": 0.5708582834331337,
+        "n": 1002
+      },
+      "pooled_net": {
+        "ann_return": -0.02492397834501879,
+        "ann_vol": 0.053982481059154014,
+        "sharpe": -0.4617049430852778,
+        "sortino": -0.6054834131553,
+        "max_drawdown": -0.14878313013190048,
+        "calmar": -0.1675188465447862,
+        "hit_rate": 0.5114656031904287,
+        "days": 1003
+      },
+      "pooled_gross": {
+        "ann_return": -0.013075328980612012,
+        "ann_vol": 0.05390835621771882,
+        "sharpe": -0.24254735068910077,
+        "sortino": -0.31919663137370585,
+        "max_drawdown": -0.12350967597016116,
+        "calmar": -0.1058648148649576,
+        "hit_rate": 0.5174476570289133,
+        "days": 1003
+      },
+      "monthly_ic_t": 3.985082384329038,
+      "monthly_ic_p": 6.74567175551477e-05,
+      "random_null_pvalue": 0.0,
+      "share_years_positive": 1.0,
+      "yearly_ic": [
+        0.01467724297040267,
+        0.014038974682803608,
+        0.03237694739540715,
+        0.021688277187572456
+      ],
+      "dsr_net": {
+        "dsr": 0.1027246139499775,
+        "sr_daily": -0.02908467758316371,
+        "sr_annual": -0.4617049430852778,
+        "sr0_daily": 0.010549380109911658,
+        "sr0_annual": 0.1674662175403049,
+        "psr_vs_zero": 0.17640302965496762,
+        "n_obs": 1003,
+        "n_trials": 5
+      },
+      "monthly_ic_p_holm": 0.0002698268702205908
+    },
+    "literature": {
+      "test_years": 4,
+      "invested_years": 4,
+      "pooled_daily": {
+        "mean": 0.012949231869921167,
+        "icir": 0.07005960028484953,
+        "t_stat": 2.2176934610664825,
+        "positive_share": 0.5199600798403193,
+        "n": 1002
+      },
+      "pooled_net": {
+        "ann_return": -0.03608876623643946,
+        "ann_vol": 0.05518963578380096,
+        "sharpe": -0.653904772588336,
+        "sortino": -0.8801714120646584,
+        "max_drawdown": -0.183937206331362,
+        "calmar": -0.19620155680425916,
+        "hit_rate": 0.49252243270189433,
+        "days": 1003
+      },
+      "pooled_gross": {
+        "ann_return": -0.028020642482700676,
+        "ann_vol": 0.05510186702525056,
+        "sharpe": -0.508524374861203,
+        "sortino": -0.6853666967332736,
+        "max_drawdown": -0.16362954409677744,
+        "calmar": -0.17124439622057544,
+        "hit_rate": 0.49750747756729813,
+        "days": 1003
+      },
+      "monthly_ic_t": 2.327405672886945,
+      "monthly_ic_p": 0.01994368411967673,
+      "random_null_pvalue": 0.09,
+      "share_years_positive": 1.0,
+      "yearly_ic": [
+        0.020561776474991935,
+        0.0028487743323556804,
+        0.02605588570982668,
+        0.002151998620372649
+      ],
+      "dsr_net": {
+        "dsr": 0.049060319227231385,
+        "sr_daily": -0.041192128794928166,
+        "sr_annual": -0.653904772588336,
+        "sr0_daily": 0.010549380109911658,
+        "sr0_annual": 0.1674662175403049,
+        "psr_vs_zero": 0.09395297968088523,
+        "n_obs": 1003,
+        "n_trials": 5
+      },
+      "monthly_ic_p_holm": 0.01994368411967673
+    }
+  },
+  "random_null": {
+    "draws": 200,
+    "mean": 0.0063818368790402565,
+    "p95": 0.01439863185827512,
+    "p99": 0.01631674932869988
+  }
+}

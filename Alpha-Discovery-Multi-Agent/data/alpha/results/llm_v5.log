@@ -1,0 +1,257 @@
+== v5 discovery seed 51  2026-10-26T14:07:29
+2026-10-26 14:09:00,101 === Config Full: All domains + macro, critic and memory ===
+2026-10-26 14:18:04,997 Rejected LLM hypothesis 'Profitability-Adjusted Momentum': contains a calendar year outside 
+the literature citation
+2026-10-26 14:18:05,202 Rejected LLM hypothesis 'Sentiment-Enhanced Value': contains a calendar year outside the 
+literature citation
+2026-10-26 14:18:05,384 Rejected LLM hypothesis 'Macro-Conditioned Accrual Quality': contains a calendar year outside 
+the literature citation
+2026-10-26 14:18:05,574 Rejected LLM hypothesis 'Liquidity-Weighted Earnings Growth': contains a calendar year outside 
+the literature citation
+2026-10-26 14:18:05,734 Rejected LLM hypothesis 'Regime-Filtered Low Volatility': contains a calendar year outside the 
+literature citation
+2026-10-26 14:18:11,807 Full: tested 42 {'REJECT': 25, 'INVALID': 16, 'ACCEPT': 1}; selected 1; combined test IC 
+0.01409233799392075 Sharpe 0.7960489934038346
+Full           tested= 42 selected=1 test rank IC=0.01409233799392075 Sharpe=0.7960489934038346
+
+== v5 discovery seed 52  2026-10-26T14:18:18
+2026-10-26 14:24:50,154 LLM provider groq failed, trying the next one: Groq HTTP 413: {"error":{"message":"Request too 
+large for model `openai/gpt-oss-20b` in organization `org_01m5vgg4ngeqvsappdvcn1hfd8` service tier `on_demand` on 
+tokens per minute (TPM): Limit 8000, Requested 9063, 
+2026-10-26 14:27:42,809 Rejected LLM hypothesis 'Accrual Quality & News Sentiment Synergy': contains a calendar year 
+outside the literature citation
+2026-10-26 14:27:43,019 Rejected LLM hypothesis 'YieldCurve Adjusted Value Tilt': contains a calendar year outside the 
+literature citation
+2026-10-26 14:27:43,225 Rejected LLM hypothesis 'Momentum Reinforced by News Surprise': contains a calendar year 
+outside the literature citation
+2026-10-26 14:27:43,376 Rejected LLM hypothesis 'Defensive Profitability in Bear Regimes': contains a calendar year 
+outside the literature citation
+2026-10-26 14:27:43,588 Rejected LLM hypothesis 'SectorRelative DeepValue Signal': contains a calendar year outside 
+the literature citation
+2026-10-26 14:27:48,219 Full: tested 42 {'REJECT': 28, 'INVALID': 13, 'ACCEPT': 1}; selected 1; combined test IC 
+0.0024490364555512633 Sharpe 0.15975300678784005
+Full           tested= 42 selected=1 test rank IC=0.0024490364555512633 Sharpe=0.15975300678784005
+
+== v5 discovery seed 53  2026-10-26T14:27:53
+  stamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+  results: Dict = {"generated_at": datetime.utcnow().isoformat(), "dataset_version": DATASET_VERSION,
+2026-10-26 14:29:18,142 === Config Full: All domains + macro, critic and memory ===
+2026-10-26 14:36:12,755 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-26 15:02:58,295 Full: tested 77 {'REJECT': 54, 'INVALID': 23}; selected 0; combined test IC None Sharpe None
+Full           tested= 77 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 54  2026-10-26T15:03:02
+2026-10-26 15:17:38,117 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-26 15:17:38,119 Revision LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 
+rate limited (per-minute); trying the next model
+2026-10-26 15:17:47,156 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-26 15:17:47,156 Revision LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 
+rate limited (per-minute); trying the next model
+2026-10-26 15:18:03,947 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-26 15:18:03,947 Revision LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 
+rate limited (per-minute); trying the next model
+2026-10-26 15:18:03,988 Full: tested 68 {'REJECT': 46, 'INVALID': 22}; selected 0; combined test IC None Sharpe None
+Full           tested= 68 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 55  2026-10-26T15:18:09
+    data = self._mgr.copy(deep=deep)
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 612, in copy
+    res = self.apply("copy", deep=deep)
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\pandas\core\internals\blocks.py", line 822, in copy
+    values = values.copy()
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 768. MiB for an array with shape (149, 675233) and data 
+type float64
+
+== v5 discovery seed 56  2026-10-26T15:19:36
+2026-10-26 15:32:46,646 Revision LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 
+rate limited (per-minute); trying the next model
+2026-10-26 15:33:12,146 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-26 15:33:12,147 Revision LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq qwen/qwen3.8-27b 
+rate limited (per-minute); trying the next model
+2026-10-26 15:33:51,420 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-26 15:33:52,459 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-26 15:33:52,459 Research Agent LLM failed: all LLM providers failed: groq:qwen/qwen3.8-27b: groq 
+qwen/qwen3.8-27b rate limited (per-minute); trying the next model | gemini:gemini-2.5-flash: Gemini daily quota 
+exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-26 15:33:52,493 Full: tested 61 {'REJECT': 43, 'INVALID': 18}; selected 0; combined test IC None Sharpe None
+Full           tested= 61 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 57  2026-10-26T15:33:57
+2026-10-26 15:34:59,632 === Config Full: All domains + macro, critic and memory ===
+2026-10-26 15:35:06,256 Rejected LLM hypothesis 'GrowthFundamentals Coupled with Positive News Sen': contains a 
+calendar year outside the literature citation
+2026-10-26 15:35:06,330 Rejected LLM hypothesis 'Low Valuation Buffers in BearRegime Environments': contains a 
+calendar year outside the literature citation
+2026-10-26 15:35:06,411 Rejected LLM hypothesis 'Technical Momentum Amplified by a Steepening Yield': contains a 
+calendar year outside the literature citation
+2026-10-26 15:35:06,488 Rejected LLM hypothesis 'Low Accrual Quality in a Declining Volatility Envi': contains a 
+calendar year outside the literature citation
+2026-10-26 15:35:06,558 Rejected LLM hypothesis 'Undervalued Stocks with Surge in News Attention': contains a calendar 
+year outside the literature citation
+2026-10-26 15:35:06,566 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 58  2026-10-26T15:35:09
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "C:\Users\hp\Downloads\final-year project (2)\final-year 
+project\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3102, in stream
+    raise GraphRecursionError(msg)
+langgraph.errors.GraphRecursionError: Recursion limit of 3100 reached without hitting a stop condition. You can 
+increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT
+
+V5 DISCOVERY DONE 2026-10-26T15:51:49
+== v5 discovery seed 55  2026-10-26T15:55:26
+2026-10-26 15:57:34,303 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:34,306 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:34,525 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:34,752 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:34,992 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:35,221 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 15:57:35,232 Full: tested 5 {'REJECT': 3, 'INVALID': 2}; selected 0; combined test IC None Sharpe None
+Full           tested=  5 selected=0 test rank IC=None Sharpe=None
+
+skip seed 57 (done)
+== v5 discovery seed 58  2026-10-26T15:57:41
+2026-10-26 15:59:39,737 LLM provider gemini failed, trying the next one: Gemini daily quota exhausted; rerun after the 
+quota resets (no fallback is used silently)
+2026-10-26 15:59:39,738 Quant Agent LLM failed: all LLM providers failed: groq:openai/gpt-oss-120b: Groq daily quota 
+exhausted; rerun after the quota resets | groq:openai/gpt-oss-20b: Groq daily quota exhausted; rerun after the quota 
+resets | groq:qwen/qwen3.8-27b: Groq daily quota exhausted; rerun after the quota resets | gemini:gemini-2.5-flash: 
+Gemini daily quota exhausted; rerun after the quota resets (no fallback is used silently)
+2026-10-26 16:00:43,688 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 16:00:43,938 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 16:00:44,138 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 16:00:44,340 Research Agent LLM failed: all LLM providers failed: 
+2026-10-26 16:00:44,348 Full: tested 36 {'REJECT': 22, 'INVALID': 14}; selected 0; combined test IC None Sharpe None
+Full           tested= 36 selected=0 test rank IC=None Sharpe=None
+
+V5 DISCOVERY DONE 2026-10-26T16:00:48
+== v5 discovery seed 59  2026-10-27T20:11:17
+2026-10-27 20:17:04,118 Rejected LLM hypothesis 'SectorRelative P/B with News Dispersion': contains a calendar year 
+outside the literature citation
+2026-10-27 20:17:04,226 Rejected LLM hypothesis 'Accrual Quality with Sentiment Momentum': contains a calendar year 
+outside the literature citation
+2026-10-27 20:17:04,269 Rejected LLM hypothesis 'YieldCurve Tightening & Valuation Gap': contains a calendar year 
+outside the literature citation
+2026-10-27 20:17:04,316 Rejected LLM hypothesis 'Technical Momentum in Bull Regime with Low Volatil': contains a 
+calendar year outside the literature citation
+2026-10-27 20:17:04,362 Rejected LLM hypothesis 'CashFlow Yield with Falling Interest Rates': contains a calendar year 
+outside the literature citation
+2026-10-27 20:17:04,405 Rejected LLM hypothesis 'SectorRelative P/B with News Dispersion': contains a calendar year 
+outside the literature citation
+2026-10-27 20:17:06,107 Full: tested 34 {'REJECT': 25, 'INVALID': 8, 'ACCEPT': 1}; selected 1; combined test IC 
+0.0007638114055584739 Sharpe 0.14337237276294398
+Full           tested= 34 selected=1 test rank IC=0.0007638114055584739 Sharpe=0.14337237276294398
+
+== v5 discovery seed 60  2026-10-27T20:17:08
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-27 20:28:15,012 LLM provider groq failed, trying the next one: groq openai/gpt-oss-20b rate limited 
+(per-minute); trying the next model
+2026-10-27 20:28:18,997 LLM provider groq failed, trying the next one: groq openai/gpt-oss-120b rate limited 
+(per-minute); trying the next model
+2026-10-27 20:28:24,424 LLM provider groq failed, trying the next one: groq openai/gpt-oss-20b rate limited 
+(per-minute); trying the next model
+2026-10-27 20:29:32,228 LLM provider groq failed, trying the next one: groq openai/gpt-oss-20b rate limited 
+(per-minute); trying the next model
+2026-10-27 20:29:42,199 Full: tested 67 {'REJECT': 52, 'INVALID': 15}; selected 0; combined test IC None Sharpe None
+Full           tested= 67 selected=0 test rank IC=None Sharpe=None
+
+V5 DISCOVERY DONE 2026-10-27T20:29:44
+== v5 discovery seed 61  2026-10-27T20:54:26
+2026-10-27 21:01:41,741 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-27 21:03:16,528 LLM provider groq failed, trying the next one: groq openai/gpt-oss-120b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:04:10,686 LLM provider groq failed, trying the next one: groq openai/gpt-oss-120b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:04:12,686 LLM provider groq failed, trying the next one: Groq daily quota exhausted; rerun after the 
+quota resets
+2026-10-27 21:05:35,926 LLM provider groq failed, trying the next one: groq openai/gpt-oss-120b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:06:50,465 LLM provider groq failed, trying the next one: groq openai/gpt-oss-120b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:09:03,555 Full: tested 62 {'REJECT': 53, 'INVALID': 8, 'ACCEPT': 1}; selected 1; combined test IC 
+0.002705778201917361 Sharpe -0.3701311060067487
+Full           tested= 62 selected=1 test rank IC=0.002705778201917361 Sharpe=-0.3701311060067487
+
+== v5 discovery seed 62  2026-10-27T21:09:06
+2026-10-27 21:17:10,863 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:18:02,872 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:18:39,123 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:19:18,143 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:20:35,773 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:21:19,990 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+2026-10-27 21:22:50,584 Full: tested 70 {'REJECT': 44, 'INVALID': 26}; selected 0; combined test IC None Sharpe None
+Full           tested= 70 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 63  2026-10-27T21:22:53
+2026-10-27 21:35:37,016 LLM provider groq failed, trying the next one: groq qwen/qwen3.8-27b rate limited 
+(per-minute); trying the next model
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+  return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+2026-10-27 21:41:24,044 Full: tested 66 {'REJECT': 53, 'INVALID': 13}; selected 0; combined test IC None Sharpe None
+Full           tested= 66 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 64  2026-10-27T21:41:27
+2026-10-27 21:42:10,234 Rejected LLM hypothesis 'Sector-Relative Value in Calm Markets': contains a calendar year 
+outside the literature citation
+2026-10-27 21:42:10,413 Rejected LLM hypothesis 'Macro-Adjusted Price Momentum': contains a calendar year outside the 
+literature citation
+2026-10-27 21:42:10,503 Rejected LLM hypothesis 'Sentiment-Weighted Value': contains a calendar year outside the 
+literature citation
+2026-10-27 21:42:10,577 Rejected LLM hypothesis 'Low Accrual Low Volatility Composite': contains a calendar year 
+outside the literature citation
+2026-10-27 21:42:10,650 Rejected LLM hypothesis 'Regime-Filtered Earnings Growth': contains a calendar year outside 
+the literature citation
+2026-10-27 21:42:10,723 Rejected LLM hypothesis 'Sector-Relative Value in Calm Markets': contains a calendar year 
+outside the literature citation
+2026-10-27 21:42:10,724 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 65  2026-10-27T21:42:12
+2026-10-27 21:44:15,651 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:15,653 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:15,824 Research Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:15,954 Research Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:16,073 Research Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:16,219 Research Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:44:16,228 Full: tested 7 {'REJECT': 5, 'INVALID': 2}; selected 0; combined test IC None Sharpe None
+Full           tested=  7 selected=0 test rank IC=None Sharpe=None
+
+== v5 discovery seed 66  2026-10-27T21:44:18
+2026-10-27 21:45:03,034 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:03,601 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:03,602 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:03,602 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:03,603 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:03,603 Quant Agent LLM failed: all LLM providers failed: 
+2026-10-27 21:45:04,145 Full: tested 0 {}; selected 0; combined test IC None Sharpe None
+Full           tested=  0 selected=0 test rank IC=None Sharpe=None
+
+V5 DISCOVERY DONE 2026-10-27T21:45:06

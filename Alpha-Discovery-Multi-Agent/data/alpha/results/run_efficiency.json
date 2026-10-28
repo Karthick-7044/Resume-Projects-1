@@ -1,0 +1,144 @@
+{
+  "v4": {
+    "rounds": [
+      {
+        "seed": 41,
+        "minutes": 23.642515483333334,
+        "formulas": 63,
+        "accepted": 0,
+        "llm_calls": 53,
+        "tokens": null,
+        "tokens_logged_calls": 0,
+        "prompt_chars": null
+      },
+      {
+        "seed": 43,
+        "minutes": 31.263766583333332,
+        "formulas": 64,
+        "accepted": 1,
+        "llm_calls": 47,
+        "tokens": 148141.0,
+        "tokens_logged_calls": 26,
+        "prompt_chars": 18576.17021276596
+      },
+      {
+        "seed": 44,
+        "minutes": 1.2418038333333332,
+        "formulas": 5,
+        "accepted": 0,
+        "llm_calls": 2,
+        "tokens": 12038.0,
+        "tokens_logged_calls": 2,
+        "prompt_chars": 16880.5
+      }
+    ],
+    "formulas": 132,
+    "accepted": 1,
+    "minutes_per_round": 18.716028633333334,
+    "seconds_per_formula": 25.52185722727273,
+    "llm_calls_per_formula": 0.7727272727272727,
+    "tokens_per_formula": 2321.4347826086955,
+    "mean_prompt_chars": 17728.33510638298
+  },
+  "v5": {
+    "rounds": [
+      {
+        "seed": 51,
+        "minutes": 10.713629200000002,
+        "formulas": 42,
+        "accepted": 1,
+        "llm_calls": 31,
+        "tokens": 97538.0,
+        "tokens_logged_calls": 31,
+        "prompt_chars": 6121.903225806452
+      },
+      {
+        "seed": 52,
+        "minutes": 9.503849966666667,
+        "formulas": 42,
+        "accepted": 1,
+        "llm_calls": 31,
+        "tokens": 112336.0,
+        "tokens_logged_calls": 31,
+        "prompt_chars": 6343.290322580645
+      },
+      {
+        "seed": 53,
+        "minutes": 35.0884546,
+        "formulas": 77,
+        "accepted": 0,
+        "llm_calls": 55,
+        "tokens": 186364.0,
+        "tokens_logged_calls": 55,
+        "prompt_chars": 7587.6
+      },
+      {
+        "seed": 54,
+        "minutes": 15.033353866666666,
+        "formulas": 68,
+        "accepted": 0,
+        "llm_calls": 43,
+        "tokens": 115245.0,
+        "tokens_logged_calls": 43,
+        "prompt_chars": 6924.186046511628
+      },
+      {
+        "seed": 55,
+        "minutes": 39.43725505,
+        "formulas": 5,
+        "accepted": 0,
+        "llm_calls": 64,
+        "tokens": 154292.0,
+        "tokens_logged_calls": 64,
+        "prompt_chars": 6737.921875
+      },
+      {
+        "seed": 56,
+        "minutes": 14.2750285,
+        "formulas": 61,
+        "accepted": 0,
+        "llm_calls": 40,
+        "tokens": 94564.0,
+        "tokens_logged_calls": 40,
+        "prompt_chars": 6864.175
+      },
+      {
+        "seed": 58,
+        "minutes": 25.589278416666666,
+        "formulas": 36,
+        "accepted": 0,
+        "llm_calls": 24,
+        "tokens": 59025.0,
+        "tokens_logged_calls": 24,
+        "prompt_chars": 6626.875
+      },
+      {
+        "seed": 55,
+        "minutes": 2.1539217166666664,
+        "formulas": 5,
+        "accepted": 0,
+        "llm_calls": 2,
+        "tokens": 6002.0,
+        "tokens_logged_calls": 2,
+        "prompt_chars": 5324.5
+      },
+      {
+        "seed": 58,
+        "minutes": 3.0559450833333335,
+        "formulas": 36,
+        "accepted": 0,
+        "llm_calls": 1,
+        "tokens": 2066.0,
+        "tokens_logged_calls": 1,
+        "prompt_chars": 6120.0
+      }
+    ],
+    "formulas": 372,
+    "accepted": 2,
+    "minutes_per_round": 17.205635155555555,
+    "seconds_per_formula": 24.975922,
+    "llm_calls_per_formula": 0.782258064516129,
+    "tokens_per_formula": 2224.2795698924733,
+    "mean_prompt_chars": 6516.716829988746
+  }
+}

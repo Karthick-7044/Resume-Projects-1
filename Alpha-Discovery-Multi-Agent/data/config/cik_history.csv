@@ -1,0 +1,7 @@
+# Point-in-time ticker -> SEC registrant lineage.
+# SEC's live company_tickers.json maps a ticker to its CURRENT registrant only. When a company
+# reorganizes (e.g. into a new holding company), historical XBRL facts remain under the
+# predecessor CIK. All listed CIKs are fetched and merged; facts are resolved as first reported.
+ticker,cik,entity_name,valid_from,valid_to,relationship
+XOM,0000034088,EXXON MOBIL CORP,1999-11-30,2026-06-30,PREDECESSOR
+XOM,0002115436,ExxonMobil Holdings Corp,2026-07-01,,SUCCESSOR

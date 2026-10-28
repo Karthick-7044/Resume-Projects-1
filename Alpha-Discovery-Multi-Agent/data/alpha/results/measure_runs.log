@@ -1,0 +1,2 @@
+﻿v4 {'formulas': 132, 'accepted': 1, 'minutes_per_round': 18.7, 'seconds_per_formula': 25.5, 'llm_calls_per_formula': 0.8, 'tokens_per_formula': 2321.4, 'mean_prompt_chars': 17728.3}
+v5 {'formulas': 372, 'accepted': 2, 'minutes_per_round': 17.2, 'seconds_per_formula': 25.0, 'llm_calls_per_formula': 0.8, 'tokens_per_formula': 2224.3, 'mean_prompt_chars': 6516.7}

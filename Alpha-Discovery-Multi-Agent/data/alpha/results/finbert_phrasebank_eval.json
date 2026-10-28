@@ -1,0 +1,198 @@
+{
+  "source": "https://huggingface.co/datasets/takala/financial_phrasebank/resolve/main/data/FinancialPhraseBank-v1.0.zip",
+  "caveat": "ProsusAI/finbert was fine-tuned on Financial PhraseBank; sanity check, not independent",
+  "subsets": {
+    "AllAgree": {
+      "n": 2264,
+      "accuracy": 0.9717314487632509,
+      "macro_f1": 0.962503461452302,
+      "weighted_f1": 0.972039219196446,
+      "per_class": {
+        "positive": {
+          "precision": 0.9472789115646258,
+          "recall": 0.9771929824561404,
+          "f1-score": 0.9620034542314335
+        },
+        "negative": {
+          "precision": 0.9057750759878419,
+          "recall": 0.9834983498349835,
+          "f1-score": 0.9430379746835443
+        },
+        "neutral": {
+          "precision": 0.9985152190051967,
+          "recall": 0.9669302659956865,
+          "f1-score": 0.9824689554419284
+        }
+      },
+      "confusion_rows_true_cols_pred": {
+        "labels": [
+          "positive",
+          "negative",
+          "neutral"
+        ],
+        "matrix": [
+          [
+            557,
+            12,
+            1
+          ],
+          [
+            4,
+            298,
+            1
+          ],
+          [
+            27,
+            19,
+            1345
+          ]
+        ]
+      },
+      "majority_class_accuracy": 0.6143992932862191
+    },
+    "75Agree": {
+      "n": 3453,
+      "accuracy": 0.9472922096727483,
+      "macro_f1": 0.9364610645058223,
+      "weighted_f1": 0.947969708200476,
+      "per_class": {
+        "positive": {
+          "precision": 0.8973821989528796,
+          "recall": 0.9661781285231116,
+          "f1-score": 0.9305103148751357
+        },
+        "negative": {
+          "precision": 0.8604166666666667,
+          "recall": 0.9833333333333333,
+          "f1-score": 0.9177777777777778
+        },
+        "neutral": {
+          "precision": 0.9915758176412289,
+          "recall": 0.9324324324324325,
+          "f1-score": 0.9610951008645533
+        }
+      },
+      "confusion_rows_true_cols_pred": {
+        "labels": [
+          "positive",
+          "negative",
+          "neutral"
+        ],
+        "matrix": [
+          [
+            857,
+            15,
+            15
+          ],
+          [
+            5,
+            413,
+            2
+          ],
+          [
+            93,
+            52,
+            2001
+          ]
+        ]
+      },
+      "majority_class_accuracy": 0.6214885606718795
+    },
+    "66Agree": {
+      "n": 4217,
+      "accuracy": 0.9181882855110268,
+      "macro_f1": 0.907786797623405,
+      "weighted_f1": 0.9191855896470196,
+      "per_class": {
+        "positive": {
+          "precision": 0.8605015673981191,
+          "recall": 0.940068493150685,
+          "f1-score": 0.8985270049099836
+        },
+        "negative": {
+          "precision": 0.8165584415584416,
+          "recall": 0.9785992217898832,
+          "f1-score": 0.8902654867256637
+        },
+        "neutral": {
+          "precision": 0.9767741935483871,
+          "recall": 0.8958579881656805,
+          "f1-score": 0.9345679012345679
+        }
+      },
+      "confusion_rows_true_cols_pred": {
+        "labels": [
+          "positive",
+          "negative",
+          "neutral"
+        ],
+        "matrix": [
+          [
+            1098,
+            21,
+            49
+          ],
+          [
+            6,
+            503,
+            5
+          ],
+          [
+            172,
+            92,
+            2271
+          ]
+        ]
+      },
+      "majority_class_accuracy": 0.6011382499407162
+    },
+    "50Agree": {
+      "n": 4846,
+      "accuracy": 0.8895996698307883,
+      "macro_f1": 0.8825330133105712,
+      "weighted_f1": 0.890836765541676,
+      "per_class": {
+        "positive": {
+          "precision": 0.8102001291155584,
+          "recall": 0.9207630227439472,
+          "f1-score": 0.8619505494505495
+        },
+        "negative": {
+          "precision": 0.8027397260273973,
+          "recall": 0.9701986754966887,
+          "f1-score": 0.8785607196401799
+        },
+        "neutral": {
+          "precision": 0.9622126996493962,
+          "recall": 0.8579367836054186,
+          "f1-score": 0.9070877708409842
+        }
+      },
+      "confusion_rows_true_cols_pred": {
+        "labels": [
+          "positive",
+          "negative",
+          "neutral"
+        ],
+        "matrix": [
+          [
+            1255,
+            22,
+            86
+          ],
+          [
+            7,
+            586,
+            11
+          ],
+          [
+            287,
+            122,
+            2470
+          ]
+        ]
+      },
+      "majority_class_accuracy": 0.594098225340487
+    }
+  }
+}
