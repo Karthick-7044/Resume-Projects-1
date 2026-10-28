@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { useAuth } from '@/context/AuthContext';
 
 export function AuthModal({ isOpen, onClose, initialMode = 'signin' }) {
-  const { signIn, signUp, signInDemo, signInWithGoogle, resetPassword, isConfigured } = useAuth();
+  const { signIn, signUp, signInWithGoogle, resetPassword, isConfigured } = useAuth();
 
   const [mode, setMode] = useState(initialMode); // 'signin' | 'register' | 'forgot'
   const [email, setEmail] = useState('');
@@ -142,32 +142,6 @@ export function AuthModal({ isOpen, onClose, initialMode = 'signin' }) {
               Access your quantitative research workspace.
             </p>
           </div>
-
-          {/* Configuration Warning Notice if .env is missing actual credentials */}
-          {!isConfigured && (
-            <div className="mb-4 p-3 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-300 text-xs space-y-2.5">
-              <div className="flex items-start gap-2.5">
-                <AlertCircle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <div>
-                  <strong className="font-semibold block">Live email auth is not connected yet</strong>
-                  Add <code className="text-[11px] font-mono text-white">VITE_SUPABASE_URL</code> and <code className="text-[11px] font-mono text-white">VITE_SUPABASE_ANON_KEY</code> in <code className="text-[11px] font-mono text-white">.env</code> to enable real sign in and registration.
-                </div>
-              </div>
-              <Button
-                type="button"
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  signInDemo();
-                  setSuccessMsg('Signed in as Demo Researcher!');
-                  setTimeout(onClose, 800);
-                }}
-                className="w-full text-xs font-mono border-amber-500/40 text-amber-200 hover:bg-amber-900/30"
-              >
-                Continue in Demo Mode
-              </Button>
-            </div>
-          )}
 
           {/* Error & Success Feedback Banners */}
           {errorMsg && (

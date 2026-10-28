@@ -2,7 +2,7 @@
 
     python scripts/capture_demo.py [out_dir]
 
-Uses the app's own "Guest Demo Mode" (no account, no credentials). Writes demo_*.png to docs/screenshots (and out_dir).
+Uses the app's own "(no login needed)" (no account, no credentials). Writes demo_*.png to docs/screenshots (and out_dir).
 """
 import shutil
 import sys
@@ -57,7 +57,7 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     page = b.new_page(viewport={"width": int(os.environ.get("CAPTURE_W", 1440)), "height": 1000}, device_scale_factor=float(os.environ.get("CAPTURE_SCALE", 1.5)))
     page.goto("http://localhost:3000/workspace", wait_until="networkidle", timeout=120000)
-    page.get_by_role("button", name="Guest Demo Mode").first.click()
+    pass
     page.wait_for_timeout(1500)
     page.add_style_tag(content=HIDE)
     page.locator("#workspace-nav").scroll_into_view_if_needed()

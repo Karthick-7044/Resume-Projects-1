@@ -186,24 +186,6 @@ export function AuthProvider({ children }) {
     if (error) throw error;
   };
 
-  const signInDemo = () => {
-    const demoUser = {
-      id: 'demo-researcher-01',
-      email: 'quant.analyst@rajsalpha.com',
-      user_metadata: { full_name: 'Lead Alpha Researcher' },
-    };
-    const demoProfile = {
-      user_id: 'demo-researcher-01',
-      full_name: 'Lead Alpha Researcher',
-      email: 'quant.analyst@rajsalpha.com',
-      role: 'Institutional Quant',
-      created_at: new Date().toISOString(),
-    };
-    setUser(demoUser);
-    setProfile(demoProfile);
-    setSession({ user: demoUser });
-  };
-
   const value = {
     user,
     profile,
@@ -211,7 +193,6 @@ export function AuthProvider({ children }) {
     loading,
     signUp,
     signIn,
-    signInDemo,
     signInWithGoogle,
     signOut,
     resetPassword,

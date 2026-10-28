@@ -71,13 +71,19 @@ export function WorkspaceSection() {
             <h2 className="font-heading text-3xl sm:text-4xl text-white">Alpha Discovery Research Workspace</h2>
             <p className="text-sm text-slate-300 flex items-center gap-2">
               <UserCheck className="w-4 h-4 text-cyan-400" />
-              <span>Signed in as <strong className="text-white font-semibold">{displayName}</strong> ({user?.email || 'demo-researcher@alphadiscovery.org'})</span>
+              {user ? (
+                <span>Signed in as <strong className="text-white font-semibold">{displayName}</strong> ({user.email})</span>
+              ) : (
+                <span>Open to all visitors: explore the data, agent loop, results and reports below.</span>
+              )}
             </p>
           </div>
-          <Button variant="ghost" size="sm" onClick={signOut}
-            className="text-xs font-mono text-rose-400 hover:text-rose-300 hover:bg-rose-950/40 border border-rose-500/30">
-            <LogOut className="w-3.5 h-3.5 mr-1.5" /> Sign Out
-          </Button>
+          {user && (
+            <Button variant="ghost" size="sm" onClick={signOut}
+              className="text-xs font-mono text-rose-400 hover:text-rose-300 hover:bg-rose-950/40 border border-rose-500/30">
+              <LogOut className="w-3.5 h-3.5 mr-1.5" /> Sign Out
+            </Button>
+          )}
         </div>
 
         {/* Section navigation (sticky) */}
