@@ -175,6 +175,17 @@ export function AuthProvider({ children }) {
     return data;
   };
 
+  const signInWithGoogle = async () => {
+    if (!isSupabaseConfigured()) {
+      throw new Error('Supabase credentials are not configured in .env.');
+    }
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: `${window.location.origin}/workspace` },
+    });
+    if (error) throw error;
+  };
+
   const signInDemo = () => {
     const demoUser = {
       id: 'demo-researcher-01',
@@ -201,6 +212,7 @@ export function AuthProvider({ children }) {
     signUp,
     signIn,
     signInDemo,
+    signInWithGoogle,
     signOut,
     resetPassword,
     isConfigured: isSupabaseConfigured(),
